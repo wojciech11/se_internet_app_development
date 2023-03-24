@@ -2,7 +2,7 @@
 
 ## Program
 
-1. TBA
+1. Wprowadzenie - [slajdy](01_wprowadzenie/slides.pdf)([md](01_wprowadzenie/slides.md))
 
 2. TBA
 
