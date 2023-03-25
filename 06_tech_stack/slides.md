@@ -11,16 +11,7 @@ style: |
 
 ---
 <!-- _class: lead -->
-# Programowanie Aplikacji Internetowych
-
----
-<!-- _class: lead -->
-## Podstawy
-<br />
-
-- HTML &amp; XHTML
-- CSS
-- Protokół HTTPS
+# Przegląd technologii internetowych oraz przykładowe tech stacki - WIP
 
 ---
 <!-- _class: lead -->
@@ -37,7 +28,7 @@ style: |
 
 - [React](https://react.dev) - prawie wszyscy
 - [Vue.js](https://vuejs.org) - react jest za skomplikowany
-- [Svelte](https://svelte.dev) - cool kids 
+- [Svelte](https://svelte.dev) - cool kids
 - [Angular](https://angular.io) - mniej
 - [tailwindcss](https://tailwindcss.com)
 

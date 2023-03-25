@@ -125,6 +125,12 @@ Praca własna:
 <!-- _class: lead -->
 ## Jak zacząć
 
+Tutoriale & trzeba dojść do końca, żeby zrozumieć niektóre kroki.
+
+---
+<!-- _class: lead -->
+## Jak zacząć
+
 Taktyka:
 
 - w iteracjach
