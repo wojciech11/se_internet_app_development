@@ -125,5 +125,16 @@ Później:
 
 ---
 <!-- _class: lead -->
+## Przyśpieszenie nauki
+
+Aka, programowania można nauczyć się tylko na własną rękę:
+
+- najlepiej w dwójkę (może macie kogoś takiego),
+- najlepiej jako pair programming,
+- zrobienie jednego tutoriala lub dwóch dla technologii wspomnianej na wykładzie,
+- wrzucenie na githuba.
+
+---
+<!-- _class: lead -->
 ## Dziękuję za uwagę
 <br />
