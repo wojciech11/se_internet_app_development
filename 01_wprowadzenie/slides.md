@@ -129,10 +129,22 @@ Później:
 
 Aka, programowania można nauczyć się tylko na własną rękę:
 
-- najlepiej w dwójkę (może macie kogoś takiego),
+- najlepiej w dwójkę (może macie już partnera do nauki i [wzajemnego coachingu](https://www.edbatista.com/the-art-of-self-coaching-public-course.html)),
 - najlepiej jako pair programming,
 - zrobienie jednego tutoriala lub dwóch dla technologii wspomnianej na wykładzie,
 - wrzucenie na githuba.
+
+---
+<!-- _class: lead -->
+## Misc
+
+What craftswoman do you follow?
+
+- Martin Thomson - [performance](https://www.youtube.com/watch?v=S4LzzuMTqjs)
+- Peter Bourgon - [Golang](https://peter.bourgon.org/go-in-production/)
+- Robert C. Martin - [arch](https://www.youtube.com/watch?v=WpkDN78P884), [scrum](https://www.youtube.com/watch?v=hG4LH6P8Syk), [craftsman](https://www.youtube.com/watch?v=p0O1VVqRSK0&list=PLRTidqHTMvtn9Zm0T8fbonHKuueKWc_r7)
+- JS/TypeScript: ?
+- ML/AI - people around fastai.
 
 ---
 <!-- _class: lead -->

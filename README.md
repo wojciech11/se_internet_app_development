@@ -1,5 +1,7 @@
 # Programowanie Aplikacji Internetowych
 
+Spotykamy się 8 razy na 2 godziny co tydzień.
+
 ## Program
 
 1. Wprowadzenie - [slajdy](01_wprowadzenie/slides.pdf)([md](01_wprowadzenie/slides.md));
