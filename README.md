@@ -2,22 +2,22 @@
 
 ## Program
 
-1. Wprowadzenie - [slajdy](01_wprowadzenie/slides.pdf)([md](01_wprowadzenie/slides.md))
+1. Wprowadzenie - [slajdy](01_wprowadzenie/slides.pdf)([md](01_wprowadzenie/slides.md));
 
-2. TBA
+2. Podstawy - html, protokoły, oraz podstawowe technologie;
 
-3. TBA
+3. Podstawy - CSS, responsywne strony internetowe, web vitals;
 
-4. TBA
+4. PHP i Bazy danych;
 
-5. TBA
+5. Bootstrap i tailwind + testowanie aplikacji internetowych;
 
-6. TBA
+6. Współczesne technologie do budowy aplikcacji internetowych;
 
-7. TBA
+7. Co to jest CMS?
 
 8. Egzamin
 
 ## Materiały Dodatkowe
 
-- TBA
+- [Testowanie API szyki start](https://github.com/wojciech11/se_http_api_testing_quickstart)
