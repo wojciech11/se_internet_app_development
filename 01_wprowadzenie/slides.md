@@ -89,13 +89,24 @@ Frontend:
 
 ---
 <!-- _class: lead -->
-## Jak zacząć 2
+## Jak zacząć 1
 
 Backend:
 
 - PHP + Laravel [1](https://kinsta.com/blog/php-frameworks/#laravel)
 - Python + Django, Flask or FastAPI
 - Typescript or Javascript - NodeJS
+
+---
+<!-- _class: lead -->
+## Jak zacząć 2
+
+Frontend / Backend TypeScript:
+
+- [Next.js](https://nextjs.org/)
+- TypeScript
+- [Tailwind](https://tailwindcss.com/) - style
+- [Prisma](https://www.prisma.io/) do baz danych
 
 ---
 <!-- _class: lead -->
