@@ -14,7 +14,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 5. Bootstrap i tailwind + testowanie aplikacji internetowych;
 
-6. Współczesne technologie do budowy aplikcacji internetowych;
+6. Współczesne technologie do budowy aplikcacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
 
 7. Co to jest CMS?
 

@@ -144,6 +144,12 @@ Aka, programowania można nauczyć się tylko na własną rękę:
 
 ---
 <!-- _class: lead -->
+## Tips
+
+- [revealjs](https://revealjs.com/).
+
+---
+<!-- _class: lead -->
 ## Misc
 
 What craftswoman do you follow?
