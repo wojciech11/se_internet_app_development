@@ -30,6 +30,14 @@ style: |
 
 ---
 <!-- _class: lead -->
+## Materiały
+<br />
+
+- github,
+- utworzę również grupę na MS Teams.
+
+---
+<!-- _class: lead -->
 ### Wprowadzenie
 
 ![width:80%](imgs/overview_s1.svg)
