@@ -15,20 +15,69 @@ style: |
 
 ---
 <!-- _class: lead -->
-## Podstawy
+## Wykładowca
 <br />
 
-- HTML &amp; XHTML
-- CSS
-- Protokół HTTPS
+- Wojciech Barczynski
+- wojciech.barczynski@wsb.wroclaw.pl
 
 ---
 <!-- _class: lead -->
-## Technologie
+## Zaliczenie
 <br />
 
-- Frontend
-- Backend
+- Egzamin + Obecność
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s1.svg)
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s2.svg)
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s3.svg)
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s4.svg)
+
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s5.svg)
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s6.svg)
+
+---
+<!-- _class: lead -->
+### Wprowadzenie
+
+![width:80%](imgs/overview_s7.svg)
+
+---
+<!-- _class: lead -->
+## Jak zacząć
+
+- w iteracjach
+
+
 
 ---
 <!-- _class: lead -->
@@ -37,7 +86,7 @@ style: |
 
 - [React](https://react.dev) - prawie wszyscy
 - [Vue.js](https://vuejs.org) - react jest za skomplikowany
-- [Svelte](https://svelte.dev) - cool kids 
+- [Svelte](https://svelte.dev) - cool kids
 - [Angular](https://angular.io) - mniej
 - [tailwindcss](https://tailwindcss.com)
 
@@ -91,26 +140,6 @@ style: |
 - XaaS
 - PaaS
 - ...
-
----
-<!-- _class: lead -->
-## Podstawowa architektura aplikacji
-<br />
-
-- Wstępne ustalenie stacku technologicznego
-- Sposób udostępniania aplikacji użytkownikom
-- Monolit vs Mikroserwisy
-- -&gt; design doc
-- -&gt; architektura (draw.io)
-
----
-<!-- _class: lead -->
-## Metody wytwarzania oprogramowania
-<br>
-
-- Agile,
-- Narzędzia do trackowania tasków (github, JIRA, YouTrack, ClickUp),
-- Organizacja zespołów (patrze [team topologies](https://teamtopologies.com/key-concepts))
 
 ---
 <!-- _class: lead -->
