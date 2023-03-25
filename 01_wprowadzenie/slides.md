@@ -73,92 +73,55 @@ style: |
 
 ---
 <!-- _class: lead -->
+## Jak zacząć 1
+
+Frontend:
+
+- [vue.js](https://vuejs.org) or [React](https://react.dev)
+
+---
+<!-- _class: lead -->
+## Jak zacząć 2
+
+Backend:
+
+- PHP + Laravel [1](https://kinsta.com/blog/php-frameworks/#laravel)
+- Python + Django, Flask or FastAPI
+- Typescript or Javascript - NodeJS
+
+---
+<!-- _class: lead -->
 ## Jak zacząć
 
+Praca własna:
+
+0. 2x tutorial z danej technologii,
+1. Zbudowanie prostej aplikacji,
+2. Szukamy pomysłu co można do aplikacji dodać,
+3. Rozwijamy w cyklu 1 tygodniowym,
+4. Warto się pochwalić,
+5. Wracamy do 2.
+
+---
+<!-- _class: lead -->
+## Jak zacząć
+
+Taktyka:
+
 - w iteracjach
-
-
-
----
-<!-- _class: lead -->
-## Frontend
-<br />
-
-- [React](https://react.dev) - prawie wszyscy
-- [Vue.js](https://vuejs.org) - react jest za skomplikowany
-- [Svelte](https://svelte.dev) - cool kids
-- [Angular](https://angular.io) - mniej
-- [tailwindcss](https://tailwindcss.com)
+- traced-bullet approach (deliver, patch, patch)
+- wrzucamy do gita
+- korzystamy z lintera
 
 ---
 <!-- _class: lead -->
-## Frontend Tooling
-<br />
+## Jak zacząć
 
-- [Vite](https://vitejs.dev)
+Później:
 
----
-<!-- _class: lead -->
-## Frontend
-<br />
-
-- Typescript vs Javascript
-
----
-<!-- _class: lead -->
-## Backend 1 - JS/TS
-<br />
-
-- [Next.js](https://nextjs.org/)
-- [Node.js]()
-- [Express.js]()
-
----
-<!-- _class: lead -->
-## Backend 2 -
-<br />
-
-- PHP
-- Python (e.g., Django)
-- Java
-- Golang
-- C# and others
-
----
-<!-- _class: lead -->
-## Warte śledzenia
-<br />
-
-- Serverless on edge
-- na przykład [Cloudflare workers](https://www.serverless.com/framework/docs/providers/cloudflare/guide/intro)
-
----
-<!-- _class: lead -->
-## Platformy w chmurze
-<br />
-
-- XaaS
-- PaaS
-- ...
-
----
-<!-- _class: lead -->
-## Elementy aplikacji
-<br />
-
-- Frontend
-- Backend
-- Bazy Danych
-- Warstwa serwerowa
-- Warstwa sieciowa
-
----
-<!-- _class: lead -->
-## Metoda dostarczania nowych wersji
-<br />
-
-- Continuous Delivery
-- github workflow
+- testy
+- Continuous Integration and Delivery ([tutorial](https://github.com/wojciech11/se_continuous_delivery_and_deployment))
+- np., github workflow
 
 ---
 <!-- _class: lead -->
