@@ -10,7 +10,7 @@
 - Załóż konto na Githubie,
 - Podstawy - [instrukcja](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/01_exercise/README_pl.md).
 
-Zauważ, github nie jest jedynym rozwiązaniem - [sr.ht](https://sr.ht/)(hacker space), [gitlab](https://about.gitlab.com/), lub [bitbucket](https://bitbucket.org/product).
+Zauważ, github nie jest jedynym rozwiązaniem - [sr.ht](https://sr.ht/)(open source, hacker), [gitlab](https://about.gitlab.com/), lub [bitbucket](https://bitbucket.org/product).
 
 ## HTML
 
