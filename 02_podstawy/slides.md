@@ -54,8 +54,8 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 <!-- _class: lead -->
 ## HTML
 
-- [tagi otwierające i zamykające](https://www.w3schools.com/html/html_elements.asp)
-- [atrybuty](https://www.w3schools.com/html/html_attributes.asp)
+- [tagi otwierające i zamykające](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+- [atrybuty](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#attributes)
 - \<br /\>
 
 ---
