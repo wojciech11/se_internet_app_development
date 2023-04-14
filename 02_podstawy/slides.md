@@ -97,7 +97,9 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 <!-- _class: lead -->
 ## HTML - Praktyka
 
-- [Responsywność](https://www.w3schools.com/html/html_responsive.asp)
+- [Responsive design](https://www.w3schools.com/html/html_responsive.asp),
+- [Responsive typography](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#responsive_typography),
+- [media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries).
 
 ---
 <!-- _class: lead -->
