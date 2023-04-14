@@ -22,9 +22,9 @@ Podstawy
 
 - HTML
 - CSS
-- HTTP
 - DNS
-
+- HTTP
+- REST
 
 ---
 <!-- _class: lead -->
@@ -136,6 +136,17 @@ Zacznij od korzystania z gotowych komponentów:
 
 DNS - Domain Name Server
 
+```bash
+dig google.com
+```
+
+---
+<!-- _class: lead -->
+## DNS
+
+Sprawdźmy kto posiada domenę
+`wsb.pl` na https://www.dns.pl/whois
+
 ---
 <!-- _class: lead -->
 ## HTTP
@@ -146,6 +157,8 @@ DNS - Domain Name Server
 <!-- _class: lead -->
 ## HTTP
 
+[Podstawy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP):
+
 - HTTP is simple
 - HTTP is extensible
 - HTTP is stateless (but not sessionless)
@@ -153,9 +166,10 @@ DNS - Domain Name Server
 
 ---
 <!-- _class: lead -->
+
 ## HTTP
 
-![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http-layers.png)
+![height:600px](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http-layers.png)
 
 ---
 <!-- _class: lead -->
@@ -198,7 +212,7 @@ http POST  https://httpbin.org/post "name"="natalia"
 
 ---
 <!-- _class: lead -->
-## HTTP - status codes
+## HTTP - status code
 
 [Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status):
 
@@ -221,9 +235,10 @@ curl -I -X GET https://httpbin.org/status/200 --fail
 
 ---
 <!-- _class: lead -->
-## HTTP
+## REST
 
-- [Podstawy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP)
+
+
 
 ---
 <!-- _class: lead -->
