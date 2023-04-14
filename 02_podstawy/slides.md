@@ -113,19 +113,37 @@ Jeśli nie mamy możliwości budowy frontendu:
 
 ---
 <!-- _class: lead -->
-## HTML
+## CSS
 
-CSS:
-
-- [css](https://www.w3schools.com/html/html_css.asp)
-- atrybut `class`
+- CSS - Cascading Style Sheets
+- [przykład](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 
 ---
 <!-- _class: lead -->
 ## CSS
 
+Zacznij od korzystania z gotowych komponentów:
 
-<!-- https://ant.design/components/checkbox -->
+1. [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/)
+2. ... ([more](https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh))
+3. [ant.design](https://ant.design/components/checkbox)
+4. [tailwindcss](https://tailwindcss.com)
+
+---
+<!-- _class: lead -->
+## DNS
+
+DNS - Domain Name Server
+
+---
+<!-- _class: lead -->
+## HTTP
+
+![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
+
+
+
+<!--  -->
 
 ---
 <!-- _class: lead -->
