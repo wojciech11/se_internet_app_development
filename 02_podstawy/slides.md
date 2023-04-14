@@ -126,7 +126,7 @@ Zacznij od korzystania z gotowych komponentów:
 
 1. [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/)
 2. ... ([more](https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh))
-3. [materializecss](https://materializecss.com) 
+3. [materializecss](https://materializecss.com)
 4. [ant.design](https://ant.design/components/checkbox)
 4. [tailwindcss](https://tailwindcss.com)
 
@@ -142,9 +142,88 @@ DNS - Domain Name Server
 
 ![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
 
+---
+<!-- _class: lead -->
+## HTTP
 
+- HTTP is simple
+- HTTP is extensible
+- HTTP is stateless (but not sessionless)
+- HTTP relies on TCP (connection based)
 
-<!--  -->
+---
+<!-- _class: lead -->
+## HTTP
+
+![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http-layers.png)
+
+---
+<!-- _class: lead -->
+## HTTP
+
+![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/client-server-chain.png)
+
+---
+<!-- _class: lead -->
+## HTTP
+
+Demo:
+
+```bash
+
+curl -I www.google.com
+
+curl -I -L google.com
+```
+
+---
+<!-- _class: lead -->
+## HTTP - methods
+
+[Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods):
+
+- GET
+- POST
+- DELETE
+
+---
+<!-- _class: lead -->
+## HTTP - methods
+
+Demo:
+
+```bash
+http POST  https://httpbin.org/post "name"="natalia"
+```
+
+---
+<!-- _class: lead -->
+## HTTP - status codes
+
+[Status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status):
+
+- 5xx: 500, 502
+- 4xx: 404, 400, 401
+- 3xx: 301, 302
+- 2xx: 200, 201, 02
+
+---
+<!-- _class: lead -->
+## HTTP - status code
+
+Demo:
+
+```bash
+curl -I -X GET https://httpbin.org/status/404 --fail
+
+curl -I -X GET https://httpbin.org/status/200 --fail
+```
+
+---
+<!-- _class: lead -->
+## HTTP
+
+- [Podstawy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP)
 
 ---
 <!-- _class: lead -->
