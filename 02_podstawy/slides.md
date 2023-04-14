@@ -48,6 +48,7 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 
 - Tim Berners-Lee
 - HTML5
+- [podstawowa struktura](https://www.w3schools.com/html/default.asp)
 
 ---
 <!-- _class: lead -->
@@ -64,7 +65,7 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 - \<a href="https://..."\>link do \</a\>
 - \<img src="" /\>
 - \<p>123</p\>
-- \<div></div\>
+- \<h2></h2\>
 
 ---
 <!-- _class: lead -->
@@ -89,10 +90,14 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 <!-- _class: lead -->
 ## HTML
 
-CSS:
+- \<script\>
+- [forms](https://www.w3schools.com/html/html_forms.asp)
 
-- [css](https://www.w3schools.com/html/html_css.asp)
-- atrybut `class`
+---
+<!-- _class: lead -->
+## HTML - Praktyka
+
+- [Responsywność](https://www.w3schools.com/html/html_responsive.asp)
 
 ---
 <!-- _class: lead -->
@@ -105,7 +110,19 @@ Jeśli nie mamy możliwości budowy frontendu:
 
 ---
 <!-- _class: lead -->
+## HTML
+
+CSS:
+
+- [css](https://www.w3schools.com/html/html_css.asp)
+- atrybut `class`
+
+---
+<!-- _class: lead -->
 ## CSS
+
+
+<!-- https://ant.design/components/checkbox -->
 
 ---
 <!-- _class: lead -->
