@@ -235,9 +235,20 @@ curl -I -X GET https://httpbin.org/status/200 --fail
 
 ---
 <!-- _class: lead -->
-## REST
+## A co z serwisami?
+
+- +/- Wiemy jak działają przeglądarki
+- co z web API?
+
+---
+<!-- _class: lead -->
+## A co z serwisami?
+
+- +/- Wiemy jak działają przeglądarki
+- co z web API?
 
 
+<!-- https://wttr.in/ -->
 
 
 ---
