@@ -98,7 +98,14 @@ CSS:
 <!-- _class: lead -->
 ## HTML - Praktyka
 
-- prezentacje z [revealjs](https://revealjs.com/)
+Jeśli nie mamy możliwości budowy frontendu:
+
+- prezentacje z [revealjs](https://revealjs.com/),
+- Warto skorzystać z gotowych komponentów, np., [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/).
+
+---
+<!-- _class: lead -->
+## CSS
 
 ---
 <!-- _class: lead -->
