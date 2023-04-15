@@ -361,8 +361,26 @@ curl -I -X GET https://httpbin.org/status/200 --fail
 Najpopularniejsze:
 
 - RPC
-- REST / REST-like
+- REST / almost-REST
 - GraphQL
+
+---
+<!-- _class: lead -->
+## 3-tier architecture
+
+- Frontend
+- backend
+- baza danych
+
+---
+<!-- _class: lead -->
+## Jak hostować?
+
+- PaaS: [vercel](https://vercel.com/), [netify](https://www.netlify.com/), [heroku](https://www.heroku.com/);
+- CaaS (AWS EKS, GCP) - container-as-a-service
+- XaaS (AWS, GCP):
+
+  - IaaS
 
 ---
 <!-- _class: lead -->
