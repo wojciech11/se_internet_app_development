@@ -14,7 +14,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 5. Bootstrap i Tailwind oraz testowanie aplikacji internetowych;
 
-6. Przegląd technologii do budowy aplikcacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
+6. Przegląd technologii do budowy aplikacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
 
 7. Co to jest CMS?
 
@@ -36,9 +36,9 @@ Program:
 
 1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) / [cwiczenia TBA](cwiczenia/01_basics)
 
-   - github & git,
-   - podstawy: html, css, http (css),
-   - frameworki: bootstrap i tailwind.
+   - github & git;
+   - podstawy: html, css, and http;
+   - frameworki: bootstrap i tailwindcss.
 
 2. TBA
 
