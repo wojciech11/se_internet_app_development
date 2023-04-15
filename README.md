@@ -34,7 +34,8 @@ Podejście:
 
 Program:
 
-1. TBA
+1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) - TBA
+2. TBA
 
 ## Materiały Dodatkowe
 
