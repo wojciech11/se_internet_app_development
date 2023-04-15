@@ -134,6 +134,57 @@ p { color: red; }
 ```
 ---
 <!-- _class: lead -->
+## CSS - Reguły
+
+```css
+h1 p { color: red; }
+```
+
+element `p` w `h1`.
+
+---
+<!-- _class: lead -->
+## CSS - Reguły
+
+```css
+p,li,h1 { color: red; }
+```
+
+wszystkie wspomniane elementy czerwone
+
+---
+<!-- _class: lead -->
+## CSS - Reguły
+
+Po id:
+
+```css
+#intro { color: red; }
+```
+
+```html
+<p id="intro">czerwony</p>
+```
+
+---
+<!-- _class: lead -->
+## CSS - Reguły
+Po klasach:
+
+```html
+<h2 class="content">Nagłówek ma klasę content.</h2>
+<p class="content">Ten paragraf oznaczyłem za pomocą klasy content. </p>
+```
+
+```css
+.content {
+color: #00f;
+font-weight: bold;
+font-style: italic; }
+```
+
+---
+<!-- _class: lead -->
 ## CSS - w dokumencie
 
 ```html
@@ -155,6 +206,13 @@ h1 {
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 ```
+
+---
+<!-- _class: lead -->
+## CSS
+
+- kaskady reguł
+- wszystki + ostatnia nadpisuje poprzednie lub bardziej precyzyjne
 
 ---
 <!-- _class: lead -->
