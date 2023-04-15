@@ -107,7 +107,7 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 
 Jeśli nie mamy możliwości budowy frontendu:
 
-- prezentacje z [revealjs](https://revealjs.com/) ([przykład](https://github.com/wojciech11/se_projekt_zespolowy/tree/master/00_wstep)),
+- prezentacje z [revealjs](https://revealjs.com/) ([przykład](https://github.com/wojciech11/cloud_dev_tools_and_platforms/tree/master/01_slides)),
 - blog na wordpress lub na alterntywnej platformie,
 - Warto skorzystać z gotowych komponentów, np., [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/).
 
