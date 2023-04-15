@@ -107,7 +107,7 @@ Skorzystajmy Najpierw z Web Developer Tools w Firefoxie
 
 Jeśli nie mamy możliwości budowy frontendu:
 
-- prezentacje z [revealjs](https://revealjs.com/),
+- prezentacje z [revealjs](https://revealjs.com/) ([przykład](https://github.com/wojciech11/se_projekt_zespolowy/tree/master/00_wstep)),
 - blog na wordpress lub na alterntywnej platformie,
 - Warto skorzystać z gotowych komponentów, np., [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/).
 
@@ -196,6 +196,34 @@ h1 {
 </style>
 </head>
 ```
+
+<!--
+<head>
+<style>
+h1 {
+  color: blue;
+}
+
+
+h2, h1 p {
+  color: red;
+}
+
+h2 {
+  color: yellow
+}
+
+
+</style>
+<body>
+<h1>WSB</h1>
+
+<h1><p>123</p></h1>
+
+<h2>123</h2>
+</body>
+</head>
+-->
 
 ---
 <!-- _class: lead -->
@@ -337,7 +365,6 @@ curl -I -X GET https://httpbin.org/status/404 --fail
 
 curl -I -X GET https://httpbin.org/status/200 --fail
 ```
-
 ---
 <!-- _class: lead -->
 ## A co z serwisami?
@@ -347,11 +374,12 @@ curl -I -X GET https://httpbin.org/status/200 --fail
 
 ---
 <!-- _class: lead -->
-## A co z serwisami?
+## Dziękuję za uwagę
+<br />
 
-- +/- Wiemy jak działają przeglądarki
-- co z web API?
-
+---
+<!-- _class: lead -->
+# Backup slides
 <!-- https://wttr.in/ -->
 
 ---
@@ -381,8 +409,3 @@ Najpopularniejsze:
 - XaaS (AWS, GCP):
 
   - IaaS
-
----
-<!-- _class: lead -->
-## Dziękuję za uwagę
-<br />
