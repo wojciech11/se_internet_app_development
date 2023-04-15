@@ -120,6 +120,44 @@ Jeśli nie mamy możliwości budowy frontendu:
 
 ---
 <!-- _class: lead -->
+## CSS - Reguły
+
+```css
+selektor { cecha: wartość; }
+```
+
+- selektor - dowolny znacznik, np. p (akapit), h1 (nagłówek), li (lista) cecha - właściwość stylu dla znacznika, np. kolor (color)
+- wartość - opis cechy np. kolor czcionki (color) czerwony (red)
+
+```css
+p { color: red; }
+```
+---
+<!-- _class: lead -->
+## CSS - w dokumencie
+
+```html
+<head>
+<style>
+h1 {
+  color: blue;
+}
+</style>
+</head>
+```
+
+---
+<!-- _class: lead -->
+## CSS - zewnętrzny
+
+```html
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+```
+
+---
+<!-- _class: lead -->
 ## CSS
 
 Zacznij od korzystania z gotowych komponentów:
@@ -130,6 +168,15 @@ Zacznij od korzystania z gotowych komponentów:
 4. [ant.design](https://ant.design/components/checkbox)
 4. [tailwindcss](https://tailwindcss.com)
 
+---
+<!-- _class: lead -->
+## Selektory: xpath, css
+
+Wróćmy do naszego  Web Developer Tools.
+
+- Copy -&gt; CSS selector,
+- Copy -&gt; XPath,
+- Potrzebne przy pracy z [cypress](https://www.cypress.io/) czy [selenium](https://www.selenium.dev/).
 ---
 <!-- _class: lead -->
 ## DNS
@@ -247,9 +294,17 @@ curl -I -X GET https://httpbin.org/status/200 --fail
 - +/- Wiemy jak działają przeglądarki
 - co z web API?
 
-
 <!-- https://wttr.in/ -->
 
+---
+<!-- _class: lead -->
+## Protokoły
+
+Najpopularniejsze:
+
+- RPC
+- REST / REST-like
+- GraphQL
 
 ---
 <!-- _class: lead -->
