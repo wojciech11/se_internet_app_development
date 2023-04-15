@@ -22,6 +22,8 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 ## Program - Ćwiczenia / laboratorium
 
+Spotykamy się 8 razy na 2 godziny.
+
 Podejście:
 
 1. Problem
@@ -32,7 +34,7 @@ Podejście:
 
 Program:
 
-TBA
+1. TBA
 
 ## Materiały Dodatkowe
 
