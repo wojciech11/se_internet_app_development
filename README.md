@@ -34,7 +34,12 @@ Podejście:
 
 Program:
 
-1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) - TBA
+1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) / [cwiczenia TBA](cwiczenia/01_basics)
+
+   - github & git,
+   - podstawy: html, css, http (css),
+   - frameworki: bootstrap i tailwind.
+
 2. TBA
 
 ## Materiały Dodatkowe
