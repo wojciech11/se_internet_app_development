@@ -20,7 +20,17 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 8. Egzamin
 
-## Program - Laboratorium
+## Program - Ćwiczenia / laboratorium
+
+Podejście:
+
+1. Problem
+2. Mierzymy się z zadaniem samemu - **timebox**
+3. Pytamy / prosimy o pomoc.
+4. Zrobiłam / Zrobiłem - warto pokazać
+5. **Kopiuj&Wklej zakazane** (chyba, że wykładowca powie inaczej)
+
+Program:
 
 TBA
 
