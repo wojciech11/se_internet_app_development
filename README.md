@@ -6,9 +6,12 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 1. Wprowadzenie - [slajdy](01_wprowadzenie/slides.pdf)([md](01_wprowadzenie/slides.md));
 
-2. Podstawy - html, protokół http, oraz podstawowe technologie web - [slajdy](02_podstawy/slides.pdf)([md](02_podstawy/slides.md));
+2. Podstawy 1 - CSS, html, protokół http, oraz responsywne strony internetowe, podstawowe technologie web - [slajdy](02_podstawy/slides.pdf)([md](02_podstawy/slides.md));
 
-3. Podstawy - CSS, responsywne strony internetowe, i web vitals;
+3. Podstawy 2:
+ 
+   - REST API
+   - web vitals;
 
 4. PHP i Bazy danych;
 

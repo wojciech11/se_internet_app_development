@@ -2,3 +2,7 @@
 # Dependency directories
 **/node_modules/
 **/**/tailwindcss/output.css
+
+## python
+**/.venv
+
