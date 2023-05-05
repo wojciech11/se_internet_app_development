@@ -208,6 +208,13 @@ Dla purystów - [HATEOAS](https://restfulapi.net/hateoas/)
 
 ---
 <!-- _class: lead -->
+# Zauważ
+
+- JS/TS w przeglądarce to też aplikacja,
+- Docelowo - JS/TS powinna komunikować się przez API.
+
+---
+<!-- _class: lead -->
 ## Dziękuję za uwagę
 <br />
 
