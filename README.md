@@ -8,14 +8,17 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 2. Podstawy 1 - CSS, html, protokół http, oraz responsywne strony internetowe, podstawowe technologie web - [slajdy](02_podstawy/slides.pdf)([md](02_podstawy/slides.md));
 
-3. Podstawy 2:
+3. Podstawy 2 - [slajdy](03_web_api/slides.pdf) oraz [przykłady](03_web_api/): 
  
-   - REST API
-   - web vitals;
+   - REST API;
+   - architektura.
 
-4. PHP i Bazy danych;
+4. Web API stacks:
 
-5. Bootstrap i Tailwind oraz testowanie aplikacji internetowych;
+   - [Typescript / Javascript stack](04_js_ts_stack/)
+   - [PHP i Bazy danych](04_php_stack/).
+
+5. Bootstrap i Tailwind oraz testowanie aplikacji internetowych &&  web vitals;
 
 6. Przegląd technologii do budowy aplikacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
 

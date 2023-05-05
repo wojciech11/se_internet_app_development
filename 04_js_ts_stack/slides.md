@@ -13,17 +13,18 @@ style: |
 <!-- _class: lead -->
 # Programowanie Aplikacji Internetowych
 
-API / Komunikacja między serwisami
+Javascript / Typescript stack
 
 ---
 <!-- _class: lead -->
 ## Plan na dziś
 <br />
 
-- http
-- RPC
-- REST
-- GraphQL
+- Typescript
+- Javascript
+
+
+
 
 ---
 <!-- _class: lead -->
@@ -202,12 +203,6 @@ Dla purystów - [HATEOAS](https://restfulapi.net/hateoas/)
 
 ---
 <!-- _class: lead -->
-# Architektura
-
-![](img/3tier_arch.svg)
-
----
-<!-- _class: lead -->
 ## Dziękuję za uwagę
 <br />
 
@@ -220,6 +215,9 @@ Dla purystów - [HATEOAS](https://restfulapi.net/hateoas/)
 <!-- _class: lead -->
 ## 3-tier architecture
 
+- Frontend
+- backend
+- baza danych
 
 ---
 <!-- _class: lead -->
