@@ -1,7 +1,12 @@
 # Web API
 
 - [slides](slides.pdf)([md](slides.md))
-- przykłady
+- przykłady:
+
+   - [klient http Python](example_py_call_rest_api)
+   - [klient/server http JavaScript](example_js_call_rest_api)
+   - [klient/server http Typescript](example_ts_call_rest_api)
+
 
 ## Materiały dodatkowe
 

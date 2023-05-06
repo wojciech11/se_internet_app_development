@@ -60,17 +60,8 @@ curl -I -L google.com
 
 - GET
 - POST
+- PUT
 - DELETE
-
----
-<!-- _class: lead -->
-## HTTP - methods
-
-Demo:
-
-```bash
-http POST  https://httpbin.org/post "name"="natalia"
-```
 
 ---
 <!-- _class: lead -->
@@ -83,14 +74,22 @@ http POST  https://httpbin.org/post "name"="natalia"
 - 3xx: 301, 302
 - 2xx: 200, 201, 02
 
+Warto wiedzieć, gdzie jest błąd.
+
 ---
 <!-- _class: lead -->
 ## WebSockets
 
-- dwu-stronnej szybkiej komunikacji
+- dwustronnej szybkiej komunikacji
 - Alternatywa dla *long polling*
 
 Więcej później o websocketach później.
+
+---
+<!-- _class: lead -->
+## WebSockets
+
+https://ably.com/topic/socketio-vs-websocket
 
 ---
 <!-- _class: lead -->

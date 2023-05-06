@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
 
 	axios
 		.get(
-			"https://mdn.github.io/learning-area/_javascript/oojs/json/superheroes.json",
+			"https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json",
 		)
 		.then((response) => {
 			console.log(response.data);

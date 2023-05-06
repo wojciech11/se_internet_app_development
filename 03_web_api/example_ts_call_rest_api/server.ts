@@ -1,8 +1,8 @@
 import * as http from "http";
 import axios from "axios";
 
-const hostname:string = "127.0.0.1";
-const port:number = 3000;
+const hostname: string = "127.0.0.1";
+const port: number = 3000;
 
 const server = http.createServer((req, res) => {
 	res.setHeader("Content-Type", "application/json");
