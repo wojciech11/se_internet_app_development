@@ -44,11 +44,14 @@ Program:
 
    - [przygotowanie](cwiczenia/README.md);
    - [github & git](cwiczenia/01_basics);
-   - [podstawy: http i web api](cwiczenia/01_basics);
+   - [podstawy: http i web api](cwiczenia/01_basics).
 
 2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](cwiczenia/02_component_frameworks).
 
-3. TBA
+3. Web App stack:
+
+   - [TS/JS](cwieczenia/04_js_ts_stack);
+   - PHP - WIP.
 
 4. TBA
 
