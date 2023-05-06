@@ -205,6 +205,12 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 
 - https://expressjs.com/en/guide/writing-middleware.html
 
+## React
+
+1. Zapoznaj się z przykładem [react](react/), zauważ, że można korzystać z reakta i eksperymentować z poziomu strony internetowej
+
+2. Przejdź do tutoriala na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
+
 <!-- 
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
 -->
@@ -216,7 +222,6 @@ Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-se
 2. JS/TS
 
 3. Next.js -->
-
 
 ## Materiały dodatkowe
 
