@@ -285,6 +285,41 @@ type User {
 
 ---
 <!-- _class: lead -->
+## Demo
+
+Za [Graphql docs](https://graphql.org/learn/), zapytanie klienta:
+
+```graphql
+{
+  me {
+    name
+  }
+}
+```
+
+---
+<!-- _class: lead -->
+## Demo
+
+Za [Graphql docs](https://graphql.org/learn/), możliwa odpowiedź:
+
+```json
+{
+  "me": {
+    "name": "Natalia"
+  }
+}
+```
+---
+<!-- _class: lead -->
+## Demo
+
+- [insomnia](https://insomnia.rest/)
+-
+
+
+---
+<!-- _class: lead -->
 ## GraphQL
 
 - https://graphql.org/
