@@ -83,13 +83,7 @@ Warto wiedzieć, gdzie jest błąd.
 - dwustronnej szybkiej komunikacji
 - Alternatywa dla *long polling*
 
-Więcej później o websocketach później.
-
----
-<!-- _class: lead -->
-## WebSockets
-
-https://ably.com/topic/socketio-vs-websocket
+Więcej później o [websocketach i socketio](https://ably.com/topic/socketio-vs-websocket) później.
 
 ---
 <!-- _class: lead -->
@@ -125,16 +119,57 @@ Najpopularniejsze:
 <!-- _class: lead -->
 ## (web) RPC
 
-Przykłady:
+Przykłady / o czym należy pamiętać wywołując zewnętrzny serwis:
 
 - [example_py_call_rest_api](example_py_call_rest_api/)
 - [example_js_call_rest_api](example_js_call_rest_api/)
+- [example_js_call_rest_api](example_ts_call_rest_api/)
 
 ---
 <!-- _class: lead -->
 ## REST API
 
-- Most popular
+- Inspiracja: jak działa komunikacja między przegląrką, a serwerem,
+- Istniejąca infrastruktura,
+- Najbardziej popularne podejście.
+
+---
+<!-- _class: lead -->
+## Przykład - Github
+
+- [commits](https://docs.github.com/en/rest/commits/commits)
+- [prs](https://docs.github.com/en/rest/pulls/pulls#list-pull-requests)
+- [authentication](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api)
+
+---
+<!-- _class: lead -->
+## Przykład - Github
+
+Co warto sprawdzić:
+
+- [verbs](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#http-verbs)
+- [errors](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#client-errors)
+- [rate limiting](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting)
+
+---
+<!-- _class: lead -->
+## Przykład - Github
+
+Często mamy już dostępne biblioteki:
+
+- oficjalne - https://github.com/octokit
+- nieoficjalne - https://github.com/google/go-github
+
+---
+<!-- _class: lead -->
+## Jeśli budujesz API
+
+Warto się wzorować na:
+
+- shopify API - [przykład](https://shopify.dev/docs/api),
+- twillio - https://www.twilio.com/docs/usage/api,
+- ably - https://ably.com/docs/api/rest-api#publish,
+- [dobre praktyki](https://cloud.google.com/blog/products/api-management/restful-web-api-design-best-practices).
 
 ---
 <!-- _class: lead -->
@@ -142,10 +177,18 @@ Przykłady:
 
 Zasady:
 
+- Logical organization of resources
+- Logical nesting
 - Stateless
 - cacheable data
-- logical organization of resources
 - większości JSON-based
+
+---
+<!-- _class: lead -->
+## REST API
+
+- Pragmatyczne vs dogmatycznie ([HATEOAS](https://restfulapi.net/hateoas/))
+- Własne często ad hoc
 
 ---
 <!-- _class: lead -->
@@ -153,6 +196,7 @@ Zasady:
 
 Implementacje:
 
+- własny
 - [json API](https://jsonapi.org/)
 - [OpenAPI](https://www.openapis.org/) - wsparcie dla generacji kodu i discovery
 
@@ -166,7 +210,7 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 <!-- _class: lead -->
 ## REST API
 
-Dla purystów - [HATEOAS](https://restfulapi.net/hateoas/)
+Dla purystów - 
 
 ---
 <!-- _class: lead -->
