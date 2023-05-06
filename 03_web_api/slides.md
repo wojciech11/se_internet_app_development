@@ -137,9 +137,11 @@ Przykłady / o czym należy pamiętać wywołując zewnętrzny serwis:
 <!-- _class: lead -->
 ## Przykład - Github
 
-- [commits](https://docs.github.com/en/rest/commits/commits)
-- [prs](https://docs.github.com/en/rest/pulls/pulls#list-pull-requests)
-- [authentication](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api)
+Przyjrzyjmy się bliżej API:
+
+- [commits](https://docs.github.com/en/rest/commits/commits);
+- [prs](https://docs.github.com/en/rest/pulls/pulls#list-pull-requests);
+- [authentication](https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api).
 
 ---
 <!-- _class: lead -->
@@ -147,9 +149,9 @@ Przykłady / o czym należy pamiętać wywołując zewnętrzny serwis:
 
 Co warto sprawdzić:
 
-- [verbs](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#http-verbs)
-- [errors](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#client-errors)
-- [rate limiting](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting)
+- [verbs](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#http-verbs);
+- [errors](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#client-errors);
+- [rate limiting](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting).
 
 ---
 <!-- _class: lead -->
@@ -157,8 +159,8 @@ Co warto sprawdzić:
 
 Często mamy już dostępne biblioteki:
 
-- oficjalne - https://github.com/octokit
-- nieoficjalne - https://github.com/google/go-github
+- oficjalne - [github.com/octokit](https://github.com/octokit)
+- nieoficjalne - [google/go-github](https://github.com/google/go-github)
 
 ---
 <!-- _class: lead -->
@@ -169,8 +171,8 @@ Warto się wzorować na:
 - shopify API - [przykład](https://shopify.dev/docs/api),
 - twillio - https://www.twilio.com/docs/usage/api,
 - ably - https://ably.com/docs/api/rest-api#publish,
-- pragmatyzm;
-- [dobre praktyki](https://cloud.google.com/blog/products/api-management/restful-web-api-design-best-practices).
+- + pragmatyzm;
+- + [dobre praktyki](https://cloud.google.com/blog/products/api-management/restful-web-api-design-best-practices).
 
 ---
 <!-- _class: lead -->
@@ -190,9 +192,8 @@ Zasady:
 
 Projekty / standardy:
 
-- [OpenAPI](https://www.openapis.org/) - industrial standard
-- [json API](https://jsonapi.org/) - jedno z podejść
-
+- [OpenAPI](https://www.openapis.org/) - industrial standard;
+- [json API](https://jsonapi.org/) - popularniejsze z bardziej ustrukturyzowanego podejścia.
 
 ---
 <!-- _class: lead -->
@@ -221,11 +222,12 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 
 - Cacheable;
 - łatwe do zrozumienia;
-- z OpenAPI, duża ilość narzędzi, np., [browsable API](https://www.django-rest-framework.org/topics/browsable-api/).
+- z OpenAPI, duża ilość narzędzi out-of-the-box, np., [browsable API](https://www.django-rest-framework.org/topics/browsable-api/);
+- bez niespodzianek dla backendu.
 
 ---
 <!-- _class: lead -->
-# GraphQL
+![width:350pt](img/GraphQL_Logo_Wordmark_Stacked_Rhodamine.svg)
 
 ---
 <!-- _class: lead -->
