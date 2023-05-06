@@ -4,7 +4,7 @@
 
 W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment)
 
-1. Utwórz repozytorium `pai_js_example` na githubie, będziemy tam umieszczać naszą aplikację:
+1. Utwórz repozytorium `pai_4_js_start` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
@@ -125,7 +125,7 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    DEBUG=helloworld:* npm start
    ```
 
-## Rozbudowanie przykładu 
+## Rozbudowanie przykładu - routers
 
 Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
@@ -177,7 +177,33 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
 5. Na podstawie dokumentacji - https://expressjs.com/en/guide/routing.html - zaimplementuj następującą funcjonalność:
 
-   - Kiedy otwieram `http://127.0.0.1:3000/hello/natalia`, powinienem zobaczyć `witaj Natalia!`.
+   1. Kiedy otwieram `http://127.0.0.1:3000/hello/natalia`, powinienem zobaczyć `witaj Natalia!`;
+
+   2. Kiedy otwieram `http://127.0.0.1:3000/hello?name=michal`, powinienem zobaczyć `witaj Michal!`;
+
+6. Wrzuć swoją aplikację do githuba, repo: `pai_4_js_example`.
+
+## Rozbudowa aplikacji - statyczne pliki
+
+Serwowanie statycznych plików - https://expressjs.com/en/starter/static-files.html
+
+## Rozbudowa aplikacji - template engineers
+
+Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html). 
+
+1. Domyślnie generator daje nam wsparcie dla jade, znajdź następujące linie w `app.js`:
+
+   ```javascript
+   // view engine setup
+   app.set('views', path.join(__dirname, 'views'));
+   app.set('view engine', 'jade');
+   ```
+
+2. Na zasadzie analogii do generacji strony startowej w routerze `index.js`, dodaj stronę `/about`.
+
+## Zaawansowane - Co to jest middleware
+
+- https://expressjs.com/en/guide/writing-middleware.html
 
 <!-- 
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
