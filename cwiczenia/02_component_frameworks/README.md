@@ -1,5 +1,31 @@
 # CSS/Component frameworks
 
+## CSS
+
+Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zobaczyć jak wygląda ostateczne reguły CSS.
+
+1. Utwórz podstawową stronę index `index.html`;
+
+2. Dodaj:
+
+   ```html
+   <h1><p>Hello</p></h1>
+
+   <h2><p>World!</p></h2>
+
+   <h3>WSB</h3>
+   ```
+
+3. Dodaj css, który (selektor po elemencie), każdemu tekstowi nada kolor niebieski.
+
+4. Dodaj css, który nada kolor teksowi czerwony, jeśli tekst znajduje się w h2.
+
+5. Dodaj css, który nad kolor tekstowi zielony, jeśli znajduje się w h3.
+
+6. Wykorzystaj `id`, dla nadania tekstowi poniżej h3, kolor żółty.
+
+7. Zmień wszystkie reguły css na klasy.
+
 ## Reveljs
 
 - Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js).

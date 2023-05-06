@@ -28,7 +28,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 ## Program - Ćwiczenia / laboratorium
 
-Spotykamy się 8 razy na 2 godziny.
+Spotykamy się 4 razy na 4 godziny (2 razy po 2 godziny) - 8 bloków tematycznych.
 
 Podejście:
 
@@ -40,13 +40,24 @@ Podejście:
 
 Program:
 
-1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) / [cwiczenia TBA](cwiczenia/01_basics)
+1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) / [cwiczenia TBA](
 
-   - github & git;
-   - podstawy: html, css, and http;
-   - frameworki: bootstrap i tailwindcss.
+   - [github & git](cwiczenia/01_basics);
+   - [podstawy: http i web api](cwiczenia/01_basics);
 
-2. TBA
+2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](02_component_frameworks).
+
+3. TBA
+
+4. TBA
+
+5. TBA
+
+6. TBA
+
+7. TBA
+
+8. Egzamin / Zaliczenia ćwiczeń.
 
 ## Materiały Dodatkowe
 
