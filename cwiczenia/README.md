@@ -1,6 +1,6 @@
 # Ćwiczenia/Laboratorium
 
-W czasie naszych zajęć będziemy korzystać z maszyna na systemie Linux - Ubuntu.
+W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - Ubuntu, kilka możliwości: Virtualbox/VMware Workstaton Player, dual boot, lub ubuntu na środowisku wirtualnym dostarczonym przez uczelnie.
 
 ## Przygotowanie
 
