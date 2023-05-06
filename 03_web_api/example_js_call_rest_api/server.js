@@ -5,24 +5,24 @@ const hostname = "127.0.0.1";
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-	res.statusCode = 200;
-	res.setHeader("Content-Type", "text/plain");
+	res.setHeader("Content-Type", "application/json");
 
 	axios
 		.get(
-			"https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json",
+			"https://mdn.github.io/learning-area/_javascript/oojs/json/superheroes.json",
 		)
 		.then((response) => {
-			res.status(200).json(response.data);
-			//console.log(response.data.squadName);
-			//console.log(response.data.homeTown);
+			res.statusCode = 200;
+			res.write(JSON.stringify(response.data));
+			res.end();
 		})
 		.catch((error) => {
-			//console.log(error);
+			console.log(error);
 
 			// moglobysmy rowniez zwrocic
 			// error code 424
-			res.status(500).json(response.data);
+			res.statusCode = 500;
+			res.end(JSON.stringify({ error: error.message }));
 		});
 });
 
