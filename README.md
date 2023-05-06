@@ -40,8 +40,9 @@ Podejście:
 
 Program:
 
-1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)) / [cwiczenia TBA](
+1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)):
 
+   - [przygotowanie](cwiczenia/README.md);
    - [github & git](cwiczenia/01_basics);
    - [podstawy: http i web api](cwiczenia/01_basics);
 

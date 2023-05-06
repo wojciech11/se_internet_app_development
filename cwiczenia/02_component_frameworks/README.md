@@ -1,14 +1,12 @@
 # CSS/Component frameworks
 
-
-
 ## CSS
 
 Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zobaczyć jak wygląda ostateczne reguły CSS.
 
-0. W katalogu `workspace` (patrz [przygotowanie](../README.md))
+0. W katalogu `workspace` (patrz [przygotowanie](../README.md)), utwórz katalog `katalog` i do niego przejdź.
 
-1. Utwórz podstawową stronę index `index.html`;
+1. W katalogu `podstawy`, utwórz podstawową stronę index `index.html`;
 
 2. Dodaj:
 
@@ -32,13 +30,13 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zo
 
 ## Reveljs
 
-- Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js).
+1. Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js);
 
-- umieść ją w repozytorium `pai_2`.
+2. Umieść wszystkie plik w repozytorium `pai_2_revealjs`.
 
 ## Bootstrap
 
-1. Zrób tutorial getting-started - https://getbootstrap.com/docs/5.2/getting-started/introduction/
+1. Zrób tutorial getting-started - https://getbootstrap.com/docs/5.2/getting-started/introduction/.
 
 2. Dodaj do przykład [bootstrap](bootstap/), kilka komponentów, np., checks & radios, form control, oraz dowolny komponent.
 
@@ -58,6 +56,8 @@ oraz
 | logo wsb | logo wsb |
 ```
 
+Po ukończeniu ćwiczenia, umieść zmiany na repozytorium git.
+
 ## Tailwindcss
 
 Teraz poznajmy, popularną (i **rekomendowanym**) frameworkiem CSS - [tailwindcss](https://tailwindcss.com/). Przejdź do katalogu z prostym projektem [tailwindcss](tailwindcss/), gdzie znajdziesz instrukcję.
@@ -65,6 +65,8 @@ Teraz poznajmy, popularną (i **rekomendowanym**) frameworkiem CSS - [tailwindcs
 ## Revealjs + Tailwindcss
 
 Zmień implementację, grid z bootstrap na z wykorzystaniem Tailwindcss.
+
+Po ukończeniu ćwiczenia, umieść zmiany na repozytorium git.
 
 ## Materiały dodatkowe:
 

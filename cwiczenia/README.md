@@ -1,5 +1,7 @@
 # Ćwiczenia/Laboratorium
 
+W czasie naszych zajęć będziemy korzystać z maszyna na systemie Linux - Ubuntu.
+
 ## Przygotowanie
 
 0. Na każdych zajęciach będziemy umieszczać kod na repozytorium git (github lub, dla chętnych [gitlab](https://gitlab.com/)).

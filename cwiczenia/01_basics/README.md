@@ -9,24 +9,34 @@ Zauważ: w czasie zajęć, będziemy umieszczać nasze programy oraz wyniki ćwi
 
 Zauważ, github nie jest jedynym rozwiązaniem - [sr.ht](https://sr.ht/)(open source, hacker), [gitlab](https://about.gitlab.com/), lub [bitbucket](https://bitbucket.org/product).
 
-## Linux
+## Linux / Ubuntu
 
 Szybka powtórka / wprowadzenie linux - [instrukcja](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/00_intro/README_pl.md).
 
 ## Załóż repozytorium
 
-Wyniki naszych ćwiczeń będziemy umieszczali na repozytorium git:
+Wyniki naszych ćwiczeń będziemy umieszczali na repozytorium git - `pai_1_intro`.
 
-- `pai_intro`
+1. Sklonuj repozytorium:
 
-W repozytorium umieść plik `README.md`.
+   ```bash
+   cd workspace
+   git clone https://.... .git
 
-```bash
-cd workspace
-git clone https://.... .git
+   cd pai_1_intro
+   ```
 
-cd pai_intro
-```
+2. W repozytorium umieść plik `README.md`:
+
+   ```bash
+   touch README.md
+
+   # edytor, może być vim
+
+   git add README.md
+   git commit -m init
+   git push -u origin master
+   ```
 
 ## HTTP
 

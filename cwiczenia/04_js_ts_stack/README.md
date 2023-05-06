@@ -1,33 +1,5 @@
 # JS/TS stack
 
-1. Upewnij się, że masz zainstalowane [nvm](https://github.com/nvm-sh/nvm) oraz [node w wersji LTS](https://github.com/nvm-sh/nvm#long-term-support).
-
-2. Upewnij się, że masz zainstalowany twój ulubiony edytor, rekomendacje, jeden z nich:
-  
-   - [pulsar](https://github.com/pulsar-edit/pulsar),
-   - [VSCodium](https://github.com/VSCodium/vscodium) lub [vscode](https://code.visualstudio.com/docs/setup/linux#_snap),
-   - [JetBrains Fleet](https://www.jetbrains.com/fleet/download/#section=linux),
-   - czy też [neovim](https://neovim.io/) :).
-
-3. Utwórz katalog `workspace` w folderze głównym użytkownika, którego będziesz używał w czasie ćwiczeń.
-
-   ```bash
-   #
-   cd
-
-   mkdir -p workspace
-
-   cd workspace
-
-   # upewnijmy się, że jesteśmy we właściwym
-   # katalogu
-   pwd
-
-   # powinnaś / powinienes zobaczyc:
-   #   /home/<your-username>/workspace
-
-   ```
-
 ## Pierwsze kroki z express.js
 
 W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment)
@@ -36,7 +8,7 @@ W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en
 
    ```bash
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
-   cd pai_js_example
+   cd pai_3_js_example
 
    # pierwszy krok to zawsze README.md
    touch README.md
