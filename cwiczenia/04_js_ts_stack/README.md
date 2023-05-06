@@ -91,11 +91,11 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
 9. Wrzuć wszystko do repozytorium git.
 
-## Generatory szkieletu aplikacji na przykładzie express
+## Generatory szkieletu aplikacji
 
 Większość frameworków posiada generatory aplikacji, pozwala to szybko zacząć pracę z danym narzędziem. Zobaczmy jako to działa
 
-0. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację o zera utworzoną.
+0. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
 
    ```bash
    cd ..
@@ -103,7 +103,7 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    ls
    ```
 
-1. Zainstalujmy generator:
+1. Zainstalujmy generator (zauważ `-g`, globalnie, wymaga `sudo` na ubuntu):
 
    ```bash
    npm install express-generator -g
@@ -123,17 +123,17 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    npm install
    ```
 
-5. Czas uruchomić naszą aplikację:
+5. Wszystko gotowe, żeby wystartować aplikację:
 
    ```bash
    DEBUG=helloworld:* npm start
    ```
 
-## Rozbudowanie przykładu - routers
+## Dodatnie routera
 
 Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
-1. W katalogu `routes/`, dodaj plik `hello.js`, który będzie naszym routerem obsługującym rządanie pod ścieżką `/hello`:
+1. W katalogu `routes/`, dodaj plik `hello.js`, który będzie naszym routerem obsługującym żądanie pod ścieżką `/hello`:
 
    ```javascript
    var express = require('express');
@@ -185,11 +185,11 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
    2. Kiedy otwieram `http://127.0.0.1:3000/hello?name=michal`, powinienem zobaczyć `witaj Michal!`;
 
-6. Wrzuć swoją aplikację do githuba, repo: `pai_4_js_example`.
+6. Wrzuć swoją aplikację do githuba, repo: `pai_4_express`.
 
 ## Rozbudowa aplikacji - statyczne pliki
 
-Serwowanie statycznych plików - https://expressjs.com/en/starter/static-files.html
+Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-files.html), dodaj serwowanie pojedynczego statycznego pliku. Możesz przetestowac czy działa serwowanie statycznych plików z prostym plikiem http lub obrazkiem.
 
 ## Rozbudowa aplikacji - template engineers
 

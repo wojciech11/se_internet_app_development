@@ -189,6 +189,21 @@ Wrzuć pełną instrukcję z `curl` i `jq` do pliku `README.md` w Twoim repozyto
 
 Prześlij link do repozytorium na emaila prowadzącego zajęcia.
 
+## Zauważ
+
+Możemy użyć `curl` lub `wget` do ściągnięcia pliku:
+
+```bash
+curl https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json --output nielubiemarvela.json
+```
+
+```bash
+wget https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
+
+# jesli chcemy zapisac pod inna nazwa
+wget -O nielubiemarvela.json https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
+```
+
 ## Materiały dodatkowe
 
 - [Testowanie web API](https://github.com/wojciech11/se_http_api_testing_quickstart)
