@@ -255,7 +255,7 @@ Value proposition:
 
 Value proposition:
 
-- frontend/client może powiedziec czego chce.
+- frontend/client może powiedzieć czego chce.
 
 ---
 <!-- _class: lead -->
@@ -310,20 +310,35 @@ Za [Graphql docs](https://graphql.org/learn/), możliwa odpowiedź:
   }
 }
 ```
----
-<!-- _class: lead -->
-## Demo
+<!-- ## Demo
 
 - [insomnia](https://insomnia.rest/)
--
-
+-->
 
 ---
 <!-- _class: lead -->
 ## GraphQL
 
-- https://graphql.org/
-- https://graphql.org/learn/
+[Principled GraphQL](https://principledgraphql.com):
+
+"...despite the name, isn't simply a query language. It's a comprehensive solution to the problem of connecting modern apps to services in the cloud."
+
+---
+<!-- _class: lead -->
+## GraphQL
+
+Częsty pattern, agregacja danych dla frontendu/clienta często z serwisów RESTowych.
+
+![](img/graphql_aggr.svg)
+
+---
+<!-- _class: lead -->
+## JS GraphQL
+
+Wiodąca implementacja:
+
+- [Apollo client](https://www.apollographql.com/docs/react/why-apollo);
+- [Tutoriale](https://www.apollographql.com/tutorials/).
 
 ---
 <!-- _class: lead -->
@@ -338,25 +353,52 @@ Za [Graphql docs](https://graphql.org/learn/), możliwa odpowiedź:
 <!-- _class: lead -->
 ## Warto wiedzieć
 
-- gRPC
-
+- [gRPC + http2](https://grpc.io/blog/grpc-on-http2/)
 
 ---
 <!-- _class: lead -->
-# Architektura
+# Architektura Web API
+
+---
+<!-- _class: lead -->
+## Architektura
 
 ![](img/3tier_arch.svg)
 
 ---
 <!-- _class: lead -->
-# Zauważ
+## Pierwsza iteracja usługi
 
-- JS/TS w przeglądarce to też aplikacja,
-- Docelowo - JS/TS powinna komunikować się przez API.
+- template-y lub mix
 
 ---
 <!-- _class: lead -->
-## Dziękuję za uwagę
+## Docelowo
+
+- JS/TS w przeglądarce
+- komunikująca się z backendem przez REST/GraphQL API
+
+---
+<!-- _class: lead -->
+## Zauważ
+
+[next.js](https://nextjs.org/):
+
+- server and client side rendering
+
+---
+<!-- _class: lead -->
+# Gdzie i jak hostować?
+
+---
+<!-- _class: lead -->
+## Gdzie i jak hostować?
+
+Na dalszych zajęciach.
+
+---
+<!-- _class: lead -->
+# Dziękuję za uwagę
 <br />
 
 ---
@@ -366,15 +408,12 @@ Za [Graphql docs](https://graphql.org/learn/), możliwa odpowiedź:
 
 ---
 <!-- _class: lead -->
-## 3-tier architecture
+## xyz
 
-
----
-<!-- _class: lead -->
-## Jak hostować?
+<!-- ## Jak hostować?
 
 - PaaS: [vercel](https://vercel.com/), [netify](https://www.netlify.com/), [heroku](https://www.heroku.com/);
 - CaaS (AWS EKS, GCP) - container-as-a-service
 - XaaS (AWS, GCP):
 
-  - IaaS
+  - IaaS -->
