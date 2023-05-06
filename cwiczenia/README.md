@@ -33,7 +33,6 @@ W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - Ubun
 
    # powinnaś / powinienes zobaczyc:
    #   /home/<your-username>/workspace
-
    ```
 
 ## Materiały dodatkowe
