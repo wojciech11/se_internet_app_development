@@ -227,6 +227,13 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 
 ---
 <!-- _class: lead -->
+## Warto wiedzieć
+
+- [OData](https://www.odata.org/) - less popular, aplikacje enterprise - np., Microsoft czy SAP;
+- [activitypub](https://activitypub.rocks/) - protokół komunikacji [mastodona](https://joinmastodon.org/).
+
+---
+<!-- _class: lead -->
 ![width:350pt](img/GraphQL_Logo_Wordmark_Stacked_Rhodamine.svg)
 
 ---
@@ -250,7 +257,7 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 ## Warto wiedzieć
 
 - gRPC
-- [OData](https://www.odata.org/) - less popular
+
 
 ---
 <!-- _class: lead -->
