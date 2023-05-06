@@ -12,6 +12,7 @@ const server = http.createServer((req, res) => {
 			"https://mdn.github.io/learning-area/_javascript/oojs/json/superheroes.json",
 		)
 		.then((response) => {
+			console.log(response.data);
 			res.statusCode = 200;
 			res.write(JSON.stringify(response.data));
 			res.end();
@@ -19,9 +20,7 @@ const server = http.createServer((req, res) => {
 		.catch((error) => {
 			console.log(error);
 
-			// moglobysmy rowniez zwrocic
-			// error code 424
-			res.statusCode = 500;
+			res.statusCode = 500; // czy 424 byłby lepszy?
 			res.end(JSON.stringify({ error: error.message }));
 		});
 });
