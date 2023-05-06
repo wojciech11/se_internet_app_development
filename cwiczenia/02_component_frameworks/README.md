@@ -64,4 +64,5 @@ Zmień implementację, grid z bootstrap na z wykorzystaniem Tailwindcss.
 
 ## Materiały dodatkowe:
 
-- [tailwindcss vs bootstap by logrocket](https://blog.logrocket.com/comparing-tailwind-css-bootstrap-time-ditch-ui-kits/)
+- [tailwindcss vs bootstap by logrocket](https://blog.logrocket.com/comparing-tailwind-css-bootstrap-time-ditch-ui-kits/);
+- [Lista CSS Frameworks](https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh).
