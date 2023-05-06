@@ -1,8 +1,12 @@
 # CSS/Component frameworks
 
+
+
 ## CSS
 
 Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zobaczyć jak wygląda ostateczne reguły CSS.
+
+0. W katalogu `workspace` (patrz [przygotowanie](../README.md))
 
 1. Utwórz podstawową stronę index `index.html`;
 

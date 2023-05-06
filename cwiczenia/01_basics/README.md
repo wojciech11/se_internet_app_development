@@ -9,13 +9,24 @@ Zauważ: w czasie zajęć, będziemy umieszczać nasze programy oraz wyniki ćwi
 
 Zauważ, github nie jest jedynym rozwiązaniem - [sr.ht](https://sr.ht/)(open source, hacker), [gitlab](https://about.gitlab.com/), lub [bitbucket](https://bitbucket.org/product).
 
+## Linux
+
+Szybka powtórka / wprowadzenie linux - [instrukcja](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/00_intro/README_pl.md).
+
 ## Załóż repozytorium
 
 Wyniki naszych ćwiczeń będziemy umieszczali na repozytorium git:
 
-- `pai_1`
+- `pai_intro`
 
 W repozytorium umieść plik `README.md`.
+
+```bash
+cd workspace
+git clone https://.... .git
+
+cd pai_intro
+```
 
 ## HTTP
 
