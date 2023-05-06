@@ -142,15 +142,17 @@ Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wik
 
 9. Patrząc od strony programisty w Amazonie budującego serwis, dlaczego *graceful degradation* jest ważny?
 
-### Praca z JSONem 1
+### Praca z danymi w formacie z JSON 1
 
-Ponownie będziemy pracować w języku programowania, który jest Tobie najbardziej znany. Jak mówiliśmy o tym w czasie wykładu...
+Ponownie będziemy pracować w języku programowania, który jest Tobie najbardziej znany. Jak mówiliśmy o tym w czasie wykładu, [JSON](https://www.json.org/json-en.html) jest wiodącym formatem danych.
 
-W języku Tobie najlepiej, odczytaj https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisz na ekran imiona wszyskich członków zespołu super bohaterów.
+1. W języku Tobie najlepiej, odczytaj https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisz na ekran imiona wszyskich członków zespołu super bohaterów.
 
-W pierwszej iteracji, zrób to wykorzystując funkcje do pracy z jsonem, w drugiej sprawdź czy jest dostępna biblioteka `jmespath` ([docs](https://jmespath.org/)).
+2. W drugiej iteracji, wyszukaj bibliotekę `jmespath` ([docs](https://jmespath.org/)) dla twojego języka oprogramowania.
 
-### Praca z JSONem 2
+3. Umieść program w repozytorium git.
+
+### Praca z danymi w formacie JSON 2
 
 Warto do swojego arsenału narzędzi dodać `jq`:
 
