@@ -195,7 +195,7 @@ Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-
 
 Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html).
 
-1. Domyślnie generator daje nam wsparcie dla jade, znajdź następujące linie w `app.js`:
+1. Domyślnie generator daje nam wsparcie dla [jade](https://github.com/dscape/jade), znajdź następujące linie w `app.js`:
 
    ```javascript
    // view engine setup
@@ -211,9 +211,11 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 
 ## React
 
-1. Zapoznaj się z przykładem [react](react/), zauważ, że można korzystać z reakta i eksperymentować z poziomu strony internetowej
+1. Zapoznaj się z przykładem [react](react/), zauważ, że można korzystać z reakta i eksperymentować z poziomu strony internetowej;
 
-2. Przejdź do tutoriala na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
+2. Tutorial 1 - [react.dev tutorial](https://react.dev/learn);
+
+3. Tutorial 2 - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
 <!--
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
