@@ -1,14 +1,18 @@
 # JS/TS stack
 
+Będziemy korzystać, z [express](https://expressjs.com/), który jest  minimalistyczny frameworkiem dla [Node.js](nodejs.org). Node.js jest wiodącą, open-source, platformą Javascript, skupioną na server-side.
+
+Jest wiele innych frameworków dla Node.js, np., [nestjs](https://nestjs.com/) czy [koa](https://github.com/koajs/koa).
+
 ## Pierwsze kroki z express.js
 
-W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment)
+Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z ekosystemu nodejs. Poniższe ćwiczenia jest oparte o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment).
 
 1. Utwórz repozytorium `pai_4_js_start` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
-   cd pai_3_js_example
+   cd pai_4_js_start
 
    # pierwszy krok to zawsze README.md
    touch README.md
@@ -17,28 +21,27 @@ W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en
    git push -u master master
    ```
 
-2. Zainistowanie `npm`, nazwa `hello_world_app`:
+2. Zainicjuj `npm`, jako nazwę wpisz *hello_world_app*:
 
    ```bash
    npm init
    ```
 
-   Przejrzyj zawartość pliku `package.json`.
+   Przejrzyj zawartość pliku `package.json`:
 
    ```bash
    cat package.json
    ```
 
-3. Zainstalowanie express:
+3. Zainstaluj [express](https://expressjs.com/):
 
    ```bash
    npm install express
    ```
 
-   co się zmieniło w `package.json`? Do czego służy `package-lock.json`?
+   Co się zmieniło w `package.json`? Do czego służy `package-lock.json`?
 
-4. Utwórz `index.js`:
-
+4. Utwórz `index.js`, czyli "main" dla naszej aplikacji:
 
    ```javascript
    const express = require("express");
@@ -54,19 +57,20 @@ W oparciu o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en
    });
    ```
 
-5. Zobaczmy czy nasz aplikacja dziala:
+5. Zweryfikujmy czy nasz aplikacja działa:
 
    ```bash
    node index.js
    ```
 
-6. Teraz zadbajmy o to, abyśmy mieli zainstalowany linter:
-
+6. Zanim, przejdziemy dalej, zobaczmy jak działają taski, na przykładzie lintera:
 
    ```bash
+   # instalacja lintera jako dev only
+   # dependency
    npm install eslint --save-dev
    ```
-   
+
    Co to jest linter?
 
 7. Aby mieć dostępnego lintera jako komendę, dodaj do `package.json`:
@@ -149,7 +153,7 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
    // ...
    var indexRouter = require('./routes/index');
    var usersRouter = require('./routes/users');
-   
+
    var helloRouter = require('./routes/hello'); // nasz router
 
    // ...
@@ -189,7 +193,7 @@ Serwowanie statycznych plików - https://expressjs.com/en/starter/static-files.h
 
 ## Rozbudowa aplikacji - template engineers
 
-Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html). 
+Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html).
 
 1. Domyślnie generator daje nam wsparcie dla jade, znajdź następujące linie w `app.js`:
 
@@ -211,7 +215,7 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 
 2. Przejdź do tutoriala na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
-<!-- 
+<!--
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
 -->
 
