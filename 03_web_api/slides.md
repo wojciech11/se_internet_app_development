@@ -240,6 +240,53 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 <!-- _class: lead -->
 ## GraphQL
 
+Value proposition:
+
+- informacja o typie;
+- frontend zadaje zapytanie;
+- może obejmować kilka encji;
+- może również wybrać które atrybuty nas interesują;
+- aliasy, zmiany nazw;
+- standard.
+
+---
+<!-- _class: lead -->
+## GraphQL
+
+Value proposition:
+
+- frontend/client może powiedziec czego chce.
+
+---
+<!-- _class: lead -->
+## GraphQL
+
+Minusy:
+
+- problem z cache-owaniem;
+- ciężar po stronie backendu;
+
+---
+<!-- _class: lead -->
+## Demo
+
+Za [Graphql docs](https://graphql.org/learn/), definicja serwisu GraphQL:
+
+```graphql
+type Query {
+  me: User
+}
+
+type User {
+  id: ID
+  name: String
+}
+```
+
+---
+<!-- _class: lead -->
+## GraphQL
+
 - https://graphql.org/
 - https://graphql.org/learn/
 
