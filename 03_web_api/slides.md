@@ -100,6 +100,13 @@ Więcej później o [websocketach i socketio](https://ably.com/topic/socketio-vs
 
 ---
 <!-- _class: lead -->
+## Web API
+
+- Jaki format danych wykorzystujemy najczęściej?
+- Jakie są alternatywy?
+
+---
+<!-- _class: lead -->
 ## Protokoły
 
 Najpopularniejsze:

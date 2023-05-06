@@ -4,10 +4,10 @@ Zauważ: w czasie zajęć, będziemy umieszczać nasze programy oraz wyniki ćwi
 
 ## Git + Github
 
-- Załóż konto na Githubie,
-- Podstawy - [instrukcja](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/01_exercise/README_pl.md).
+1. Załóż konto na Githubie, jeśli jeszcze nie masz;
+2. Zróbmy sobie szybką powtórkę - [instrukcja](https://github.com/wojciech11/se_software_build_automation_tools/blob/master/01_exercise/README_pl.md).
 
-Zauważ, github nie jest jedynym rozwiązaniem - [sr.ht](https://sr.ht/)(open source, hacker), [gitlab](https://about.gitlab.com/), lub [bitbucket](https://bitbucket.org/product).
+Zauważ, Github nie jest jedynym portalem oferującym zdalne repozytorium git, z bardziej popularnych alternatyw [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/product), i [sr.ht](https://sr.ht/) (open source, hacker, często gości na [hackernews](https://news.ycombinator.com/)),
 
 ## Linux / Ubuntu
 
@@ -15,18 +15,20 @@ Szybka powtórka / wprowadzenie linux - [instrukcja](https://github.com/wojciech
 
 ## Załóż repozytorium
 
-Wyniki naszych ćwiczeń będziemy umieszczali na repozytorium git - `pai_1_intro`.
+1. Na githubie, utwórz nowe repozytorium git - `pai_1_intro`.
 
-1. Sklonuj repozytorium:
+2. Sklonuj repozytorium:
 
    ```bash
    cd workspace
+
+   # adres twojego repozytorium
    git clone https://.... .git
 
    cd pai_1_intro
    ```
 
-2. W repozytorium umieść plik `README.md`:
+3. W repozytorium umieść plik `README.md`:
 
    ```bash
    touch README.md
@@ -38,51 +40,77 @@ Wyniki naszych ćwiczeń będziemy umieszczali na repozytorium git - `pai_1_intr
    git push -u origin master
    ```
 
+4. W `README.md`, proszę umieszczaj notatki oraz komendy, jeśli tak wskazuje instrukcja.
+
 ## HTTP
 
-Skorzystajmy z serwisu [httpbin.org](https://httpbin.org), przetestuj następujące komendy:
+Skorzystajmy z serwisu [httpbin.org](https://httpbin.org), który służy jako pomoc w nauce http oraz możliwych scenariuszy.
+
+
+ 1. Przetestuj następujące komendy:
+
+    ```bash
+    curl --fail -X POST \
+        -H "Content-Type: application/json" \
+        -d '{"name":"natalia"}' https://httpbin.org/post
+    ```
+
+    ```bash
+    # zwroc uwage na odpowiedz:
+    curl --fail -X POST \
+        -H "Content-Type: application/json" \
+        -d '{"name":"natalia"}' https://httpbin.org/get
+    ```
+
+    ```bash
+    curl --fail -X GET \
+        -H "Content-Type: application/json" \
+        https://httpbin.org/get
+    ```
+
+    ```bash
+    curl --fail \
+        -X DELETE \
+        -H "Content-Type: application/json" https://httpbin.org/delete
+    ```
+
+2. Zapoznaj się z [statusami](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), zwróć szczególną uwagę które kody mówią o problemach po stronie klienta i serwera.
+
+3. Zauważ, że możesz wykorzystać *httpbin* do eksperymentowania z kodami http.
 
 ```bash
-curl --fail -X POST \
-    -H "Content-Type: application/json" \
-    -d '{"name":"natalia"}' https://httpbin.org/post
+curl -X GET https://httpbin.org/status/404 --fail
 ```
 
-```bash
-# zwroc uwage na odpowiedz:
-curl --fail -X POST \
-    -H "Content-Type: application/json" \
-    -d '{"name":"natalia"}' https://httpbin.org/get
-```
+   Poświęć kilka minut na przejrzenie wszystkich dostępnych method [metodach HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-```bash
-curl --fail -X GET \
-    -H "Content-Type: application/json" https://httpbin.org/get
-```
+   - Do czego służy *PATCH* czy różni się od *PUT*?
+   - Na jakich metodach http polega API REST, kryjącymi się za skrótem CRUD?
 
-```bash
-curl --fail -X DELETE \
-    -H "Content-Type: application/json" https://httpbin.org/delete
-```
+## Klient web API 1 - GET
 
-Zapoznaj się z [statusami](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), zwróć szczególną uwagę które kody mówią o problemach po stronie klienta i serwera.
+Poniższy program rozwijaj w katalogu sklonowanego repozytorium.
 
-Przeczytaj o [metodach HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
-
-## Pisanie klienta http
-
-1. Napisz w znanym tobie języku (i umieść w repozytorium git), program, który będzie wywoływał:
+1. Napisz w znanym tobie języku (i umieść w repozytorium git), program, który będzie wywoła/ściągnie:
 *https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json*.
 
 2. Jeśli Twój program działa, to dodaj obsługę błędów:
 
    - Sprawdzał kodu http,
    - Jeśli kod jest błędny, zakończył program,
-   - Wyświetlił dane kiedy wszystko było dobrze,
+   - Wyświetlił dane kiedy nie było błędu.
 
-3. Czas na nagłówki, dodaj nagłówek (*header*) `Content-Type: application/json`, który informuje, że mamy zamiar przesłać JSON.
+3. Jeśli powyższy program działa, umieść go w repozytorium git.
 
-4. Prześlemy teraz dane do serwera w formie JSON, w tym celu zmień wywoływany adres url na *https://httpbin.org/post* i prześlij dane (*data*):
+## Klient web API 2 - POST
+
+Po każdym kroku, warto przetestować czy kod działa w zamierzony sposób.
+
+1. Zmień web API URL na `https://httpbin.org/post`, żebyśmy mogli zobaczyć w jaki sposób możemy przesyłać dane i zweryfikować, że we właściwy sposób wywołujemy API.
+
+2. Zanim prześlesz dane, nagłówek (*header*) `Content-Type: application/json`, który informuje, że mamy zamiar przesłać JSON.
+
+3. Dodaj dane do wywołania serwisu, powinnaś/powinienieś przesłać:
 
    ```json
    {
@@ -90,31 +118,35 @@ Przeczytaj o [metodach HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/M
    }
    ```
 
-5. Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), wiemy, że możemy mieć problemy z połączeniem :/, warto było dodać timeout.
+4. zweryfikuj, że program działa i że *httpbin* zwrócił twoje dane w odpowiedzi.
 
-   1. Zmień wywoływany url na `https://httpbin.org/delay/2` ([doc](https://httpbin.org/#/Dynamic_data/get_delay__delay_)).
+## Klient web API 3 - timeout
 
-   2. Dodaj timeout `1` sekundowy.
+Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), wiemy, że możemy mieć problemy z połączeniem :/, warto było dodać timeout.
 
-   3. Przetestuj aplikację, czy timeout działa.
+1. Zmień wywoływany url na `https://httpbin.org/delay/2` ([doc](https://httpbin.org/#/Dynamic_data/get_delay__delay_)).
 
-6. Dodaj retries and backoff, do poprzedniego przykładu:
+2. Dodaj timeout `1` sekundowy.
 
-   - co jeden nie udane wywolanie zwiększ sleep między requestami
+3. Przetestuj aplikację, czy timeout działa.
+
+4. Dodaj retries and backoff, czyli `N` razy, jeśli wywołanie nie zadziała poczekaj dłużej przed ponownym wywołaniem API.
 
    Zauważ jest wiele strategii, najpopularniejsza jest Fibonacci i Exponential ([przykładowa biblioteka](https://backoff-utils.readthedocs.io/en/latest/strategies.html#supported-strategies)).
 
-**Pamiętaj** Jako, że nie można liczyć, że każdy request zostanie wysłany bez problemów, pamiętaj o timeout (pamiętaj w niektórych frameworkach musisz go ustawić na kilku poziomach transportu i protokołu). Powstało wiele frameworków adresujących tej problem, np., dla Javy - [resilience4j](https://github.com/resilience4j/resilience4j) oraz sławny poprzednik od Netflixa - [Hystrix](https://github.com/Netflix/Hystrix).
+**Pamiętaj** Nie można liczyć, że każdy request zostanie wysłany bez problemów, zawsze ustawiaj timeout. W niektórych frameworkach musisz go ustawić na kilku poziomach transportu i protokołu. Powstało wiele frameworków adresujących tej problem, np., dla Javy - [resilience4j](https://github.com/resilience4j/resilience4j) oraz sławny poprzednik od Netflixa - [Hystrix](https://github.com/Netflix/Hystrix).
 
-7. Co to są *circuit breakers* i do czego służą? Dlaczego to jest ważny element aplikacji Netfixa? Zanowuj w `README.md`.
+7. Co to są *circuit breakers* i do czego służą? Dlaczego to jest ważny element aplikacji Netfixa? Zanotuj w `README.md`.
 
-8. Patrząc od strony programisty w Netflixie czy Allegro budującego serwis, co to są *cascading failures*?
+8. Patrząc od strony programisty w Netflixie czy Allegro budującego serwis, dlaczego chcemy uniknąć *cascading failures*?
 
-9. Patrząc od strony programisty w Amazonie budującego serwis, co to jest *graceful degradation*?
+9. Patrząc od strony programisty w Amazonie budującego serwis, dlaczego *graceful degradation* jest ważny?
 
 ### Praca z JSONem 1
 
-W języku Tobie najlepiej, odczytaj https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisz na ekran miona wszyskich członków zespołu super bohaterów.
+Ponownie będziemy pracować w języku programowania, który jest Tobie najbardziej znany. Jak mówiliśmy o tym w czasie wykładu...
+
+W języku Tobie najlepiej, odczytaj https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisz na ekran imiona wszyskich członków zespołu super bohaterów.
 
 W pierwszej iteracji, zrób to wykorzystując funkcje do pracy z jsonem, w drugiej sprawdź czy jest dostępna biblioteka `jmespath` ([docs](https://jmespath.org/)).
 
