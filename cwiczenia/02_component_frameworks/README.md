@@ -28,9 +28,13 @@ oraz
 | logo wsb | logo wsb |
 ```
 
-## Tailwind
+## Tailwindcss
 
-Przejdź do katalogu z prostym projektem [tailwindcss](tailwindcss/).
+Teraz poznajmy, popularną (i **rekomendowanym**) frameworkiem CSS - [tailwindcss](https://tailwindcss.com/). Przejdź do katalogu z prostym projektem [tailwindcss](tailwindcss/), gdzie znajdziesz instrukcję.
+
+## Revealjs + Tailwindcss
+
+Zmień implementację, grid z bootstrap na z wykorzystaniem Tailwindcss.
 
 ## Materiały dodatkowe:
 
