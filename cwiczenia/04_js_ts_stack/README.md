@@ -105,16 +105,83 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    npm install express-generator -g
    ```
 
-2. 
+2. Wygeneruj aplikację:
 
+   ```bash
+   express helloworld   
+   ```
 
+3. Po przejściu do katalogu `helloworld`, przejrzyj plik `cat package.json`.
 
+4. Podążając za wskazówkami generatora, zainstaluj dependencies:
 
+   ```bash
+   npm install
+   ```
 
+5. Czas uruchomić naszą aplikację:
 
+   ```bash
+   DEBUG=helloworld:* npm start
+   ```
+
+## Rozbudowanie przykładu 
+
+Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
+
+1. W katalogu `routes/`, dodaj plik `hello.js`, który będzie naszym routerem obsługującym rządanie pod ścieżką `/hello`:
+
+   ```javascript
+   var express = require('express');
+   var router = express.Router();
+
+   router.get('/', function(req, res, next) {
+       res.send('World!');
+    });
+
+    module.exports = router;
+   ```
+
+2. Teraz musimy zintegrować z główną aplikację, dodaj następujący kod w `app.js`:
+
+   ```javascript
+
+   // ...
+   var indexRouter = require('./routes/index');
+   var usersRouter = require('./routes/users');
+   
+   var helloRouter = require('./routes/hello'); // nasz router
+
+   // ...
+   ```
+
+   ```javascript
+   // ...
+
+   app.use('/', indexRouter);
+   app.use('/users', usersRouter);
+   app.use('/hello', helloRouter); // mapowanie sciezki na router
+
+   // ...
+   ```
+
+3. Czas uruchomić naszą aplikację:
+
+   ```bash
+   DEBUG=helloworld:* npm start
+   ```
+
+   w przeglądarce otwórz `http://127.0.0.1:3000/hello/`.
+
+4. A co byśmy musieli zrobić, aby wyświetlić `hello`, kiedy użytkownik otworzy `http://127.0.0.1:3000/hello/witam`?
+
+5. Na podstawie dokumentacji - https://expressjs.com/en/guide/routing.html - zaimplementuj następującą funcjonalność:
+
+   - Kiedy otwieram `http://127.0.0.1:3000/hello/natalia`, powinienem zobaczyć `witaj Natalia!`.
+
+<!-- 
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
-
-
+-->
 
 <!-- 0. [mdn on frameworks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Introduction).
 
