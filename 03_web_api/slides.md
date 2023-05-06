@@ -169,6 +169,7 @@ Warto się wzorować na:
 - shopify API - [przykład](https://shopify.dev/docs/api),
 - twillio - https://www.twilio.com/docs/usage/api,
 - ably - https://ably.com/docs/api/rest-api#publish,
+- pragmatyzm;
 - [dobre praktyki](https://cloud.google.com/blog/products/api-management/restful-web-api-design-best-practices).
 
 ---
@@ -187,18 +188,11 @@ Zasady:
 <!-- _class: lead -->
 ## REST API
 
-- Pragmatyczne vs dogmatycznie ([HATEOAS](https://restfulapi.net/hateoas/))
-- Własne często ad hoc
+Projekty / standardy:
 
----
-<!-- _class: lead -->
-## REST API
+- [OpenAPI](https://www.openapis.org/) - industrial standard
+- [json API](https://jsonapi.org/) - jedno z podejść
 
-Implementacje:
-
-- własny
-- [json API](https://jsonapi.org/)
-- [OpenAPI](https://www.openapis.org/) - wsparcie dla generacji kodu i discovery
 
 ---
 <!-- _class: lead -->
@@ -208,17 +202,30 @@ Wiele godzin rozstało przepalone na dyskusjach co to jest REST API i czy dane A
 
 ---
 <!-- _class: lead -->
-## REST API
+## Ograniczenia REST API
 
-Dla purystów - 
+- [wszystko albo nic](https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#list-pull-requests);
+- kilka(naście) requestów, żeby zebrać dane;
+- a potem składanie.
 
 ---
 <!-- _class: lead -->
-## Wyzwania REST API
+## Ograniczenia REST API
 
-- musimy składać dane po stronie klienta
-- za każdym razem backend musi pisać API dla frontendu
-- jak można przewidzieć co frontend potrzebuje...
+- za każdym razem backend musi pisać API dla frontendu (backed-for-frontend);
+- czasami gonienie za nieuchwytnym celem.
+
+---
+<!-- _class: lead -->
+## Plusy REST API
+
+- Cacheable;
+- łatwe do zrozumienia;
+- z OpenAPI, duża ilość narzędzi, np., [browsable API](https://www.django-rest-framework.org/topics/browsable-api/).
+
+---
+<!-- _class: lead -->
+# GraphQL
 
 ---
 <!-- _class: lead -->
