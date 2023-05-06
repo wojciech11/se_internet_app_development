@@ -46,7 +46,7 @@ Program:
    - [github & git](cwiczenia/01_basics);
    - [podstawy: http i web api](cwiczenia/01_basics);
 
-2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](02_component_frameworks).
+2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](cwiczenia/02_component_frameworks).
 
 3. TBA
 
