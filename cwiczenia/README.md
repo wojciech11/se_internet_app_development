@@ -12,7 +12,7 @@ W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - Ubun
 
 3. Upewnij się, że masz zainstalowany twój ulubiony edytor, rekomendacje, jeden z nich:
   
-   - [pulsar](https://github.com/pulsar-edit/pulsar),
+   - [atom](https://snapcraft.io/install/atom/ubuntu) (projekt zakonczony ale z duzą ilością pluginów) lub [pulsar](https://github.com/pulsar-edit/pulsar) (projekt kontynuujący atoma),
    - [VSCodium](https://github.com/VSCodium/vscodium) lub [vscode](https://code.visualstudio.com/docs/setup/linux#_snap),
    - [JetBrains Fleet](https://www.jetbrains.com/fleet/download/#section=linux),
    - czy też [neovim](https://neovim.io/) :).
