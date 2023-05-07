@@ -50,7 +50,7 @@ Program:
 
 3. Web App stack:
 
-   - [TS/JS](cwieczenia/04_js_ts_stack);
+   - [TS/JS](cwiczenia/04_js_ts_stack);
    - PHP - WIP.
 
 4. TBA
