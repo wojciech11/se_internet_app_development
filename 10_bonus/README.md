@@ -33,6 +33,8 @@
 
 - Co Ciebie motywuje?
 - ...
+- oczekiwania, poziomy ownershipu, own-your-input
+- otwartość (zazwyczaj jest na to przestrzeń)
 
 ## Różnica między początkującym, zaawansowanym a ekspertem
 
