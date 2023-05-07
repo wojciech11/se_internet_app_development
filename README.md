@@ -32,11 +32,13 @@ Spotykamy się 4 razy na 4 godziny (2 razy po 2 godziny) - 8 bloków tematycznyc
 
 Podejście:
 
-1. Problem
-2. Mierzymy się z zadaniem samemu - **timebox**
-3. Pytamy / prosimy o pomoc.
-4. Zrobiłam / Zrobiłem - warto pokazać
-5. **Kopiuj&Wklej zakazane** (chyba, że wykładowca powie inaczej)
+1. Problem;
+2. Mierzymy się z zadaniem samemu - **timebox**;
+3. Pytamy / prosimy o pomoc;
+4. Zrobiłam / Zrobiłem - warto pokazać;
+5. **Kopiuj&Wklej zakazane** (chyba, że wykładowca powie inaczej).
+
+Cel: jak najwięcej hands-on.
 
 Program:
 
@@ -53,9 +55,9 @@ Program:
    - [TS/JS](cwiczenia/04_js_ts_stack);
    - PHP - WIP.
 
-4. TBA
+4. Web App stack: frontend.
 
-5. TBA
+5. Web App stack: baza danych.
 
 6. TBA
 
