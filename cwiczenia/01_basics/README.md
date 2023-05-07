@@ -120,6 +120,8 @@ Po każdym kroku, warto przetestować czy kod działa w zamierzony sposób.
 
 4. zweryfikuj, że program działa i że *httpbin* zwrócił twoje dane w odpowiedzi.
 
+5. Jeśli powyższy program działa, umieść tą wersję twojego programu w repozytorium git. Jako, że to jest repozytorium git, możemy nadpisać poprzednią wersję bez obaw.
+
 ## Klient web API 3 - timeout
 
 Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), wiemy, że możemy mieć problemy z połączeniem :/, warto było dodać timeout.
@@ -141,6 +143,8 @@ Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wik
 8. Patrząc od strony programisty w Netflixie czy Allegro budującego serwis, dlaczego chcemy uniknąć *cascading failures*?
 
 9. Patrząc od strony programisty w Amazonie budującego serwis, dlaczego *graceful degradation* jest ważny?
+
+10. Jeśli powyższy program działa, umieść tą wersję twojego programu w repozytorium git.
 
 ### Praca z danymi w formacie z JSON 1
 
