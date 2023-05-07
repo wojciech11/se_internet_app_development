@@ -33,7 +33,7 @@ Trzeba przejść ścieżkę, pytanie jest jak długo nam to zajmie:
 
 ## Pytanie o wskazówki bez wysłuchania i przetrawienia
 
-Nie zależnie od etapu kariery. Często więc musimy sami popełnić błędy lub czegoś doświadczyć, aby w pełni zrozumieć 
+Nie zależnie od etapu kariery. Często więc musimy sami popełnić błędy lub czegoś doświadczyć, aby w pełni zrozumieć czy się nauczyć.
 
 ## Facilitate growth:
 
