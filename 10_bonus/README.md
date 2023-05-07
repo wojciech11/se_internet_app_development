@@ -31,6 +31,16 @@ Trzeba przejść ścieżkę, pytanie jest jak długo nam to zajmie:
 
 ![](img/novie_to_expert.jpg)
 
+## Pytanie o wskazówki bez wysłuchania i przetrawienia
+
+Nie zależnie od etapu kariery. Często więc musimy sami popełnić błędy lub czegoś doświadczyć, aby w pełni zrozumieć 
+
+## Facilitate growth:
+
+- [yes, and...,](https://en.wikipedia.org/wiki/Yes,_and...);
+- masterclass niezaleźnie lub w ramach z jakiejś z org ([manual prowadzenia spotkań](https://eonyc.org/wp-content/uploads/EOResources/ModeratorResources/MyEOForumModeratorGuidebook.pdf).);
+- dobry start w mniejszej grupie - [Ed Batista - the art of self coaching](https://www.edbatista.com/the-art-of-self-coaching-public-course.html).
+
 ## Misc
 
 - https://dave.cheney.net/2016/08/20/solid-go-design
