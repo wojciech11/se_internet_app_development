@@ -6,14 +6,28 @@
 
 2. Przeczytać - [GoF](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns).
 
-3. Tracer-bullet approach;
+3. Zaimplementuj design patterns w 1 lub 2ch językach programowania.
 
-4. Dwa ważne koncepty, aby lepiej strukturyzować kod, część [SOLID](https://en.wikipedia.org/wiki/SOLID):
+4. Tracer-bullet approach;
+
+5. Dwa ważne koncepty, aby lepiej strukturyzować kod, część [SOLID](https://en.wikipedia.org/wiki/SOLID):
 
    1. [Dependency Injection / InversionOfControl](https://wiki.c2.com/?DependencyInjection)
    2. ~Single Responsibility Principle
 
    Z czym walczymy - rigid + complexity.
+
+6. A propos strukturyzowania kodu:
+
+   - nazwa funkcji oraz zmiannych
+   - ich zakres
+   - podział kodu na pliki 
+
+7. Git - rozbijanie dużej funkcjonalności na PRy oraz komentarze.
+
+8. code != Ty
+
+9. Praca z gitem w zespole - TBA - https://github.com/wojciech11/se_projekt_zespolowy/blob/master/01_praca_z_gitem/README.md
 
 ## Bardziej relacje
 
