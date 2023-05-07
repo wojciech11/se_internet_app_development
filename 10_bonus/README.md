@@ -19,11 +19,11 @@
 
 6. A propos strukturyzowania kodu:
 
-   - nazwa funkcji oraz zmiannych
-   - ich zakres
-   - podział kodu na pliki 
+   - nazwa funkcji oraz zmiannych;
+   - ich zakres;
+   - podział kodu na pliki.
 
-7. Git - rozbijanie dużej funkcjonalności na PRy oraz komentarze.
+7. Git - rozbijanie dużej funkcjonalności na PRy oraz komentarze do commitów.
 
 8. code != Ty
 
