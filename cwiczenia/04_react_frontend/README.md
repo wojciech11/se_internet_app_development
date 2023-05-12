@@ -18,19 +18,24 @@
    cd pai_4_express_react
    ```
 
-2. Skorzystamy z generatora do utworzenia szkieletu naszej aplikacji:
+3. Wygenerujmy kod dla react app:
 
    ```bash
+   create-react-app client
+
+   # podążając za wskazówkami
+   ```
+
+4. Skorzystamy z generatora do utworzenia szkieletu naszej aplikacji:
+
+   ```bash
+   mkdir server
+   cd server
+
    npx express-generator
 
    # podążając za wskazówkami
    npm install
-   ```
-
-3. Wygenerujmy kod dla react app:
-
-   ```
-   create-react-app client
    ```
 
 ## JS -> Typescript
@@ -43,4 +48,4 @@ xyz
 
 ## Materiały dodatkowe
 
-
+- https://www.react.express/
