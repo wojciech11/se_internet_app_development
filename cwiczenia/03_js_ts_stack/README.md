@@ -191,7 +191,7 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
 Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-files.html), dodaj serwowanie pojedynczego statycznego pliku. Możesz przetestowac czy działa serwowanie statycznych plików z prostym plikiem http lub obrazkiem.
 
-## Rozbudowa aplikacji - template engineers
+## Rozbudowa aplikacji - template engines
 
 Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html).
 
@@ -209,18 +209,8 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 
 - https://expressjs.com/en/guide/writing-middleware.html
 
-<!--
-Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
--->
-
-<!-- 0. [mdn on frameworks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Introduction).
-
-1. React
-
-2. JS/TS
-
-3. Next.js -->
-
 ## Materiały dodatkowe
 
-- https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+- [mdn on JS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics),
+- [mdn on frameworks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Introduction),
+- [Express and Typescript](https://blog.logrocket.com/how-to-set-up-node-typescript-express/).
