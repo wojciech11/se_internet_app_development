@@ -8,11 +8,11 @@ Jest wiele innych frameworków dla Node.js, np., [nestjs](https://nestjs.com/) c
 
 Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z ekosystemu nodejs. Poniższe ćwiczenia jest oparte o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment).
 
-1. Utwórz repozytorium `pai_4_js_start` na githubie, będziemy tam umieszczać naszą aplikację:
+1. Utwórz repozytorium `pai_3_js_start` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
-   cd pai_4_js_start
+   cd pai_3_js_start
 
    # pierwszy krok to zawsze README.md
    touch README.md
@@ -208,14 +208,6 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 ## Zaawansowane - Co to jest middleware
 
 - https://expressjs.com/en/guide/writing-middleware.html
-
-## React
-
-1. Zapoznaj się z przykładem [react](react/), zauważ, że można korzystać z reakta i eksperymentować z poziomu strony internetowej;
-
-2. Tutorial 1 - [react.dev tutorial](https://react.dev/learn);
-
-3. Tutorial 2 - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
 <!--
 Jeśli byśmy chcieli używać Typescript - https://blog.logrocket.com/how-to-set-up-node-typescript-express/
