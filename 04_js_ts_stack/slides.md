@@ -20,11 +20,57 @@ Javascript / Typescript stack
 ## Plan na dziś
 <br />
 
-- Typescript
 - Javascript
+- React
+- Express
+- Typescript
 
+---
+<!-- _class: lead -->
+## Javascript
 
+- TBA
 
+---
+<!-- _class: lead -->
+## NodeJS + Express
+
+- TBA
+
+---
+<!-- _class: lead -->
+## Express
+
+- Fast server-side development 
+- Middleware
+- Routing
+- Templating
+
+---
+<!-- _class: lead -->
+## React
+
+Benefits:
+
+- JSX - JSX is a syntax extension to JavaScript with react
+- Virtual Document Object Model (DOM)- This defines how documents are accessed and manipulated on a web page.
+- Performance - There are several ways to speed up the react application by using virtual DOM because it reduces the re-render time.
+- One-way data-binding - Information flows in one direction.
+
+---
+<!-- _class: lead -->
+## React
+
+- React Props 
+- ReactJS State 
+- ReactJS Components
+- React with Redux 
+
+---
+<!-- _class: lead -->
+## Typescript
+
+- TBA
 
 ---
 <!-- _class: lead -->
