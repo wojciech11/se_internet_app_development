@@ -205,9 +205,9 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
 
 2. Na zasadzie analogii do generacji strony startowej w routerze `index.js`, dodaj stronę `/about`.
 
-## Zaawansowane - Co to jest middleware
+## Zaawansowane - Co to jest middleware (dodatkowe)
 
-- https://expressjs.com/en/guide/writing-middleware.html
+Na podstawie tutoriala na stronie: https://expressjs.com/en/guide/writing-middleware.html, dodaj middleware dla mierzenia czasu odpowiedzi.
 
 ## Materiały dodatkowe
 
