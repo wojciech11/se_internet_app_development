@@ -50,12 +50,9 @@ Program:
 
 2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](cwiczenia/02_component_frameworks).
 
-3. Web App stack:
+3. Web App stack first steps - [TS/JS](cwiczenia/03_js_ts_stack);
 
-   - [TS/JS](cwiczenia/04_js_ts_stack);
-   - PHP - WIP.
-
-4. Web App stack: frontend.
+4. Web App stack: frontend - []
 
 5. Web App stack: baza danych.
 
