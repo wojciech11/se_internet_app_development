@@ -6,13 +6,13 @@ Jest wiele innych frameworków dla Node.js, np., [nestjs](https://nestjs.com/) c
 
 ## Pierwsze kroki z express.js
 
-Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z ekosystemu nodejs. Poniższe ćwiczenia jest oparte o tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment).
+Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z ekosystemu nodejs. Poniższe ćwiczenia jest oparte na [tutorialu developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment).
 
-1. Utwórz repozytorium `pai_3_js_start` na githubie, będziemy tam umieszczać naszą aplikację:
+1. Utwórz repozytorium `pai_3_start` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
-   cd pai_3_js_start
+   cd pai_3_start
 
    # pierwszy krok to zawsze README.md
    touch README.md
@@ -24,6 +24,9 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 2. Zainicjuj `npm`, jako nazwę wpisz *hello_world_app*:
 
    ```bash
+   # zakladam ze jestes 
+   # w katalogu pai_3_start 
+
    npm init
    ```
 
@@ -41,7 +44,7 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
    Co się zmieniło w `package.json`? Do czego służy `package-lock.json`?
 
-4. Utwórz `index.js`, czyli "main" dla naszej aplikacji:
+4. Utwórz `index.js`, czyli *main* dla naszej aplikacji:
 
    ```javascript
    const express = require("express");
@@ -95,39 +98,34 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
 Większość frameworków posiada generatory aplikacji, pozwala to szybko zacząć pracę z danym narzędziem. Zobaczmy jako to działa
 
-0. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
+1. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
 
    ```bash
    cd ..
 
-   ls
+   # powinnas byc w katalogu
+   # workspace
+   mkdir pai_3_express
+   cd pai_3_express
+
+   npx express-generator --view=pug
    ```
 
-1. Zainstalujmy generator (zauważ `-g`, globalnie, wymaga `sudo` na ubuntu):
+   Przejrzyj plik - `cat package.json`.
 
-   ```bash
-   npm install express-generator -g
-   ```
-
-2. Wygeneruj aplikację:
-
-   ```bash
-   express helloworld   
-   ```
-
-3. Po przejściu do katalogu `helloworld`, przejrzyj plik `cat package.json`.
-
-4. Podążając za wskazówkami generatora, zainstaluj dependencies:
+2. Podążając za wskazówkami generatora, zainstaluj dependencies:
 
    ```bash
    npm install
    ```
 
-5. Wszystko gotowe, żeby wystartować aplikację:
+3. Wszystko gotowe, żeby wystartować aplikację:
 
    ```bash
-   DEBUG=helloworld:* npm start
+   DEBUG=pai-3-express:* npm start
    ```
+
+   Otwórz przeglądarkę na http://127.0.0.1:3000.
 
 ## Dodatnie routera
 
