@@ -2,7 +2,7 @@
 
 ## CSS
 
-Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zobaczyć jak wygląda ostateczne reguły CSS.
+Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https://firefox-source-docs.mozilla.org/devtools-user/), aby zobaczyć jak wygląda ostateczne reguły CSS.
 
 0. W katalogu `workspace` (patrz [przygotowanie](../README.md)), utwórz katalog `pai_2_css`.
 
@@ -47,8 +47,8 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj Developer tools, aby zo
 Dodaj do prezentacji slajd, w którym będziesz miał następujący layout, wykorzystaj w tym celu bootstap ([grid](https://getbootstrap.com/docs/5.0/layout/grid/)):
 
 ```
-| logo wsb | text
-| text  | logo WKS
+| logo wsb |  text    |
+| text     | logo wsb |
 ```
 
 oraz
