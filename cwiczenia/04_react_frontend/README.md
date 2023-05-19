@@ -10,12 +10,12 @@
 
 ## React + Tailwind + Express
 
-1. Utwórz repozytorium `pai_4_express_react` na githubie, będziemy tam umieszczać naszą aplikację:
+1. Utwórz repozytorium `pai_4_app` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
    cd workspace
-   git clone https://... /pai_4_express_react.git
-   cd pai_4_express_react
+   git clone https://... /pai_4_app.git
+   cd pai_4_app
    ```
 
 3. Wygenerujmy kod dla react app:
