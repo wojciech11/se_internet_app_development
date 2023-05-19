@@ -1,4 +1,4 @@
-# Basics
+# Podstawy i komunikacja z web API
 
 Zauważ: w czasie zajęć, będziemy umieszczać nasze programy oraz wyniki ćwiczeń w repozytorium git. Na koniec zajęć, proszę przesłać URL do swojego repozytorium git na email prowadzącego.
 
@@ -78,14 +78,14 @@ Skorzystajmy z serwisu [httpbin.org](https://httpbin.org), który służy jako p
 
 3. Zauważ, że możesz wykorzystać *httpbin* do eksperymentowania z kodami http.
 
-```bash
-curl -X GET https://httpbin.org/status/404 --fail
-```
+   ```bash
+   curl -X GET https://httpbin.org/status/404 --fail
+   ```
 
    Poświęć kilka minut na przejrzenie wszystkich dostępnych method [metodach HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
    - Do czego służy *PATCH* czy różni się od *PUT*?
-   - Na jakich metodach http polega API REST, kryjącymi się za skrótem CRUD?
+   - Na jakich metodach http polega API REST, kryjącymi się za skrótem *CRUD*?
 
 ## Klient web API 1 - GET
 
@@ -118,9 +118,9 @@ Po każdym kroku, warto przetestować czy kod działa w zamierzony sposób.
    }
    ```
 
-4. zweryfikuj, że program działa i że *httpbin* zwrócił twoje dane w odpowiedzi.
+4. Zweryfikuj, że program działa i że *httpbin* zwrócił twoje dane w odpowiedzi.
 
-5. Jeśli powyższy program działa, umieść tą wersję twojego programu w repozytorium git. Jako, że to jest repozytorium git, możemy nadpisać poprzednią wersję bez obaw.
+5. Jeśli wszystko działa, umieść tą wersję twojego programu w repozytorium git. Jako, że to jest repozytorium git, możemy nadpisać poprzednią wersję bez obaw.
 
 ## Klient web API 3 - timeout
 
@@ -134,9 +134,9 @@ Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wik
 
 4. Dodaj retries and backoff, czyli `N` razy, jeśli wywołanie nie zadziała poczekaj dłużej przed ponownym wywołaniem API.
 
-   Zauważ jest wiele strategii, najpopularniejsza jest Fibonacci i Exponential ([przykładowa biblioteka](https://backoff-utils.readthedocs.io/en/latest/strategies.html#supported-strategies)).
+   Zauważ jest wiele strategii, najpopularniejsza jest Fibonacci i Exponential, patrz ([przykładowa biblioteka dla implmentacji backoff](https://backoff-utils.readthedocs.io/en/latest/strategies.html#supported-strategies)).
 
-**Pamiętaj** Nie można liczyć, że każdy request zostanie wysłany bez problemów, zawsze ustawiaj timeout. W niektórych frameworkach musisz go ustawić na kilku poziomach transportu i protokołu. Powstało wiele frameworków adresujących tej problem, np., dla Javy - [resilience4j](https://github.com/resilience4j/resilience4j) oraz sławny poprzednik od Netflixa - [Hystrix](https://github.com/Netflix/Hystrix).
+**Pamiętaj** Nie można liczyć, że każdy request zostanie wysłany bez problemów, zawsze definiuj **timeout**. W niektórych frameworkach musisz go ustawić na kilku poziomach transportu i protokołu. Powstało wiele frameworków adresujących tej problem, np., dla Javy - [resilience4j](https://github.com/resilience4j/resilience4j) oraz sławny poprzednik od Netflixa - [Hystrix](https://github.com/Netflix/Hystrix).
 
 7. Co to są *circuit breakers* i do czego służą? Dlaczego to jest ważny element aplikacji Netfixa? Zanotuj w `README.md`.
 
@@ -148,9 +148,9 @@ Pamiętając o [Fallacies of distributed computing](https://en.wikipedia.org/wik
 
 ### Praca z danymi w formacie z JSON 1
 
-Ponownie będziemy pracować w języku programowania, który jest Tobie najbardziej znany. Jak mówiliśmy o tym w czasie wykładu, [JSON](https://www.json.org/json-en.html) jest wiodącym formatem danych.
+Ponownie będziemy pracować w języku programowania, który jest Tobie najbardziej znany. Jak mówiliśmy o tym w czasie wykładu, [JSON](https://www.json.org/json-en.html) jest wiodącym formatem danych do komunikacji między aplikacjami.
 
-1. W języku Tobie najlepiej, odczytaj https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisz na ekran imiona wszyskich członków zespołu super bohaterów.
+1. Napisz program, który odczyta https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json i wypisze na ekran imiona wszyskich członków zespołu super bohaterów.
 
 2. W drugiej iteracji, wyszukaj bibliotekę `jmespath` ([docs](https://jmespath.org/)) dla twojego języka oprogramowania.
 
@@ -158,7 +158,7 @@ Ponownie będziemy pracować w języku programowania, który jest Tobie najbardz
 
 ### Praca z danymi w formacie JSON 2
 
-Warto do swojego arsenału narzędzi dodać `jq`:
+Warto do swojego arsenału narzędzi dodać `jq`, służące do pracy z formatem danych json:
 
 ```bash
 curl -s --fail -X POST \
@@ -195,17 +195,19 @@ Prześlij link do repozytorium na emaila prowadzącego zajęcia.
 
 ## Zauważ
 
-Możemy użyć `curl` lub `wget` do ściągnięcia pliku:
+Czesto spotkasz `curl` lub `wget` w skyptach *bash* do ściągania plików:
 
 ```bash
-curl https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json --output nielubiemarvela.json
+curl https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json \
+     --output nielubiemarvela.json
 ```
 
 ```bash
 wget https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
 
 # jesli chcemy zapisac pod inna nazwa
-wget -O nielubiemarvela.json https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
+wget -O nielubiemarvela.json \
+     https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
 ```
 
 ## Materiały dodatkowe
