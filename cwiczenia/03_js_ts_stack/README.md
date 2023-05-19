@@ -201,13 +201,13 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
    app.set('view engine', 'pug');
    ```
 
-2. Na zasadzie analogii do generacji strony startowej w routerze `routers/index.js`, zbuduj router oraz dodaj template dla ścieżki `/about`. 
+2. Na zasadzie analogi do generacji strony startowej w routerze `routers/index.js`, zbuduj router oraz dodaj template dla ścieżki `/about`. 
 
    Ścieżka about może zawierać dowolne informacje.
 
 ## Zaawansowane - Co to jest middleware (dodatkowe)
 
-Na podstawie tutoriala na stronie: https://expressjs.com/en/guide/writing-middleware.html, dodaj middleware dla mierzenia czasu odpowiedzi.
+Na podstawie tutoriala na stronie: [expressjs.com/en/guide/writing-middleware.html](https://expressjs.com/en/guide/writing-middleware.html), dodaj middleware dla mierzenia czasu odpowiedzi.
 
 ## Materiały dodatkowe
 
