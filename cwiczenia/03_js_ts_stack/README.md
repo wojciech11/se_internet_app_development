@@ -170,20 +170,20 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 3. Czas uruchomić naszą aplikację:
 
    ```bash
-   DEBUG=helloworld:* npm start
+   DEBUG=pai-3-express:* npm start
    ```
 
-   w przeglądarce otwórz `http://127.0.0.1:3000/hello/`.
+   w przeglądarce otwórz `http://127.0.0.1:3000/hello/`. Powinineś zobaczyc `World!`.
 
-4. A co byśmy musieli zrobić, aby wyświetlić `hello`, kiedy użytkownik otworzy `http://127.0.0.1:3000/hello/witam`?
+4. A co byśmy musieli zrobić, aby wyświetlić `World!`, kiedy użytkownik otworzy `http://127.0.0.1:3000/hello/witam`?
 
-5. Na podstawie dokumentacji - https://expressjs.com/en/guide/routing.html - zaimplementuj następującą funcjonalność:
+5. Na podstawie dokumentacji - [expressjs.com/en/guide/routing.html](https://expressjs.com/en/guide/routing.html) - zaimplementuj następującą funcjonalność:
 
    1. Kiedy otwieram `http://127.0.0.1:3000/hello/natalia`, powinienem zobaczyć `witaj Natalia!`;
 
    2. Kiedy otwieram `http://127.0.0.1:3000/hello?name=michal`, powinienem zobaczyć `witaj Michal!`;
 
-6. Wrzuć swoją aplikację do githuba, repo: `pai_4_express`.
+6. Wrzuć swoją aplikację do githuba, repo: `pai_3_express`.
 
 ## Rozbudowa aplikacji - statyczne pliki
 
@@ -193,15 +193,17 @@ Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-
 
 Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak korzystać z [templetów](https://expressjs.com/en/guide/using-template-engines.html).
 
-1. Domyślnie generator daje nam wsparcie dla [jade](https://github.com/dscape/jade), znajdź następujące linie w `app.js`:
+1. Generując szkielet aplikacji, jako template engine, wybraliśmy [pug](https://github.com/pugjs/pug), znajdź następujące linie w `app.js`:
 
    ```javascript
    // view engine setup
    app.set('views', path.join(__dirname, 'views'));
-   app.set('view engine', 'jade');
+   app.set('view engine', 'pug');
    ```
 
-2. Na zasadzie analogii do generacji strony startowej w routerze `index.js`, dodaj stronę `/about`.
+2. Na zasadzie analogii do generacji strony startowej w routerze `routers/index.js`, zbuduj router oraz dodaj template dla ścieżki `/about`. 
+
+   Ścieżka about może zawierać dowolne informacje.
 
 ## Zaawansowane - Co to jest middleware (dodatkowe)
 
