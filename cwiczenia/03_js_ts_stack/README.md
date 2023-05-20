@@ -11,6 +11,10 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 1. Utwórz repozytorium `pai_3_start` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
+   # zakladajac ze masz juz katalog
+   # workspace/
+   cd ~/workspace
+
    git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
    cd pai_3_start
 
@@ -134,10 +138,9 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
 1. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
 
    ```bash
-   cd ..
+   # wrocmy do katalogu workspace/
+   cd ~/workspace
 
-   # powinnas byc w katalogu
-   # workspace
    mkdir pai_3_express
    cd pai_3_express
 
