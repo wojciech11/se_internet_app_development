@@ -50,7 +50,11 @@ Javascript / Typescript stack
 
 - manager pakietów;
 - najlepiej zarządząć z pomocą [nvm](https://github.com/nvm-sh/nvm);
-- `npx`.
+- `npx` - package executor.
+
+---
+<!-- _class: lead -->
+# Express
 
 ---
 <!-- _class: lead -->
@@ -98,6 +102,10 @@ app.listen(port, () => {
 - [routes](https://expressjs.com/en/guide/routing.html);
 - [template engines](https://expressjs.com/en/guide/using-template-engines.html);
 - [static](https://expressjs.com/en/starter/static-files.html).
+
+---
+<!-- _class: lead -->
+# React
 
 ---
 <!-- _class: lead -->
