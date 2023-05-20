@@ -8,12 +8,38 @@
 
 3. Tutorial 2 - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
+## React + Tailwind
+
+1. Utwórz repozytorium na githubie - `pai_4_react.git`:
+
+   ```bash
+   cd workspace
+   git clone https://... /pai_4_react.git
+   ```
+
+2. Skorzystajmy z generatora, dla utworzenia aplikacji react:
+
+   ```bash
+   npx create-react-app
+   ```
+
+3. Tailwindcss - https://tailwindcss.com/docs/guides/create-react-app
+
+4. TBA
+
 ## React + Tailwind + Express
 
 1. Utwórz repozytorium `pai_4_app` na githubie, będziemy tam umieszczać naszą aplikację:
 
    ```bash
+   
+   # wroc do katalogu domowego
+   cd
+
+   # workspace
    cd workspace
+
+   # clone!
    git clone https://... /pai_4_app.git
    cd pai_4_app
    ```
