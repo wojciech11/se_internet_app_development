@@ -47,14 +47,20 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 4. Utwórz `index.js`, czyli *main* dla naszej aplikacji:
 
    ```javascript
+   // importuje modul express
    const express = require("express");
    const app = express();
    const port = 3000;
 
    app.get("/", (req, res) => {
+       res.statusCode = 200;
+       res.setHeader('Content-Type', 'text/plain')
        res.send("Hello World!");
    });
 
+
+   // Uruchamia serwer nasłuchujący 
+   // na porcie 3000.
    app.listen(port, () => {
       console.log(`Example app listening on port ${port}!`);
    });
@@ -66,7 +72,29 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
    node index.js
    ```
 
-6. Zanim, przejdziemy dalej, zobaczmy jak działają taski, na przykładzie lintera:
+   Otwórze przeglądarkę adress: http://127.0.0.1:3000 lub skorzystaj z `curl`:
+
+   ```bash
+   curl 127.0.0.1:3000/
+   ```
+
+6. Zanim, przejdziemy dalej, zobaczmy jak działają taski, dodaj do `package.json`:
+
+   ```json
+   "scripts": {
+         // ...
+         "start": "node index.js",
+         // ...
+   }
+   ```
+
+7. Teraz możemy uruchomić naszę aplikację z CLI:
+
+   ```bash
+   node start
+   ```
+
+8. Teraz dodajmy, komendę do uruchominia lintera, zanim to zrobimy, zainstalujmy `eslint`:
 
    ```bash
    # instalacja lintera jako dev only
@@ -76,27 +104,32 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
    Co to jest linter?
 
-7. Aby mieć dostępnego lintera jako komendę, dodaj do `package.json`:
+   Jaki jest najpopularniejszy linter dla twojego ulubionego języka programowania?
+
+9. Aby mieć dostępnego lintera jako komendę, dodaj do `package.json`:
 
    ```json
    "scripts": {
    		// ...
-   		"lint": "eslint src/js"
+         "start": "node index.js",
+   		"lint": "eslint src/js",
    		// ...
    }
    ```
 
-8. Możemy teraz uruchomić lintera:
+10. Możemy teraz uruchomić lintera:
 
    ```bash
+   # na razie nie bedziemy zajmowac
+   # sie bledem zgloszonym przez lintera
    npm run lint
    ```
 
-9. Wrzuć wszystko do repozytorium git.
+11. Wrzuć wszystko do repozytorium git.
 
 ## Generatory szkieletu aplikacji
 
-Większość frameworków posiada generatory aplikacji, pozwala to szybko zacząć pracę z danym narzędziem. Zobaczmy jako to działa
+Większość frameworków posiada generatory aplikacji, pozwala to szybko zacząć pracę z danym narzędziem. Zobaczmy jako to działa dla expressa.
 
 1. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
 
@@ -125,7 +158,9 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    DEBUG=pai-3-express:* npm start
    ```
 
-   Otwórz przeglądarkę na http://127.0.0.1:3000.
+   Otwórz przeglądarkę adress http://127.0.0.1:3000.
+
+4. Wraz z prowadzącymi, przejrzyć strukturę wygenerowanej aplikacji.
 
 ## Dodatnie routera
 
