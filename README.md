@@ -15,8 +15,8 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 4. Web API stacks:
 
-   - [Platformy w chmurze](04_chmura/slides.md)
-   - [Typescript / Javascript stack](04_js_ts_stack/)
+   - [Platformy w chmurze](04_chmura/index.pdf)([html](04_chmura/index.html));
+   - [Typescript / Javascript stack](04_js_ts_stack/);
    - [PHP i Bazy danych](04_php_stack/).
 
 5. Bootstrap i Tailwind oraz testowanie aplikacji internetowych &&  web vitals;
