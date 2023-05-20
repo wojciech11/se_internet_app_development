@@ -8,7 +8,7 @@
 
 3. Tutorial 2 - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
-## React + Tailwind
+## React
 
 1. Utwórz repozytorium na githubie - `pai_4_react.git`:
 
