@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WSB - Programowanie App Internetowych Ćwiczenia</title>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="ext/bootstrap-5.3.0-alpha3/bootstrap.min.css">
+		<!-- -->
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+		<!-- remove annoying shadow around images -->
+		<style>
+			.reveal section img {
+				background-color:white;
+				border:0;
+				box-shadow: 0 0 0 0;
+			}
+		</style>
+		<!-- -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>U<span style="text-transform: lowercase;">sługi i platformy deweloperskie dla aplikacji w Chmurze</span></h3>
+
+					<img src="img/what-are-cloud-in-cloud-computing-is-made-of-dad.jpeg" class="center-block" style="background-color:white;border:0;width: 60%"/>
+					<!-- h5>+ how to prepare your service</h5 -->
+					<br />
+
+					<h6><small>W<span style="text-transform: lowercase;">ojciech</span> B<span style="text-transform: lowercase;">arczyński</span> <br />
+							<span style="text-transform: lowercase;">wojciech.barczynski@wsb.wroclaw.pl</span></small>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+## W<span style="text-transform: lowercase;">hoami</span>
+
+					</script>
+				</section>
+
+				<section>
+					<h3>D<span style="text-transform: lowercase;">laczego chmura?</span></h3>
+					<ul>
+						<li>Elastyczność</li>
+						<li>Niższe koszty</li>
+						<li>Wszystko API, łatwe do automatyzacji</li>
+						<li>Pay As You Go</li>
+						<li>Gwałtowna demokratyzacja technologii</lo>
+					</ul>
+				</section>
+
+				<section>
+					<h3>D<span style="text-transform: lowercase;">laczego chmura?</span></h3>
+					<ul>
+						<li>Potężne narzędzie do rozwiązywania problemów</li>
+						<li>Cloud-first, Mobile-first</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>E<span style="text-transform: lowercase;">wolucja 1</span></h3>
+					<ul>
+						<li>Własny hardware</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>E<span style="text-transform: lowercase;">wolucja 1</span></h3>
+					<p>Trendy:</p>
+					<ul>
+						<li>Rozwój CPU -&gt; CPU idle</li>
+						<li>Dużo sprzętu -&gt; szybko się starzeje</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>E<span style="text-transform: lowercase;">wolucja 2</span></h3>
+					<ul>
+						<li>Wirtualizacja na niezawodnym i dedykowanym sprzęcie</li>
+						<li>Konsolidacja</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>E<span style="text-transform: lowercase;">wolucja 2</span></h3>
+					<ul>
+						<li>Dużo sprzętu -&gt; szybko się starzeje</li>
+						<li>Mała elastyczność</li>
+						<li>Trudne do zautomatyzowania</li>
+						<li>Amazon i Black Friday</li>
+						<li>Google buduje na zwykłym sprzęcie</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>E<span style="text-transform: lowercase;">wolucja 3</span></h3>
+					<ul>
+						<li>Masowa wirtualizacja na zwykłym*/zawodnym sprzęcie</li>
+					</ul>
+					<small>* - tak się zaczęło...</small>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">attle vs </span>P<span style="text-transform: lowercase;">ets</span>
+
+<img src="img/Rubber_Duck_Sea.jpg" width="60%"/>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">attle vs </span>P<span style="text-transform: lowercase;">ets</span>
+
+<img src="img/Rubber_Duck_Sea.jpg" width="60%"/>
+
+<p>D001, D002, D003, D004, Disposabled</p>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">attle vs </span>P<span style="text-transform: lowercase;">ets</span>
+
+- Wirtualne Maszyny może paść
+- Wirtualna Maszyna może być przemigrowana
+- Chatty neigbours...
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+<img src="img/managed_stack_on_premise.svg" />
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+<img src="img/managed_stack_iaas.svg" />
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+<img src="img/managed_stack_paas.svg" />
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+<img src="img/managed_stack.svg"/>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+<img src="img/piramida_onp_saas.svg"/>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### _aaS
+
+- Serverless / FaaS (również onEdge!)
+- Pamiętaj, AWS/GCP... to XaaS
+					</script>
+				</section>
+
+
+					<section data-markdown>
+						<script type="text/template">
+### MTTR <span style="text-transform: lowercase;">vs</span> MTTF
+
+- Chmura: MTTR
+- Wcześniej: MTTF
+
+<p><small><a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">Fallacies of distributed computing</a></small></p>
+						</script>
+					</section>
+
+				<section>
+						<h3>J<span style="text-transform: lowercase;">ak wybrać?</span></h3>
+						<ul>
+							<li>100 serwisów</li>
+							<li>K8S? Serverless? EC2 + xyz</li>
+						</ul>
+				</section>
+
+
+				<section>
+						<h3>J<span style="text-transform: lowercase;">ak wybrać?</span></h3>
+
+						<img src="https://islodycze.pl/media/catalog/product/cache/1/image/85e4522595efc69f496374d01ef2bf13/s/o/solidarno_praliny_almondo_w_kartonie_2_5kg_islodycze.jpg" width="50%"/>
+				</section>
+
+				<section>
+					<h3>H<span style="text-transform: lowercase;">igh performance teams</span></h3>
+					<div class="container">
+						<div class="row">
+							<div class='col-md-6'>
+								<p>(Tech) metrics:</p>
+								<ul>
+									<li>Lead Time</li>
+									<li>Deployment frequency</li>
+									<li>Mean time to Recovery</li>
+									<li>Change Fail Percent</li>
+								</ul>
+							</div>
+							<div class='col-md-6'>
+								<img width="100%" style="object-fit: fill;" src="img/laptop_book_accelarate.png" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>C<span style="text-transform: lowercase;">hoosing tech</span></h3>
+					<div class="container">
+						<div class="row">
+							<div class='col-md-6'>
+								<p>Other factors:</p>
+								<ul>
+									<li>Skillset</li>
+									<li>New tech for people to feel that they learn sth new</li>
+									<li>What year team tech background is</li>
+								</ul>
+							</div>
+							<div class='col-md-6'>
+								<img width="100%" style="object-fit: fill;" src="img/laptop_book_accelarate.png" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### B<span style="text-transform: lowercase;">uy &gt; build</span>
+
+Kandydaci:
+
+- Wysokie TCO, nie jest to częścią naszego produktu
+- Skomplikowany i złożony problem np., bazy danych
+- Narzędzia
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+- Samo programowanie nie wystarcza!
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+Świadomość operacyjnej strony oprogramowania:
+
+- monitoring - [RED](https://www.infoworld.com/article/3638693/the-red-method-a-new-strategy-for-monitoring-microservices.html), [4 Golden Signals](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals), [USE](https://www.brendangregg.com/usemethod.html)
+- logging - structured<br /> np., [Python](https://www.structlog.org/en/stable/), [Golang](https://github.com/uber-go/zap), [dotnet core](https://serilog.net/), java
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+Świadomość operacyjnej strony oprogramowania:
+
+- tracing
+- probes
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+<img src="img/observability/observability_capex_vs_opex_from_golang_prod_blog.png" width="80%" />
+
+<small><a href="https://peter.bourgon.org/go-for-industrial-programming/">Go for Industrial Programming by Peter Bourgon</a></small>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+Warto obejrzeć:
+
+[Engineering You • Martin Thompson](https://www.youtube.com/watch?v=S4LzzuMTqjs)
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### O<span style="text-transform: lowercase;">czekiwania wobec dev</span>
+
+Świadomość operacyjnej strony oprogramowania:
+
+- you build it, you run it
+- devs, ops na OnCall
+					</script>
+			</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### R<span style="text-transform: lowercase;">etry and timeouts</span>
+
+- [timeouts](https://www.codecentric.de/wissens-hub/blog/resilience-design-patterns-retry-fallback-timeout-circuit-breaker)
+- Retries / Backoff
+- [Circute breaker](https://martinfowler.com/bliki/CircuitBreaker.html)
+
+<a href="https://ably.com/blog/8-fallacies-of-distributed-computing">8 fallacies of distributed computing</a>
+					</script>
+				</section>
+
+				<section data-background="img/eff_dev_books.png" data-background-repeat="" data-background-size="100%" data-background-color="white">
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/51P4cUtnqUL.jpg" width="30%"/>
+
+<p><span>Practice of Cloud System Administration, The: DevOps and SRE Practices for Web Services, Volume 2</span></p>
+					</script>
+				</section>
+
+				<section>
+					<h4>D<span style="text-transform: lowercase;">ziękuje za uwagę</span></h4>
+					<img src="img/laptop_book_accelarate.png" width="80%">
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+				## B<span style="text-transform: lowercase;">ackup slides</span>
+
+					</script>
+				</section>
+
+				<!--
+				12factor apps
+				-->
+				<section data-markdown>
+					<script type="text/template">
+### <span style="text-transform: lowercase;">12factor apps</span>
+
+- Good to know what [12factorapp](https://12factor.net) is.
+- Not new, might look obvious.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### <span style="text-transform: lowercase;">12factor apps</span>
+
+Few that are very relevant for Kubernetes:
+
+1. III. [Config](https://12factor.net/config) - environment variable, injected by environment
+2. VIII. [Concurrency by process](https://12factor.net/concurrency)
+3. IX. [Disposability](https://12factor.net/disposability) (MTTR vs MTTF)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### <span style="text-transform: lowercase;">12factor apps</span>
+
+4. X. [Dev/Prod parity](https://12factor.net/dev-prod-parity) including time, tooling, and backing services
+5. XI. [Logs](https://12factor.net/logs) - push your logs to stdout and let log routers to take care of them
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+# P<span style="text-transform: lowercase;">raca z chmurą</span>
+					</script>
+				</section>
+				<!-- https://github.com/wojciech12/talk_bitconf_best_practices_introducing_k8s_and_CN/blob/master/slides.pdf -->
+
+				<section data-markdown>
+					<script type="text/template">
+### A<span style="text-transform: lowercase;">utomate everything?</span>
+
+<img src="https://memegenerator.net/img/instances/51075200.jpg" width="40%"/>
+
+<p><small><a href="https://github.com/wojciech12/talk_bitconf_best_practices_introducing_k8s_and_CN/blob/master/slides.pdf">best practices</a><small></p>
+					</script>
+				</section>
+				<!--
+				The purpose of a good architecture is to defer decisions, delay decisions.
+				The job of an architect is not to make decisions, the job of an architect
+				is to build a structure that allows decisions to be delayed as long as possible.
+				Why? Because when you delay a decision, you have more information
+				when it comes time to make it.
+
+				— “Clean Architecture” Robert C. Martin
+				-->
+
+				<section data-markdown>
+					<script type="text/template">
+### A<span style="text-transform: lowercase;">utomate everything?</span>
+
+- A journey
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### A<span style="text-transform: lowercase;">utomate everything?</span>
+
+Kroki:
+
+1. Skrypty/README
+2. Infrastructure-as-a-code w iteracjach
+3. Unikać rzeczy utworzonych z ręki bez śladu w naszych git (doc, kod)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### A<span style="text-transform: lowercase;">utomate everything?</span>
+
+Kroki:
+
+4. Dobrze mieć z tyły głowy: x2, x5
+5. Rozdzielić środowiska dev, staging, prod na osobne konta wcześniej niż później
+					</script>
+				</section>
+
+				<section data-markdown>
+						<script type="text/template">
+### T<span style="text-transform: lowercase;">echnologie</span>
+
+1. Terraform
+2. Terragrunt
+3. Ansible / Saltstack
+4. AWS CDK / AWS CloudFormations?
+5. [Pulumi](https://www.thoughtworks.com/radar/platforms/pulumi)
+						</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">ontinuous deployment</span>
+
+- CI/CD zaczyna się na komputerze programisty
+- Komponenty powinny być uruchamialne lokalnie
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+### C<span style="text-transform: lowercase;">ontinuous deployment</span>
+
+- Działający ci/cd jest najwyższym priorytetem!
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
