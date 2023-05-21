@@ -51,9 +51,9 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https
 
 1. Zrób tutorial getting-started - https://getbootstrap.com/docs/5.2/getting-started/introduction/.
 
-2. Dodaj do przykład [bootstrap](bootstap/), kilka komponentów, np., checks & radios, form control, oraz dowolny komponent.
+2. Dodaj do zbudowanej prostej strony z bootstrapem, kilka komponentów, np., checks & radios, form control, oraz dowolny komponent (patrz [dokumentacja](https://getbootstrap.com/docs/5.2/forms/form-control/)).
 
-3. Po każdej modyfikacji, zobacz jak zmienia się strona.
+3. Po każdej modyfikacji, odśwież przeglądarkę i zobacz efekty swojej pracy.
 
 ## Revealjs + Bootstrap
 
