@@ -41,7 +41,7 @@ Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.c
 
 1. Przygotowanie:
 
-   - ściągnij / sklonuj repozytorium revealjs;
+   - ściągnij / sklonuj (`git clone`) repozytorium revealjs (w jakimś katalogu na tymczasowe rzeczy, np., `~/tmp`);
    - usuń `.git/`, `test/`, `examples/`, `.github/`, oraz `demo.html`;
    - zmien nazwę `README.md` na `README_revealjs.md` oraz `LICENSE` na `LICENSE_revealjs`.
 
