@@ -35,15 +35,17 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https
 
 7. Zmień wszystkie reguły css na klasy.
 
-## Reveljs
+## Revealjs
 
-1. Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js) ([demo](https://revealjs.com/#/1));
+Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js) ([demo](https://revealjs.com/#/1)).
+
+1. Przygotowanie:
 
    - ściągnij / sklonuj repozytorium revealjs;
    - usuń `.git/`, `test/`, `examples/`, `.github/`, oraz `demo.html`;
    - zmien nazwę `README.md` na `README_revealjs.md` oraz `LICENSE` na `LICENSE_revealjs`.
 
-2. Umieść wszystkie pozostałe pliki w repozytorium `pai_2_revealjs`.
+2. Umieść wszystkie pozostałe pliki w katalogu `pai_2_revealjs` (do wrzucenia do repozytorium o tej samej nazwie).
 
 3. W pliku `index.html` (w którym znajduje się prezentacja), proszę dodać kilka prostych slajdów. Możecie zobaczyć jak mogą wyglądać slajdy w `demo.html` ([github](https://github.com/hakimel/reveal.js/)).
 
