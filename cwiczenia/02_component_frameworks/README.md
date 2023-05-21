@@ -37,13 +37,15 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https
 
 ## Reveljs
 
-1. Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js);
+1. Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js) ([demo](https://revealjs.com/#/1));
 
    - ściągnij / sklonuj repozytorium revealjs;
    - usuń `.git/`, `test/`, `examples/`, `.github/`, oraz `demo.html`;
    - zmien nazwę `README.md` na `README_revealjs.md` oraz `LICENSE` na `LICENSE_revealjs`.
 
-2. Umieść wszystkie pliki w repozytorium `pai_2_revealjs`.
+2. Umieść wszystkie pozostałe pliki w repozytorium `pai_2_revealjs`.
+
+3. W pliku `index.html` (w którym znajduje się prezentacja), proszę dodać kilka prostych slajdów. Możecie zobaczyć jak mogą wyglądać slajdy w `demo.html` ([github](https://github.com/hakimel/reveal.js/)).
 
 ## Bootstrap
 
