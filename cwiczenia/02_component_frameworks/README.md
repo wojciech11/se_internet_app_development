@@ -6,7 +6,14 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https
 
 0. W katalogu `workspace` (patrz [przygotowanie](../README.md)), utwórz katalog `pai_2_css`.
 
-1. W katalogu `pai_2_css`, utwórz podstawową stronę `index.html` z podstawową strukturą (elementy: head, body, oraz nagłówek).
+   ```bash
+   # jesli nie istnieje
+   mkdir workspace
+   cd workspace
+   mkdir pai_2_css
+   ```
+
+1. W katalogu `pai_2_css`, utwórz stronę `index.html` z podstawową strukturą strony html (elementy: head, body, oraz nagłówek).
 
 2. Aby oczarować klienta, dodajmy następującą treść do naszej strony www:
 
@@ -32,7 +39,11 @@ Uwaga: po każdej zmianie odśwież stronę, wykorzystaj [Developer tools](https
 
 1. Przygotuj 5 slajdową prezentację z wykorzystaniem [reveal.js](https://github.com/hakimel/reveal.js);
 
-2. Umieść wszystkie plik w repozytorium `pai_2_revealjs`.
+   - ściągnij / sklonuj repozytorium revealjs;
+   - usuń `.git/`, `test/`, `examples/`, `.github/`, oraz `demo.html`;
+   - zmien nazwę `README.md` na `README_revealjs.md` oraz `LICENSE` na `LICENSE_revealjs`.
+
+2. Umieść wszystkie pliki w repozytorium `pai_2_revealjs`.
 
 ## Bootstrap
 
