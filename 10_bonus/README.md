@@ -27,7 +27,9 @@
 
 8. code != Ty
 
-9. Praca z gitem w zespole - TBA - https://github.com/wojciech11/se_projekt_zespolowy/blob/master/01_praca_z_gitem/README.md
+9. Praca z gitem w zespole - https://github.com/wojciech11/se_projekt_zespolowy/blob/master/01_praca_z_gitem/README.md
+
+10. Typing - https://typing.io
 
 ## Bardziej relacje
 
