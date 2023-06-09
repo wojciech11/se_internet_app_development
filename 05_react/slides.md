@@ -43,7 +43,7 @@ function MyButton() {
 
 ---
 <!-- _class: lead -->
-## JSX
+## Components
 
 ```jsx
 function MyButton() {
@@ -52,6 +52,18 @@ function MyButton() {
 
 const app = document.getElementById('app');
 ReactDOM.render(<><h1>Develop. Preview. Ship. 🚀 </h1><MyButton /></>, app);
+```
+
+---
+<!-- _class: lead -->
+## props
+
+```jsx
+function MyButton(props) {
+  return (<button>I'm a {props.what}</button>);
+}
+
+ReactDOM.render(<MyButton what="Login Button" />, app);
 ```
 
 ---
@@ -74,9 +86,64 @@ ReactDOM.render(<>
 
 ---
 <!-- _class: lead -->
+## Responding to events
+
+```jsx
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+```
+
+---
+<!-- _class: lead -->
+## State
+
+```jsx
+function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+`useState` -  built-in Hook
+
+---
+<!-- _class: lead -->
+## State
+
+How would you implement sharing the data between state between components?
+
+---
+<!-- _class: lead -->
+## Hooks
+
+- see [API reference on built-in React Hooks](https://react.dev/reference/react),
+- notice: reducer pattern.
+
+---
+<!-- _class: lead -->
 ## React
 
-- React Props
-- ReactJS State
-- ReactJS Components
-- React with Redux
+- Redux - predictable state container for JS Apps;
+- [React with Redux](React Redux).
+
+---
+<!-- _class: lead -->
+## Dziękuję
