@@ -8,31 +8,28 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 2. Podstawy 1 - CSS, html, protokół http, oraz responsywne strony internetowe, podstawowe technologie web - [slajdy](02_podstawy/slides.pdf)([md](02_podstawy/slides.md));
 
-3. Podstawy 2 - [slajdy](03_web_api/slides.pdf) oraz [przykłady](03_web_api/): 
- 
+3. Podstawy 2 - [slajdy](03_web_api/slides.pdf) oraz [przykłady](03_web_api/):
+
    - REST API;
    - architektura.
 
-4. Web API stacks:
+4. Web tech stacks:
 
    - [Platformy w chmurze](04_chmura/index.pdf)([html](04_chmura/index.html));
    - [Typescript / Javascript stack](04_js_ts_stack/);
-   - [PHP i Bazy danych](04_php_stack/);
+   - [PHP frameworks i Wordpress](04_php_stack/);
 
-5. 
+5. React.
 
+6. Praca z bazą danych, ORM, oraz integracja z express.io.
 
+7. Aplikacja w produkcji 1:
 
-Bootstrap i Tailwind oraz testowanie aplikacji internetowych &&  ;
+   - Web vitals;
+   - Observability: monitoring API: RED i USE;
 
-6. Przegląd technologii do budowy aplikacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
+8. Egzamin:
 
-7. Co to jest CMS?
-
-8. Observability i egzamin:
-
-   - web vitals;
-   - monitoring API: RED i USE;
    - Egzamin.
 
 ## Program - Ćwiczenia / laboratorium
