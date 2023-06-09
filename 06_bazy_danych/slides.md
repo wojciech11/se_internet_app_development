@@ -176,7 +176,7 @@ Praktyka:
 
 - Unikaj ORMów
 - Query buildery lub lekkie ORMy OK
-- Zacznik od query builderów, np., [knex](https://github.com/knex/knex).
+- Zacznij od query builderów, np., [knex](https://github.com/knex/knex).
 
 ---
 <!-- _class: lead -->
