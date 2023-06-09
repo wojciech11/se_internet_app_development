@@ -21,7 +21,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 5. Frontend with React - [slajdy](05_react/slides.pdf).
 
-6. Praca z bazą danych, ORM, oraz integracja z express.io.
+6. Praca z bazą danych, ORM, oraz integracja z express.io - [slajdy](06_bazy_danych).
 
 7. Aplikacja w produkcji:
    
