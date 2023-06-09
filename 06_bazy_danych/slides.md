@@ -23,7 +23,6 @@ Bazy danych
 
 ![width:600px](img/overview_s4.svg)
 
-
 ---
 <!-- _class: lead -->
 ## Na dziś:
@@ -99,7 +98,6 @@ New global scale DBs:
 
 Fascynująca dziedzina w inżynierii!
 
-
 ---
 <!-- _class: lead -->
 ## Baza danych vs App
@@ -136,6 +134,8 @@ connection.query('SELECT 1 + 1 AS solution', (err, rows, fields) => {
 connection.end()
 ```
 
+---
+<!-- _class: lead -->
 ## Lightweigh DSL
 
 Query Builder - [knex](https://github.com/knex/knex):
@@ -174,9 +174,30 @@ Praktyka:
 <!-- _class: lead -->
 ## Rekomendacja
 
-- Unikaj ORMów
-- Query buildery lub lekkie ORMy OK
-- Zacznij od query builderów, np., [knex](https://github.com/knex/knex).
+- Unikaj ORMów;
+- Query buildery lub DSL z lekką abstrakcją OK;
+- Zacznij od query builderów, np., [knex](https://github.com/knex/knex);
+- Weryfikuj zapytania z `explain` i `analyze`!!
+
+---
+<!-- _class: lead -->
+## Na przykład - PSQL
+
+- [Explain](https://wiki.postgresql.org/images/4/45/Explaining_EXPLAIN.pdf),
+- [Query Plan Visualization](http://tatiyants.com/postgres-query-plan-visualization/)
+- [Types of Indexes](https://www.justwatch.com/blog/post/mastering-postgres-indexes-in-10-minutes/)
+
+Good read: [Debugging PSQL the hardway](https://www.justwatch.com/blog/post/debugging-postgresql-performance-the-hard-way/)
+
+---
+<!-- _class: lead -->
+## Performance
+
+- Powyżej 200ms = **za wolno**!!
+- Generalnie ([src](https://postgres.ai/blog/20210909-what-is-a-slow-sql-query)):
+
+![width:600px](https://postgres.ai/assets/blog/20210909-slow-sql.png)
+
 
 ---
 <!-- _class: lead -->
