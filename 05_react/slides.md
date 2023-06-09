@@ -142,7 +142,35 @@ How would you implement sharing the data between state between components?
 ## React
 
 - Redux - predictable state container for JS Apps;
-- [React with Redux](React Redux).
+- [React with Redux](https://react-redux.js.org/introduction/getting-started).
+
+---
+<!-- _class: lead -->
+![width:250px](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)
+
+---
+<!-- _class: lead -->
+## Next.js
+
+- backend framework which is based on React
+- Client Side Rendering vs Server Side Rendering
+- Sponsored by Vercel
+
+---
+<!-- _class: lead -->
+## Next.js
+
+Popular combination with:
+
+- TypeScript;
+- [Tailwind](https://tailwindcss.com) do styli;
+- [Prisma](https://www.prisma.io) do baz danych.
+
+---
+<!-- _class: lead -->
+## Next.js
+
+Wrócimy w czasie ćwiczeń.
 
 ---
 <!-- _class: lead -->
