@@ -56,17 +56,20 @@ ReactDOM.render(<><h1>Develop. Preview. Ship. 🚀 </h1><MyButton /></>, app);
 
 ---
 <!-- _class: lead -->
-## JSX
+## JSX - styling
 
 ```jsx
 function MyButton() {
   return (<button>I'm a button</button>);
 }
 
-const front_color="red"
+var front_color = 'red'
 
 const app = document.getElementById('app');
-ReactDOM.render(<><h1>Develop. Preview. Ship. 🚀 </h1><MyButton /></>, app);
+ReactDOM.render(<>
+  <h1 style={{color: front_color }}>Develop. Preview. Ship. 🚀 </h1>
+  <MyButton />
+</>, app);
 ```
 
 ---
