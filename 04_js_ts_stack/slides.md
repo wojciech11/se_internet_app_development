@@ -62,6 +62,45 @@ No one clean winner:
 
 ---
 <!-- _class: lead -->
+## Javascript
+
+```javascript
+// firstFile.js - export 2 functions
+
+export const testFunc = () => console.log("hello world");
+export function secondTestFunc() {
+  console.log("hello world 2");
+}
+
+// secondFile.js - export 1 function by default
+const uniqueFunc = () => console.log("hello world from another file");
+
+export default uniqueFunc;
+
+// index.js -
+
+import { testFunc, secondTestFunc } from "firstFile.js";
+import uniqueFunc from "secondFile.js";
+```
+
+---
+<!-- _class: lead -->
+## Javascript
+
+[Javascript for Python programmers](https://observablehq.com/@ballingt/javascript-for-python-programmers)
+
+---
+<!-- _class: lead -->
+## Javascript
+
+JavaScript style:
+
+- camelCase instead of snake_case for variables, still TitleCase for classes and ALL_CAPS for global constants;
+- Standard JavaScript style prescribes semicolons;
+- Two spaces per indentation level instead of four.
+
+---
+<!-- _class: lead -->
 ## Nodejs
 
 - Node.js to otwarto źródłowe i między platformowe środowisko uruchomieniowe dla języka JavaScript;
@@ -128,29 +167,17 @@ app.listen(port, () => {
 
 ---
 <!-- _class: lead -->
-# React
+## Typescript
 
-![width:400px](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+- [vs Javascript](https://www.toptal.com/typescript/typescript-vs-javascript-guide):
 
----
-<!-- _class: lead -->
-## React
+```javascript
+let var1 = "Hello";
+var1 = 10;
+console.log(var1);
+```
 
-Benefits:
-
-- JSX - JSX is a syntax extension to JavaScript with react;
-- Virtual Document Object Model (DOM) - This defines how documents are accessed and manipulated on a web page;
-- Performance - There are several ways to speed up the react application by using virtual DOM because it reduces the re-render time;
-- One-way data-binding - Information flows in one direction.
-
----
-<!-- _class: lead -->
-## React
-
-- React Props
-- ReactJS State
-- ReactJS Components
-- React with Redux
+- IDE support
 
 ---
 <!-- _class: lead -->

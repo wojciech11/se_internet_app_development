@@ -17,7 +17,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
    - [Platformy w chmurze](04_chmura/index.pdf)([html](04_chmura/index.html));
    - [Typescript / Javascript stack](04_js_ts_stack/);
-   - [PHP frameworks i Wordpress](04_php_stack/);
+   - [PHP frameworks i Wordpress](04_php_stack/).
 
 5. Frontend with React - [slajdy](05_react/index.pdf).
 
