@@ -6,7 +6,7 @@
 
 2. Przejdź przez tutorial 1 dostępny na [react.dev](https://react.dev/learn).
 
-## React App
+## React App 1
 
 Ćwiczenie jest w oparciu o getting-started-with-react tutorial na [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started).
 
@@ -112,6 +112,13 @@ Zobaczmy teraz jak możemy wykorzystać props komponentów.
       );
     }
     ```
+
+12. Po upewnieniu się, że wszystko działa, umieść aplikację na githubie.
+
+## React App 2
+
+1. 
+
 
 ## React + Tailwindcss
 

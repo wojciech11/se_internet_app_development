@@ -17,15 +17,23 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
    - [Platformy w chmurze](04_chmura/index.pdf)([html](04_chmura/index.html));
    - [Typescript / Javascript stack](04_js_ts_stack/);
-   - [PHP i Bazy danych](04_php_stack/).
+   - [PHP i Bazy danych](04_php_stack/);
 
-5. Bootstrap i Tailwind oraz testowanie aplikacji internetowych &&  web vitals;
+5. 
+
+
+
+Bootstrap i Tailwind oraz testowanie aplikacji internetowych &&  ;
 
 6. Przegląd technologii do budowy aplikacji internetowych - [slajdy](06_tech_stack/slides.pdf) ([md](06_tech_stack/slides.md));
 
 7. Co to jest CMS?
 
-8. Egzamin
+8. Observability i egzamin:
+
+   - web vitals;
+   - monitoring API: RED i USE;
+   - Egzamin.
 
 ## Program - Ćwiczenia / laboratorium
 
