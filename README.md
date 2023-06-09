@@ -19,7 +19,7 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
    - [Typescript / Javascript stack](04_js_ts_stack/);
    - [PHP frameworks i Wordpress](04_php_stack/);
 
-5. Frontend with React.
+5. Frontend with React - [slajdy](05_react/index.pdf).
 
 6. Praca z bazą danych, ORM, oraz integracja z express.io.
 
