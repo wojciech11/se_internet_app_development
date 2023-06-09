@@ -60,3 +60,4 @@ Nie zależnie od etapu kariery. Często więc musimy sami popełnić błędy lub
 ## Misc
 
 - https://dave.cheney.net/2016/08/20/solid-go-design
+- [The Practice of Programming for C devs](https://en.wikipedia.org/wiki/The_Practice_of_Programming)
