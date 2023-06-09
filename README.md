@@ -19,17 +19,19 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
    - [Typescript / Javascript stack](04_js_ts_stack/);
    - [PHP frameworks i Wordpress](04_php_stack/);
 
-5. React.
+5. Frontend with React.
 
 6. Praca z bazą danych, ORM, oraz integracja z express.io.
 
-7. Aplikacja w produkcji 1:
-
+7. Aplikacja w produkcji:
+   
+   - testowanie && CI/CD;
    - Web vitals;
-   - Observability: monitoring API: RED i USE;
+   - Observability: monitoring API: RED i USE.
 
 8. Egzamin:
 
+   - PaaS
    - Egzamin.
 
 ## Program - Ćwiczenia / laboratorium
