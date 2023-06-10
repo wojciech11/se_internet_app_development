@@ -178,6 +178,7 @@ Praktyka:
 - Query buildery lub DSL z lekką abstrakcją OK;
 - Zacznij od query builderów, np., [knex](https://github.com/knex/knex);
 - Weryfikuj zapytania z `explain` i `analyze`!!
+- Monitoruj zapytania
 
 ---
 <!-- _class: lead -->
@@ -198,11 +199,19 @@ Good read: [Debugging PSQL the hardway](https://www.justwatch.com/blog/post/debu
 
 ![width:600px](https://postgres.ai/assets/blog/20210909-slow-sql.png)
 
+---
+<!-- _class: lead -->
+### PSQL + Expressjs
+
+[Expressjs + Knex](https://frontend.turing.edu/lessons/module-4/knex-postgres.html)
 
 ---
 <!-- _class: lead -->
-# Let's get the hands dirty
+
+![width:650px](https://raw.githubusercontent.com/prisma/presskit/main/Assets/Prisma-IndigoLogo.svg)
 
 ---
 <!-- _class: lead -->
-# MySQL + Expressjs
+### Prisma
+
+- ORM for Node.js and Typescript
