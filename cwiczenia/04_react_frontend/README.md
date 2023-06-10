@@ -212,26 +212,20 @@ flowchart TD
 
 Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikają reacta, a serwerem.
 
-8. 
+8.
+
+   ```bash
+   cd client
+   PORT=8080 npm start
+   ```
 
 
+9. Dodanie [Tailwindcss](https://tailwindcss.com/docs/guides/create-react-app)
 
+## Następne kroki
 
-## React + Tailwindcss
-
-1. VITE
-
-2. Tailwindcss - https://tailwindcss.com/docs/guides/create-react-app
-
-3. TBA
-
-## JS -> Typescript
-
-xyz
-
-## VITE
-
-xyz
+- JS -> TS
+- VITE
 
 ## Materiały dodatkowe
 
