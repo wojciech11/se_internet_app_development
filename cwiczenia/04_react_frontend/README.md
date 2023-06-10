@@ -4,7 +4,7 @@
 
 1. Zapoznaj się z przykładem [react](react/), zauważ, że można korzystać z reakta i eksperymentować z poziomu strony internetowej;
 
-2. Przejdź przez tutorial 1 dostępny na [react.dev](https://react.dev/learn).
+2. Przejdź przez tutorial 1 dostępny na [react.dev](https://react.dev/learn), bez hooków.
 
 ## React App 1
 
@@ -40,7 +40,7 @@
 5. Przygotuj swoje środowisko do pracy:
 
    1. code z terminalem ([doc](https://code.visualstudio.com/docs/terminal/basics));
-   2. W terminalu uruchom aplikację: `npm start`;
+   2. W terminalu uruchom aplikacje: `npm start`;
    3. Przeglądarkę na `localhost:3000`.
 
 6. W `src/App.js` usuń wszystko poniżej elementu `img` w obrębie `header`. Dodaj paragraph z tekstem <i>Hello, Natalio!</i>.
@@ -117,18 +117,16 @@ Zobaczmy teraz jak możemy wykorzystać props komponentów.
 
 ## React App 2
 
-1. 
-
-
-## React + Tailwindcss
-
-1. VITE
-
-2. Tailwindcss - https://tailwindcss.com/docs/guides/create-react-app
-
-3. TBA
+W domu, zrób drugą część tutorialu: [aplikacja TODO](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
 
 ## React + Tailwind + Express
+
+Teraz zobaczymy jak utworzyć aplikację łączącą zarówno frontend i backend.
+
+```mermaid
+flowchart TD
+ App(Hello App\nReact) -- Rest --> API(API\nexpressjs)
+```
 
 1. Utwórz repozytorium `pai_4_app` na githubie, będziemy tam umieszczać naszą aplikację:
 
@@ -145,25 +143,87 @@ Zobaczmy teraz jak możemy wykorzystać props komponentów.
    cd pai_4_app
    ```
 
+2. Zanim przejdziemy dalej, omówmy jak będzie wyglądało nasze repozytorium:
+
+   ```
+   |- client/
+   |   \- ... # react app
+   \- server/
+       \- ... # express app
+   ```
+
 3. Wygenerujmy kod dla react app:
 
    ```bash
-   create-react-app client
+   npx create-react-app client
 
    # podążając za wskazówkami
    ```
 
-4. Skorzystamy z generatora do utworzenia szkieletu naszej aplikacji:
+   ```bash
+   # sprawdzmy czy wszystko dziala
+   cd client
+   npm start
+   ```
+
+4. Wróćmy do głównego katalogu naszego projektu:
 
    ```bash
-   mkdir server
-   cd server
+   cd ..
+   ```
 
-   npx express-generator
+5. Skorzystamy z generatora do utworzenia szkieletu naszej aplikacji:
+
+   ```bash
+   npx express-generator server
 
    # podążając za wskazówkami
    npm install
    ```
+
+6. Zmień `routes/index.js` na:
+
+   ```javascript
+   router.get('/', function(req, res, next) {
+     res.setHeader('Content-Type', 'application/json');
+     res.status(200)
+
+     res.json({
+       'name': 'Natalia',
+       'msg': 'hello!'
+     });
+   });
+   ```
+
+   Możesz również wykasować `views/index.jade`, nie będzie nam potrzebny.
+
+7. Przetestuj czy działa:
+
+   ```bash
+   npm start
+   ```
+
+   ```bash
+   curl '127.0.0.1:3000'
+
+    # wynik
+    {"name": "Natalia"... }
+   ```
+
+Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikają reacta, a serwerem.
+
+8. 
+
+
+
+
+## React + Tailwindcss
+
+1. VITE
+
+2. Tailwindcss - https://tailwindcss.com/docs/guides/create-react-app
+
+3. TBA
 
 ## JS -> Typescript
 
