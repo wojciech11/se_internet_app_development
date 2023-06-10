@@ -215,3 +215,88 @@ Good read: [Debugging PSQL the hardway](https://www.justwatch.com/blog/post/debu
 ### Prisma
 
 - ORM for Node.js and Typescript
+
+---
+<!-- _class: lead -->
+### Prisma
+
+Model (`prisma/schema.prisma`):
+
+```prism-code
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
+```
+
+---
+<!-- _class: lead -->
+### Prisma
+
+Create a tuple:
+
+```typescript
+const user = await prisma.user.create({
+  data: {
+    name: 'Alice',
+    email: 'alice@prisma.io',
+  },
+})
+```
+
+---
+<!-- _class: lead -->
+### Prisma
+
+Query:
+```typescript
+const users = await prisma.user.findMany()
+console.log(users)
+```
+
+---
+<!-- _class: lead -->
+### Prisma
+
+Create with the related tuple:
+
+```typescript
+const user = await prisma.user.create({
+  data: {
+    name: 'Bob',
+    email: 'bob@prisma.io',
+    posts: {
+      create: {
+        title: 'Hello World',
+      },
+    },
+  },
+})
+```
+
+---
+<!-- _class: lead -->
+### Prisma
+
+- [Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
+- Next (after learning *knex*):
+
+  - [prisma + express](https://www.prisma.io/express)
+  - [prisma + Next.js](https://www.prisma.io/nextjs)
+
+---
+<!-- _class: lead -->
+### Dziękuję
+
+Czy są jakieś pytania?
