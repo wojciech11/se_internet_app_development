@@ -25,12 +25,12 @@ Bazy danych
 
 ---
 <!-- _class: lead -->
-## Na dziś:
+## Na dziś
 
 - bazy danych - co mamy do wyboru?
-- plain SQL vs ORM
-- SQL DB + express.io
-- primsa
+- plain SQL vs DSL vs ORM
+- SQL DB, express.io, i knex
+- ORM na przykładzie primsa
 
 ---
 <!-- _class: lead -->
@@ -47,9 +47,9 @@ Bazy danych
 - Object storage, np.: Amazon S3 czy Google Storage
 - kolejki:
 
-  - Amazon SQS, RabbitMQ, Kafka
+  - Amazon SQS, RabbitMQ, Kafka.
 
-- Backend-as-a-Serive, np., Google Firebase
+- Backend-as-a-Serive, np., Google Firebase.
 
 ---
 <!-- _class: lead -->
@@ -62,9 +62,9 @@ Bazy danych
 ## SQL
 
 Nie będziemy omawiać:
-- [CAP](https://en.wikipedia.org/wiki/CAP_theorem)/[PACELC](https://en.wikipedia.org/wiki/PACELC_theorem)
-- [Modele spójności](https://aphyr.com/posts/313-strong-consistency-models) i ACID
-- Eventual consistency
+- [CAP](https://en.wikipedia.org/wiki/CAP_theorem)/[PACELC](https://en.wikipedia.org/wiki/PACELC_theorem);
+- [Modele spójności](https://aphyr.com/posts/313-strong-consistency-models) i ACID;
+- Eventual consistency.
 
 ![width:650px](https://aphyr.com/data/posts/313/uniprocessor-history.jpg)
 
@@ -93,8 +93,9 @@ Side note - ważna decyzja techniczna
 
 New global scale DBs:
 
-- [cockroach DB](https://www.cockroachlabs.com/)
-- Yugabyte
+- [cockroach DB](https://www.cockroachlabs.com/);
+- Yugabyte;
+- ...
 
 Fascynująca dziedzina w inżynierii!
 
@@ -103,7 +104,7 @@ Fascynująca dziedzina w inżynierii!
 ## Baza danych vs App
 
 1. Plain SQL
-2. Lightweigh DSL over SQL (**tutaj zacznij**)
+2. Lightweight DSL over SQL (**tutaj zacznij**)
 3. ORM
 
 
@@ -136,9 +137,9 @@ connection.end()
 
 ---
 <!-- _class: lead -->
-## Lightweigh DSL
+## Lightweight DSL
 
-Query Builder - [knex](https://github.com/knex/knex):
+[knex](https://github.com/knex/knex) - query builder:
 
 ```js
 const pg = require('knex')({client: 'pg'});
@@ -148,6 +149,21 @@ knex('table')
   .returning('*')
   .toString();
 ```
+
+---
+<!-- _class: lead -->
+## ORM
+
+![width:700px](https://martinfowler.com/bliki/images/ormHate/sketch.png)
+
+---
+<!-- _class: lead -->
+## ORM
+
+Famous example (not a recommendation):
+
+- hibernate - Java
+- SQLAlchemy - Python
 
 ---
 <!-- _class: lead -->
@@ -166,9 +182,9 @@ Na plus:
 
 Praktyka:
 
-- niska wydajność,
-- daje fałszywe poczucie, że nie trzeba myśleć o bazie danych
-- dużo magi, trudne w debugingu
+- niska wydajność;
+- daje fałszywe poczucie, że nie trzeba myśleć o bazie danych;
+- dużo magi, trudne w debugingu.
 
 ---
 <!-- _class: lead -->
@@ -178,7 +194,7 @@ Praktyka:
 - Query buildery lub DSL z lekką abstrakcją OK;
 - Zacznij od query builderów, np., [knex](https://github.com/knex/knex);
 - Weryfikuj zapytania z `explain` i `analyze`!!
-- Monitoruj zapytania
+- Monitoruj zapytania w produkcji.
 
 ---
 <!-- _class: lead -->
