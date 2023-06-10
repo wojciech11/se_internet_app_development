@@ -15,4 +15,6 @@ cwiczenia/*_react_frontend/pai*
 cwiczenia/**/tmp
 
 ## database, examples with sqlite
-**.db
+**/prisma/**.db
+**/prisma/**.db-journal
+**/prisma/migrations/**
