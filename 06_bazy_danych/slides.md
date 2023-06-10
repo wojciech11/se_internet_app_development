@@ -29,8 +29,8 @@ Bazy danych
 
 - bazy danych - co mamy do wyboru?
 - plain SQL vs DSL vs ORM
-- SQL DB, express.io, i knex
-- ORM na przykładzie primsa
+- SQL DB, express.io i knex
+- ORM na przykładzie primsa.io
 
 ---
 <!-- _class: lead -->
@@ -108,7 +108,7 @@ Fascynująca dziedzina w inżynierii!
 3. ORM
 
 
-Zobacz też: [logrocke blog](https://blog.logrocket.com/node-js-orms-why-shouldnt-use/).
+Zobacz też: [post na blogu logrocketa](https://blog.logrocket.com/node-js-orms-why-shouldnt-use/).
 
 
 ---
@@ -204,7 +204,7 @@ Praktyka:
 - [Query Plan Visualization](http://tatiyants.com/postgres-query-plan-visualization/)
 - [Types of Indexes](https://www.justwatch.com/blog/post/mastering-postgres-indexes-in-10-minutes/)
 
-Good read: [Debugging PSQL the hardway](https://www.justwatch.com/blog/post/debugging-postgresql-performance-the-hard-way/)
+Good read: [Debugging PSQL the hardway](https://www.justwatch.com/blog/post/debugging-postgresql-performance-the-hard-way/).
 
 ---
 <!-- _class: lead -->
