@@ -56,19 +56,17 @@ Program:
    - [github & git](cwiczenia/01_basics);
    - [podstawy: http i web api](cwiczenia/01_basics).
 
-2. CSS i frameworki: bootstrap i tailwindcss - [cwiczenia](cwiczenia/02_component_frameworks).
+2. CSS i frameworki: bootstrap i tailwindcss - [instrukcja](cwiczenia/02_component_frameworks);
 
-3. Web App stack first steps - [TS/JS](cwiczenia/03_js_ts_stack);
+3. Web App stack: backend, the first steps - [instrukcja](cwiczenia/03_js_ts_stack);
 
-4. Web App stack: frontend - []
+4. Web App stack: frontend - [instrukcja](cwiczenia/04_react_frontend);
 
-5. Web App stack: baza danych.
+5. Web App stack: baza danych - [instrukcja](cwiczenia/05_baza_danych);
 
-6. TBA
+6. Aplikacja w produkcji - [instrukcja](cwiczenia/06_produkcja);
 
-7. TBA
-
-8. Egzamin / Zaliczenia ćwiczeń.
+7. Egzamin / Zaliczenie ćwiczeń.
 
 ## Materiały Dodatkowe
 
