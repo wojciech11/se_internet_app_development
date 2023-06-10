@@ -23,10 +23,9 @@ React
 
 Benefits:
 
-- JSX - JSX is a syntax extension to JavaScript with react;
+- JSX is a syntax extension to JavaScript with react;
 - Virtual Document Object Model (DOM)
-- Performance - There are several ways to speed up the react application by using virtual DOM because it reduces the re-render time;
-- One-way data-binding - Information flows in one direction.
+- Performance - There are several ways to speed up the react application by using virtual DOM because it reduces the re-render time.
 
 ---
 <!-- _class: lead -->
