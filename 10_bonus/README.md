@@ -29,7 +29,9 @@
 
 9. Praca z gitem w zespole - https://github.com/wojciech11/se_projekt_zespolowy/blob/master/01_praca_z_gitem/README.md
 
-10. Typing - https://typing.io, more typing/programming - [Codility Lessons](https://app.codility.com/programmers/lessons/1-iterations/)([template dla pracy lokalnie](https://github.com/wojciech11/cracking_coding_challenges)).
+10. Typing - https://typing.io, more typing/programming - [Codility Lessons](https://app.codility.com/programmers/lessons/1-iterations/)([template dla pracy lokalnie](https://github.com/wojciech11/cracking_coding_challenges));
+
+11. Szukać ekspozycji na bardziej złożone wyzwania / problemy.
 
 ## Bardziej relacje
 
