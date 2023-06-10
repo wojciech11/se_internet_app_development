@@ -2,7 +2,7 @@
 
 ## Bardziej technicznie
 
-1. Przeczytać - [Pragmatic Programmer](https://www.amazon.pl/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052).
+1. Przeczytać - [Pragmatic Programmer second edition](https://www.amazon.pl/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052).
 
 2. Przeczytać - [GoF](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns).
 
@@ -25,7 +25,7 @@
 
 7. Git - rozbijanie dużej funkcjonalności na PRy oraz komentarze do commitów.
 
-8. code != Ty
+8. code != Ty,
 
 9. Praca z gitem w zespole - https://github.com/wojciech11/se_projekt_zespolowy/blob/master/01_praca_z_gitem/README.md
 
@@ -56,10 +56,12 @@ Nie zależnie od etapu kariery. Często więc musimy sami popełnić błędy lub
 ## Facilitate growth:
 
 - [yes, and...,](https://en.wikipedia.org/wiki/Yes,_and...);
+- pytać się o wskazówki, przygotować się;
 - masterclass niezaleźnie lub w ramach z jakiejś z org ([manual prowadzenia spotkań](https://eonyc.org/wp-content/uploads/EOResources/ModeratorResources/MyEOForumModeratorGuidebook.pdf).);
 - dobry start w mniejszej grupie - [Ed Batista - the art of self coaching](https://www.edbatista.com/the-art-of-self-coaching-public-course.html).
 
 ## Misc
 
-- https://dave.cheney.net/2016/08/20/solid-go-design
-- [The Practice of Programming for C devs](https://en.wikipedia.org/wiki/The_Practice_of_Programming)
+- [Dostanie wymarzonej pracy](https://github.com/wojciech11/se_cv_linkedin_and_interviews);
+- [SOLID w Golangu](https://dave.cheney.net/2016/08/20/solid-go-design);
+- [The Practice of Programming for C devs](https://en.wikipedia.org/wiki/The_Practice_of_Programming).
