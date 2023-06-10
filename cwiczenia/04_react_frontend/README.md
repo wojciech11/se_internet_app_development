@@ -212,13 +212,12 @@ flowchart TD
 
 Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikają reacta, a serwerem.
 
-8.
+8. Wystarujmy kod clienta w osobnej zakładce w terminau:
 
    ```bash
-   cd client
+   cd ../client
    PORT=8080 npm start
    ```
-
 
 9. Dodanie [Tailwindcss](https://tailwindcss.com/docs/guides/create-react-app)
 
