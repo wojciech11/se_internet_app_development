@@ -264,5 +264,5 @@ flowchart TD
 
 ## Następne kroki
 
-- Javascript -> Typescript
-- [VITE](https://vitejs.dev)
+- Javascript -> Typescript: ([express & TS](https://blog.logrocket.com/how-to-set-up-node-typescript-express/));
+- [VITE](https://vitejs.dev).
