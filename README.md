@@ -72,4 +72,5 @@ Program:
 
 ## Materiały Dodatkowe
 
-- [Testowanie API szyki start](https://github.com/wojciech11/se_http_api_testing_quickstart)
+- [missing semester](https://missing.csail.mit.edu/);
+- [Testowanie API szybki start](https://github.com/wojciech11/se_http_api_testing_quickstart).

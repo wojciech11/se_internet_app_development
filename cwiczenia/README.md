@@ -56,7 +56,3 @@ Jeśli uruchamiasz Ubuntu na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest 
    # powinnaś / powinienes zobaczyc:
    #   /home/<your-username>/workspace
    ```
-
-## Materiały dodatkowe
-
-- [missing semester](https://missing.csail.mit.edu/).
