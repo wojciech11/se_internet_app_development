@@ -233,31 +233,31 @@ flowchart TD
 
 11. Pobierzmy wiadomość hello world z backendu:
 
-   ```js
-   import React, { useState, useEffect } from 'react';
-   import logo from './logo.svg';
-   import './App.css';
-
-   function App() {
-     const [data, setData] = useState(null);
-
-     useEffect(() => {
-       fetch("/api")
-         .then((res) => res.json())
-         .then((data) => setData(data.msg));
-     }, []);
-
-     return (
-       <div className="App">
-         <header className="App-header">
-           <img src={logo} className="App-logo" alt="logo" />
-           <p>{data}</p>
-         </header>
-       </div>
-     );
-   }
-   export default App;
-   ```
+    ```js
+    import React, { useState, useEffect } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+ 
+    function App() {
+      const [data, setData] = useState(null);
+ 
+      useEffect(() => {
+        fetch("/api")
+          .then((res) => res.json())
+          .then((data) => setData(data.msg));
+      }, []);
+ 
+      return (
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>{data}</p>
+          </header>
+        </div>
+      );
+    }
+    export default App;
+    ```
    <!-- https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/ -->
 
 12. Dodaj [Tailwindcss](https://tailwindcss.com/docs/guides/create-react-app) do klienta.
