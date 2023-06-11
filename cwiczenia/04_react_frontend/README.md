@@ -203,7 +203,7 @@ flowchart TD
 7. Przetestuj czy działa:
 
    ```bash
-  PORT=3001 npm start
+   PORT=3001 npm start
    ```
 
    ```bash
