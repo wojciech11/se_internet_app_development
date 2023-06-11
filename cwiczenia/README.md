@@ -1,6 +1,8 @@
 # Ćwiczenia/Laboratorium
 
-W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - Ubuntu, kilka możliwości: Virtualbox/VMware Workstaton Player, dual boot, lub ubuntu na środowisku wirtualnym dostarczonym przez uczelnie.
+W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - [Ubuntu LTS](https://wiki.ubuntu.com/Releases) (rekomenduje - 2023-06: **20.04.6 LTS**), kilka możliwości: Virtualbox/VMware Workstaton Player, dual boot, lub ubuntu na środowisku wirtualnym dostarczonym przez uczelnie.
+
+Jeśli uruchamiasz na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest additions* ([howto](https://askubuntu.com/questions/22743/how-do-i-install-guest-additions-in-a-virtualbox-vm)). 
 
 ## Przygotowanie
 

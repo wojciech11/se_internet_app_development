@@ -50,6 +50,8 @@ Cel: jak najwięcej hands-on.
 
 Program:
 
+0. Instalacja wszystkich wymaganych narzędzi - [lista](cwiczenia/README.md);
+
 1. Wstęp i podstawy - [wykład](cwiczenia/00_wstep/index.pdf)([html](cwiczenia/00_wstep/)):
 
    - [przygotowanie](cwiczenia/README.md);
