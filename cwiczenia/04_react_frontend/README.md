@@ -22,7 +22,7 @@
 2. Skorzystajmy z generatora, dla utworzenia aplikacji react:
 
    ```bash
-   npx create-react-app
+   npx create-react-app .
    ```
 
 3. Przejrzyjmy się wygenerowanej strukturze plików wraz z prowadzącym zajęcia.
