@@ -6,14 +6,28 @@ W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - Ubun
 
 0. Na każdych zajęciach będziemy umieszczać kod na repozytorium git (github lub, dla chętnych [gitlab](https://gitlab.com/)).
 
-1. Upewnij się, że masz zainstalowane [nvm](https://github.com/nvm-sh/nvm) oraz [node w wersji LTS](https://github.com/nvm-sh/nvm#long-term-support). 
+1. Upewnij się, że masz zainstalowane [nvm](https://github.com/nvm-sh/nvm) oraz [node w wersji LTS](https://github.com/nvm-sh/nvm#long-term-support):
 
-2. (TBA) Upewniej się, że masz zainstalowane narzędzia wymagane do pracy z php.
+   - linux - instalacja:
 
-3. Upewnij się, że masz zainstalowany twój ulubiony edytor, rekomendacje, jeden z nich:
+     ```bash
+     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+     ```
+
+     ```bash
+     # przeladowanie konsoli
+     bash
+     ```
+
+     ```bash
+     # instalujemy lts
+     nvm install --lts
+     ```
+
+2. Upewnij się, że masz zainstalowany twój ulubiony edytor, rekomendacje, jeden z nich:
   
    - [atom](https://snapcraft.io/install/atom/ubuntu) (projekt zakonczony ale z duzą ilością pluginów) lub [pulsar](https://github.com/pulsar-edit/pulsar) (projekt kontynuujący atoma),
-   - [VSCodium](https://github.com/VSCodium/vscodium) lub [vscode](https://code.visualstudio.com/docs/setup/linux#_snap),
+   - [vscode](https://code.visualstudio.com/docs/setup/linux#_snap) czy [VSCodium](https://github.com/VSCodium/vscodium),
    - [JetBrains Fleet](https://www.jetbrains.com/fleet/download/#section=linux),
    - czy też [neovim](https://neovim.io/) :).
 

@@ -117,7 +117,7 @@ Zobaczmy teraz jak możemy wykorzystać props komponentów.
 
 ## React App 2
 
-W domu, zrób drugą część tutorialu: [aplikacja TODO](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
+W domu, zrób drugą część tutorialu: [aplikacja TODO](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning).
 
 ## React + Tailwind + Express
 
@@ -184,7 +184,7 @@ flowchart TD
 6. Zmień `routes/index.js` na:
 
    ```javascript
-   router.get('/', function(req, res, next) {
+   router.get('/api', function(req, res, next) {
      res.setHeader('Content-Type', 'application/json');
      res.status(200)
 
@@ -200,26 +200,64 @@ flowchart TD
 7. Przetestuj czy działa:
 
    ```bash
-   npm start
+  PORT=3001 npm start
    ```
 
    ```bash
-   curl '127.0.0.1:3000'
+   curl '127.0.0.1:3001/api'
 
     # wynik
     {"name": "Natalia"... }
    ```
 
-Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikają reacta, a serwerem.
+8. Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikacją reacta, a serwerem.
 
-8. Wystartujmy kod clienta w osobnej zakładce w terminalu:
+9. Aby każdy z requestów z frontendu szedł do naszego backendu:
 
-   ```bash
-   cd ../client
-   PORT=3001 npm start
+    ```json
+    // client/package.json
+
+    "proxy": "http://localhost:3001",
+    ```
+
+10. Wystartujmy kod clienta w osobnej zakładce w terminalu:
+
+
+    ```bash
+    cd ../client
+    npm start
+    ```
+
+11. Pobierzmy wiadomość hello world z backendu:
+
+   ```js
+   import React, { useState, useEffect } from 'react';
+   import logo from './logo.svg';
+   import './App.css';
+
+   function App() {
+     const [data, setData] = useState(null);
+
+     useEffect(() => {
+       fetch("/api")
+         .then((res) => res.json())
+         .then((data) => setData(data.msg));
+     }, []);
+
+     return (
+       <div className="App">
+         <header className="App-header">
+           <img src={logo} className="App-logo" alt="logo" />
+           <p>{data}</p>
+         </header>
+       </div>
+     );
+   }
+   export default App;
    ```
+   <!-- https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/ -->
 
-9. Dodanie [Tailwindcss](https://tailwindcss.com/docs/guides/create-react-app)
+12. Dodaj [Tailwindcss](https://tailwindcss.com/docs/guides/create-react-app) do klienta.
 
 ## Następne kroki
 

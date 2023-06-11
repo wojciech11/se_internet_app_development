@@ -28,8 +28,8 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 2. Zainicjuj `npm`, jako nazwę wpisz *hello_world_app*:
 
    ```bash
-   # zakladam ze jestes 
-   # w katalogu pai_3_start 
+   # zakladam ze jestes
+   # w katalogu pai_3_start
 
    npm init
    ```
@@ -52,18 +52,17 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
    ```javascript
    // importuje modul express
-   const express = require("express");
+   const express = require("express"); // import express
    const app = express();
    const port = 3000;
 
    app.get("/", (req, res) => {
        res.statusCode = 200;
-       res.setHeader('Content-Type', 'text/plain')
+       res.setHeader('Content-Type', 'text/plain');
        res.send("Hello World!");
    });
 
-
-   // Uruchamia serwer nasłuchujący 
+   // Uruchamia serwer nasłuchujący
    // na porcie 3000.
    app.listen(port, () => {
       console.log(`Example app listening on port ${port}!`);
@@ -82,23 +81,25 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
    curl 127.0.0.1:3000/
    ```
 
-6. Zanim, przejdziemy dalej, zobaczmy jak działają taski, dodaj do `package.json`:
+6. Zanim, przejdziemy dalej, zobaczmy jak działają taski, dodaj do `package.json` linie z *start*:
 
    ```json
    "scripts": {
-         // ...
-         "start": "node index.js",
-         // ...
+     // ...
+     "start": "node index.js"
+     // ...
    }
    ```
 
-7. Teraz możemy uruchomić naszę aplikację z CLI:
+   Zauważ, jest to plik w formacie JSON, uwaga na przecinki i znaki cudzysłowia.
+
+7. Teraz możemy uruchomić naszą aplikację z CLI:
 
    ```bash
-   node start
+   npm start
    ```
 
-8. Teraz dodajmy, komendę do uruchominia lintera, zanim to zrobimy, zainstalujmy `eslint`:
+8. Teraz dodajmy, komendę do uruchomienia lintera, zanim to zrobimy, zainstalujmy `eslint`:
 
    ```bash
    # instalacja lintera jako dev only
@@ -114,18 +115,18 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
    ```json
    "scripts": {
-   		// ...
-         "start": "node index.js",
-   		"lint": "eslint src/js",
-   		// ...
+     // ...
+     "start": "node index.js",
+     "lint": "eslint src/js",
+     // ...
    }
    ```
 
 10. Możemy teraz uruchomić lintera:
 
    ```bash
-   # na razie nie bedziemy zajmowac
-   # sie bledem zgloszonym przez lintera
+   # na razie nie będziemy zajmować
+   # się błędami zgłoszonymi przez lintera
    npm run lint
    ```
 
@@ -135,13 +136,15 @@ Naszym celem jest utworzenie prostej aplikacji i nauczenie się narzędzi, z eko
 
 Większość frameworków posiada generatory aplikacji, pozwala to szybko zacząć pracę z danym narzędziem. Zobaczmy jako to działa dla expressa.
 
+0. Utwórz repozytorium.
+
 1. Wyjdź z katalogu gdzie mieliśmy naszą pierwszą aplikację *express*.
 
    ```bash
    # wrocmy do katalogu workspace/
    cd ~/workspace
 
-   mkdir pai_3_express
+   git clone ŚCIEŻKA_DO_TWOJEGO_REPOZYTORIUM
    cd pai_3_express
 
    npx express-generator --view=pug
@@ -161,9 +164,9 @@ Większość frameworków posiada generatory aplikacji, pozwala to szybko zaczą
    DEBUG=pai-3-express:* npm start
    ```
 
-   Otwórz przeglądarkę adress http://127.0.0.1:3000.
+   Otwórz przeglądarkę adres: http://127.0.0.1:3000.
 
-4. Wraz z prowadzącymi, przejrzyć strukturę wygenerowanej aplikacji.
+4. Wraz z prowadzącymi, zapoznać się ze strukturą wygenerowanej aplikacji.
 
 ## Dodatnie routera
 
@@ -211,11 +214,11 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
    DEBUG=pai-3-express:* npm start
    ```
 
-   w przeglądarce otwórz `http://127.0.0.1:3000/hello/`. Powinineś zobaczyc `World!`.
+   w przeglądarce otwórz `http://127.0.0.1:3000/hello/`. Powinnaś / powinieneś zobaczyć `World!`.
 
 4. A co byśmy musieli zrobić, aby wyświetlić `World!`, kiedy użytkownik otworzy `http://127.0.0.1:3000/hello/witam`?
 
-5. Na podstawie dokumentacji - [expressjs.com/en/guide/routing.html](https://expressjs.com/en/guide/routing.html) - zaimplementuj następującą funcjonalność:
+5. Na podstawie dokumentacji - [expressjs.com/en/guide/routing.html](https://expressjs.com/en/guide/routing.html) - zaimplementuj następującą funkcjonalność:
 
    1. Kiedy otwieram `http://127.0.0.1:3000/hello/natalia`, powinienem zobaczyć `witaj Natalia!`;
 
@@ -225,7 +228,7 @@ Dodajmy teraz endpoint `/hello`, który będzie nam zwracał `world!`.
 
 ## Rozbudowa aplikacji - statyczne pliki
 
-Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-files.html), dodaj serwowanie pojedynczego statycznego pliku. Możesz przetestowac czy działa serwowanie statycznych plików z prostym plikiem http lub obrazkiem.
+Podążając za [dokumentacją express](https://expressjs.com/en/starter/static-files.html), dodaj serwowanie pojedynczego statycznego pliku. Możesz przetestować czy działa serwowanie statycznych plików z prostym plikiem http lub obrazkiem.
 
 ## Rozbudowa aplikacji - template engines
 
@@ -239,7 +242,7 @@ Aby wygenerować stronę html, serwowaną do klienta, musimy nauczyć się jak k
    app.set('view engine', 'pug');
    ```
 
-2. Na zasadzie analogi do generacji strony startowej w routerze `routers/index.js`, zbuduj router oraz dodaj template dla ścieżki `/about`. 
+2. Na zasadzie analogi do generacji strony startowej w routerze `routers/index.js`, zbuduj router oraz dodaj template dla ścieżki `/about`.
 
    Ścieżka about może zawierać dowolne informacje.
 
