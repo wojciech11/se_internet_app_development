@@ -1,8 +1,8 @@
 # Ćwiczenia/Laboratorium
 
-W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - [Ubuntu LTS](https://wiki.ubuntu.com/Releases) (rekomenduje - 2023-06: **20.04.6 LTS**), kilka możliwości: Virtualbox/VMware Workstaton Player, dual boot, lub ubuntu na środowisku wirtualnym dostarczonym przez uczelnie.
+W czasie naszych zajęć będziemy korzystać z maszyna na systemie \*nix - [Ubuntu LTS](https://wiki.ubuntu.com/Releases) (rekomenduje - 2023-06: **20.04.6 LTS**), kilka możliwości: Virtualbox/VMware Workstaton Player, dual boot, lub Ubuntu na środowisku wirtualnym dostarczonym przez uczelnie.
 
-Jeśli uruchamiasz na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest additions* ([howto](https://askubuntu.com/questions/22743/how-do-i-install-guest-additions-in-a-virtualbox-vm)). 
+Jeśli uruchamiasz Ubuntu na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest additions* ([howto](https://askubuntu.com/questions/22743/how-do-i-install-guest-additions-in-a-virtualbox-vm)).
 
 ## Przygotowanie
 
@@ -32,6 +32,12 @@ Jeśli uruchamiasz na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest additio
    - [vscode](https://code.visualstudio.com/docs/setup/linux#_snap) czy [VSCodium](https://github.com/VSCodium/vscodium),
    - [JetBrains Fleet](https://www.jetbrains.com/fleet/download/#section=linux),
    - czy też [neovim](https://neovim.io/) :).
+
+   Aby zainstalować vscode na Ubuntu:
+
+   ```bash
+   sudo snap install --classic code
+   ```
 
 4. Utwórz katalog `workspace` w folderze głównym użytkownika, którego będziesz używał w czasie ćwiczeń.
 
