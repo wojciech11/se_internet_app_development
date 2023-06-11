@@ -223,9 +223,5 @@ Teraz naszym zadaniem, będzie zaimplementowanie komunikacji między aplikają r
 
 ## Następne kroki
 
-- JS -> TS
-- VITE
-
-## Materiały dodatkowe
-
-- https://www.react.express/
+- Javascript -> Typescript
+- [VITE](https://vitejs.dev)
