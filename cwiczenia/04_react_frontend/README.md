@@ -184,6 +184,7 @@ flowchart TD
 6. Zmień `routes/index.js` na:
 
    ```javascript
+   // ... powyżej będą importy
    router.get('/api', function(req, res, next) {
      res.setHeader('Content-Type', 'application/json');
      res.status(200)
@@ -193,6 +194,8 @@ flowchart TD
        'msg': 'hello!'
      });
    });
+
+   // poniżej eksport
    ```
 
    Możesz również wykasować `views/index.jade`, nie będzie nam potrzebny.
