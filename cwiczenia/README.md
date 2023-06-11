@@ -59,4 +59,4 @@ Jeśli uruchamiasz Ubuntu na VirtualBoxie, nie zapomnij o zainstalowaniu *Guest 
 
 ## Materiały dodatkowe
 
-- TBA
+- [missing semester](https://missing.csail.mit.edu/).
