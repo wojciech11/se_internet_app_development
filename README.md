@@ -60,9 +60,9 @@ Program:
 
 2. CSS i frameworki: bootstrap i tailwindcss - [instrukcja](cwiczenia/02_component_frameworks);
 
-3. Web App stack: backend, the first steps - [instrukcja](cwiczenia/03_js_ts_stack);
+3. Web App stack: backend z Expressem - [instrukcja](cwiczenia/03_js_ts_stack);
 
-4. Web App stack: frontend - [instrukcja](cwiczenia/04_react_frontend);
+4. Web App stack: frontend z Reactem - [instrukcja](cwiczenia/04_react_frontend);
 
 5. Web App stack: baza danych - [instrukcja](cwiczenia/05_baza_danych);
 
