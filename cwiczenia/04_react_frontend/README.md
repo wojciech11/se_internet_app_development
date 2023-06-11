@@ -181,7 +181,7 @@ flowchart TD
    npm install
    ```
 
-6. Zmień `routes/index.js` na:
+6. Zmień funkcję `get` w routerze zdefiniowanym w `routes/index.js` na:
 
    ```javascript
    // ... powyżej będą importy
