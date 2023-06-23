@@ -23,11 +23,12 @@ Spotykamy się 8 razy na 2 godziny co tydzień.
 
 6. Praca z bazą danych, ORM, oraz integracja z express.io - [slajdy](06_bazy_danych).
 
-7. Aplikacja w produkcji:
+7. Testowanie ([slajdy](07_testowanie/)) i aplikacja w produkcji - [slajdy](07_produkcja/slides.pdf):
    
-   - testowanie && CI/CD;
+   - Continuous Deployment;
+   - Observability
    - Web vitals;
-   - Observability: monitoring API: RED i USE.
+   - Monitoring API: RED i USE.
 
 8. Egzamin:
 
