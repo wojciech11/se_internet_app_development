@@ -69,7 +69,7 @@ Program:
 
 6. Aplikacja w produkcji - [instrukcja](cwiczenia/06_produkcja);
 
-7. Egzamin / Zaliczenie ćwiczeń.
+7. Zaliczenie ćwiczeń - [instrukcja](cwiczenia/07_zaliczenie).
 
 ## Materiały Dodatkowe
 

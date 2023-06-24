@@ -1,4 +1,4 @@
-DECKTAPE_VERSION=3
+DECKTAPE_VERSION=3.7
 
 # npm install decktype
 # node node_modules/decktape/decktape.js -s 2560x1600 index.html index.pdf

@@ -119,7 +119,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    node index.js
    ```
 
-## Knex + sqlite
+## Knex + Baza danych
 
 1. Zainstaluj [knex](https://knexjs.org/), szczegółowe informacje znajdziesz na w [dokumentacji](https://knexjs.org/guide/#node-js):
 
@@ -129,13 +129,23 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npm install -g knex
    ```
 
-2. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
+2. Inicjalizacja:
+
+   ```bash
+   npx knex init -x ts
+   ```
+
+3. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
 
    ```bash
    mkdir db
    cd db
    ```
 
-## Dodatkowe - Next.js
+## App 2
+
+TBA
+
+## Materiały dodatkowe
 
 - [NodeJs + Express + PSQL](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).

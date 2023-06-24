@@ -18,3 +18,10 @@ cwiczenia/**/tmp
 **/prisma/**.db
 **/prisma/**.db-journal
 **/prisma/migrations/**
+
+
+## database, exercise
+**/05_baza_danych/example_app/index.js
+
+##
+**/core
