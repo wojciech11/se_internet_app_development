@@ -37,9 +37,13 @@
 
    ```bash
    # globalnie jako narzedzie
-   npm install knex
+   # linux moze wymagac sudo
+   npm install -g knex
    ```
 
-4. xyz
+4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
+
+   ```bash
+   ```
 
 ## Dodatkowe - Next.js
