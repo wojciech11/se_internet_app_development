@@ -25,9 +25,18 @@ style: |
 <!-- _class: lead -->
 ### Dzisiaj
 
-1. Continuous Integration && Deployment
-2. Observability
-3. Performance testing and monitoring
+1. 12factor apps
+2. Continuous Integration && Deployment
+3. Observability
+4. Performance testing and monitoring
+
+---
+<!-- _class: lead -->
+### 12factor apps
+
+Dobre praktyki dla pisania aplikacji SaaS:
+
+- [12factor.net](https://12factor.net/)
 
 ---
 <!-- _class: lead -->
