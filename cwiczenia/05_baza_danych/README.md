@@ -1,39 +1,127 @@
 # Bazy danych
 
-## Express + Baza Danych
+## Express + Typescript + Knex
 
-0. Tradycyjnie, nowy projekt, nowe repozytorium gita:
+Tradycyjnie, nowy projekt, nowe repozytorium gita:
+
+```bash
+git clone https://... /pai_5_app.git
+cd pai_5_db_app
+```
+
+## Express + Typescript
+
+Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.com/how-to-set-up-node-typescript-express/):
+
+1. Zainstalujmy wszystkie wymagane biblioteki:
 
    ```bash
-   git clone https://... /pai_5_app.git
-   cd pai_5_db_app
+   npm install express knex dotenv
    ```
 
-1. Skorzystamy z generatora do utworzenia szkieletu naszej aplikacji:
+2. Instalacja informacji o typach:
 
    ```bash
-   npx express-generator .
-
-   # podążając za wskazówkami
-   npm install
+   npm i -D typescript @types/express @types/node @types/knex @types/dotenv
    ```
 
-2. Warto sprawdzić, że wszystko działa:
+3. Inicjalizacja:
 
    ```bash
-   npm start --verbose
+   npx tsc --init
+   ```
+
+4. Utwórzmy nasz `index.ts` w vscode:
+
+   ```typescript
+   import express, { Express, Request, Response } from 'express';
+   import dotenv from 'dotenv';
+
+   dotenv.config();
+
+   const app: Express = express();
+   const port = process.env.PORT;
+
+   app.get('/', (req: Request, res: Response) => {
+     res.send('Express + TypeScript Server');
+   });
+
+   app.listen(port, () => {
+     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+   });
+   ```
+
+   dla porównania ten sam plik w Javascript:
+
+   ```javascript
+   const express = require('express');
+   const dotenv = require('dotenv');
+
+   dotenv.config();
+
+   const app = express();
+   const port = process.env.PORT;
+
+   app.get('/', (req, res) => {
+     res.send('Express + TypeScript Server');
+   });
+
+   app.listen(port, () => {
+     console.log(`[server]: Server is running at http://localhost:${port}`);
+   });
+   ```
+
+5. Dodaj plik `.env` o treści:
+
+   ```text
+   PORT=8000
+   ```
+
+6. Node/express pracuje na plikach w Javascript, za każdym razem jak będziemy zapisywać plik `.ts` musimy wykonać: `npm tsc`, czyli kompilację Typescript do Javascript. Zobacz co się stanie jak uruchomisz:
+
+   ```bash
+   npm tsc
+
+   #
+   ls
+   ```
+
+7. Aby automatycznie kompilować nowy kod Typescript oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
+
+   ```bash
+   npm install -D concurrently nodemon
+   ```
+
+8. Dodaj następujący blok do `package.json`:
+
+   ```json
+   "scripts": {
+      "build": "npx tsc",
+      "start": "node index.js",
+      "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+   }
+   ```
+
+9. Teraz wystarczy:
+
+   ```bash
+   npm run dev
    ```
 
    ```bash
-   # w drugim oknie terminala
+   # w drugim oknie:
    curl 127.0.0.1:3000
    ```
 
-3. Zainstaluj [knex](https://knexjs.org/), szczegółowe informacje znajdziesz na w [dokumentacji](https://knexjs.org/guide/#node-js):
+10. Zauważ, mógłbyś:
 
    ```bash
-   npm install knex
+   node index.js
    ```
+
+## Knex + sqlite
+
+1. Zainstaluj [knex](https://knexjs.org/), szczegółowe informacje znajdziesz na w [dokumentacji](https://knexjs.org/guide/#node-js):
 
    ```bash
    # globalnie jako narzedzie
@@ -41,9 +129,13 @@
    npm install -g knex
    ```
 
-4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
+2. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
 
    ```bash
+   mkdir db
+   cd db
    ```
 
 ## Dodatkowe - Next.js
+
+- [NodeJs + Express + PSQL](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
