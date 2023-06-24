@@ -280,6 +280,17 @@ Monitorowanie (oraz [alerty](https://prometheus.io/docs/practices/alerting/)) na
 
 ---
 <!-- _class: lead -->
+### Oncall duty / Incidents
+
+Warto znać:
+
+- [Error budget](https://www.atlassian.com/incident-management/kpis/error-budget);
+- [pre-mortem](https://en.wikipedia.org/wiki/Pre-mortem) i [post-mortem](https://www.atlassian.com/incident-management/postmortem/blameless);
+- łopatologiczna instrukcja incident respone;
+- retrospetywy prowadzone przez zespół.
+
+---
+<!-- _class: lead -->
 ### Performance
 
 - web performance
