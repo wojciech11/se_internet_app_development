@@ -29,12 +29,17 @@
    curl 127.0.0.1:3000
    ```
 
-3. Install [knex](https://knexjs.org/)
+3. Zainstaluj [knex](https://knexjs.org/), szczegółowe informacje znajdziesz na w [dokumentacji](https://knexjs.org/guide/#node-js):
 
    ```bash
    npm install knex
    ```
 
-4. xxx
+   ```bash
+   # globalnie jako narzedzie
+   npm install knex
+   ```
+
+4. xyz
 
 ## Dodatkowe - Next.js
