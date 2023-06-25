@@ -172,7 +172,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npx knex init -x ts
    ```
 
-3. Przanalizuj plik `knexfile.ts`.
+3. Przanalizuj plik `knexfile.ts`. Co to jest `migration_table`? Zauważ, że masz konfigurację per środowisko (`development`, `staging` i `production`).
 
 
 4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
