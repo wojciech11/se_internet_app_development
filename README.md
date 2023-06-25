@@ -49,6 +49,8 @@ Podejście:
 
 Cel: jak najwięcej hands-on.
 
+Linki do repozytorium z rozwiazaniem proszę przesłać na emaila prowadzącego.
+
 Program:
 
 0. Instalacja wszystkich wymaganych narzędzi - [lista](cwiczenia/README.md);
