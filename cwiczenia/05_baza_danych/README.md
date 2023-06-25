@@ -166,7 +166,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npm install -g knex
    ```
 
-2. Inicjalizacja:
+2. Inicjalizacja ([knex supports TS](https://knexjs.org/guide/#typescript)):
 
    ```bash
    npx knex init -x ts
