@@ -105,34 +105,52 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    ls dist/
    ```
 
-7. Aby automatycznie kompilować nowy kod Typescript oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
+8. Aby automatycznie kompilować nowy kod Typescript oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
 
    ```bash
    npm install -D concurrently nodemon
    ```
 
-8. Dodaj następujący blok do `package.json`:
+9. Dodaj następujący blok do `package.json`:
 
    ```json
    "scripts": {
       "build": "npx tsc",
-      "start": "node index.js",
+      "start": "node dist/index.js",
       "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
    }
    ```
 
-9. Teraz wystarczy:
+   Przetestuj czy wszystkie komendy działają:
 
    ```bash
+   npm run build
+   npm run start
    npm run dev
    ```
 
-   ```bash
-   # w drugim oknie:
-   curl 127.0.0.1:3000
-   ```
+10. Sprawdźmy czy wszystko działą:
 
-10. Zauważ, mógłbyś:
+    ```bash
+    npm run dev
+    ```
+
+    ```bash
+    # w drugim oknie:
+    curl 127.0.0.1:3000
+    ```
+
+    OK. Teraz czy po zmianach się kod rekompiluje:
+
+    1. Zmień tekst zwracany przez naszą aplikację na głównej ścieżce.
+
+    2. Wywołaj ponownie nasze API:
+
+       ```bash
+       curl 127.0.0.1:3000
+       ```
+
+11. Zauważ, mógłbyś:
 
    ```bash
    node index.js
