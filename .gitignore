@@ -22,6 +22,7 @@ cwiczenia/**/tmp
 
 ## database, exercise
 **/05_baza_danych/example_app/index.js
+**/05_baza_danych/example_app/dist/
 
 ##
 **/core

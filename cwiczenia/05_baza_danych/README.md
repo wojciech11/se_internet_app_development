@@ -31,7 +31,16 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npx tsc --init
    ```
 
-4. Utwórzmy nasz `index.ts` w vscode:
+4. Przejrzyj plik `tsconfig.json` ([docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)), odkomentuj `outDir` i jako wartość ustaw `./dist`:
+
+   ```javascript
+   // ...
+    "outDir": "./dist"
+  // ...
+   ```
+
+
+5. Utwórzmy nasz `index.ts` w vscode:
 
    ```typescript
    import express, { Express, Request, Response } from 'express';
@@ -71,19 +80,29 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    });
    ```
 
-5. Dodaj plik `.env` o treści:
+6. Dodaj plik `.env` o treści
 
    ```text
    PORT=8000
    ```
 
-6. Node/express pracuje na plikach w Javascript, za każdym razem jak będziemy zapisywać plik `.ts` musimy wykonać: `npm tsc`, czyli kompilację Typescript do Javascript. Zobacz co się stanie jak uruchomisz:
+   Biblioteka *dotenv* ([doc na npmjs.com](https://www.npmjs.com/package/dotenv)) czyta ten plik, aby pobrać numer portu na jakim nasza aplikacja będzie słuchała:
+
+   ```javascript
+   dotenv.config();
+   // ...
+   const port = process.env.PORT;
+
+   // ...
+   ```
+
+7. Node/express pracuje na plikach w Javascript, za każdym razem jak będziemy zapisywać plik `.ts` musimy wykonać: `npx tsc`, czyli kompilację Typescript do Javascript. Zobacz co się stanie jak uruchomisz:
 
    ```bash
-   npm tsc
+   npx tsc
 
    #
-   ls
+   ls dist/
    ```
 
 7. Aby automatycznie kompilować nowy kod Typescript oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
@@ -135,7 +154,10 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npx knex init -x ts
    ```
 
-3. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
+3. Przanalizuj plik `knexfile.ts`.
+
+
+4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
 
    ```bash
    mkdir db
