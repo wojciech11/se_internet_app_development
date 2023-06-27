@@ -276,8 +276,96 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    sqlite> select * from car
    ```
 
-8. xyz
+8. Seed file allows you to add data into your database without having to manually add them:
 
+
+    ```bash
+    knex seed:make employee --knexfile knexfile.ts -x ts
+    knex seed:make car --knexfile knexfile.ts -x ts
+    ```
+
+    Zacznijmy pliku seed dla tabeli `employee`, uzupełnij `seeds/employee.ts` według poniższego przykładu:
+
+    ```typescript
+    import { Knex } from "knex";
+
+    export async function seed(knex: Knex): Promise<void> {
+      // Deletes ALL existing entries
+      await knex("employee").del();
+
+      // Inserts seed entries
+      await knex("employee").insert([
+        {
+          id: 1,
+          employee_number: "D7992",
+          first_name: "Natalia",
+          surname: "Kowalska",
+        },
+        { id: 2, employee_number: "D7991", first_name: "Weronika", surname: "Kot" },
+        { id: 3, employee_number: "D7990", first_name: "Tomasz", surname: "Kowal" },
+      ]);
+    }
+    ```
+
+    Zacznijmy pliku seed dla tabeli `car`, uzupełnij `seeds/car.ts` według poniższego przykładu:
+
+    ```typescript
+    import { Knex } from "knex";
+
+    export async function seed(knex: Knex): Promise<void> {
+      // Deletes ALL existing entries
+      await knex("car").del();
+
+      // Inserts seed entries
+      await knex("car").insert([
+        {
+          id: 1,
+          number_plate: "DW888",
+          description: "",
+          mileage: 10,
+          alias: "",
+          employee_id: 1,
+        },
+        {
+          id: 2,
+          number_plate: "DW777",
+          description: "",
+          mileage: 12,
+          alias: "",
+          employee_id: 2,
+        },
+        {
+          id: 3,
+          number_plate: "DW444",
+          description: "",
+          mileage: 15,
+          alias: "",
+          employee_id: 3,
+        },
+      ]);
+    }
+    ```
+
+    Dodamy od razu komendę do `package.json`, abyśmy nie musieli wpisywać jej za każdym razem:
+
+    ```javascript
+    "seed": "knex seed:run --knexfile knexfile.ts"
+    ```
+
+    Teraz:
+
+    ```bash
+    npm run seed
+    ```
+
+    Zobaczmy czy dane są w bazie danych:
+
+    ```bash
+    sqlite3 dev.sqlite3
+
+    sqlite> . tables
+    sqlite> select * from car
+    ``` 
 
 <!--
    Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
