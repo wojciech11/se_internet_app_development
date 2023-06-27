@@ -223,7 +223,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
     TE(Employee) -- 1:N --> TC(Cars)
    ```
 
-   Utwórzmy dwie tabele, zaraz zdefiniujemy dla nich scheme, w pliku ` migrations/20230627164951_default.ts`, dodaj dwa polecenia dla utworzenia tabeli `employee` i `car` (btw. [plural vs singular table names](https://dba.stackexchange.com/questions/13730/plural-vs-singular-table-name)): 
+   Utwórzmy dwie tabele, zaraz zdefiniujemy dla nich scheme, w pliku ` migrations/20230627164951_default.ts`, dodaj dwa polecenia dla utworzenia tabeli `employee` i `car` (a propos, [plural vs singular table names](https://dba.stackexchange.com/questions/13730/plural-vs-singular-table-name)): 
 
    ```typescript
    import { Knex } from "knex";
