@@ -204,9 +204,9 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    });
    ```
 
-5. Utwórzmy plik do migracji, niezapomniejmy zainstalować biblioteki do pracy z sqllite ([docs](https://knexjs.org/guide/#node-js)), czyli bazy danych, którą chcemy używać w środowisku dev. 
+5. Utwórzmy plik do migracji, niezapomnij zainstalować biblioteki do pracy z [sqlite3](https://www.sqlite.org) ([docs](https://knexjs.org/guide/#node-js)), czyli bazy danych, którą chcemy używać w środowisku dev.
 
-   **Pamiętaj**: unikaj korzystania z różnych baz na różnych środowiskach!
+   **Pamiętaj**: nie korzystaj z różnych baz na różnych środowiskach!
 
    ```bash
    npm install sqlite3 // !!
@@ -216,7 +216,37 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
    Zauważ, że został utworzony nowy katalog - `migrations`, przejrzyj zawartość nowego katalogu.
 
-6. 
+6. Teraz czas utworzyć tabele, naszym celem jest aplikacja do zarządzania samochodami dla pracowników:
+
+   ```mermaid
+   flowchart LR
+    TE(Employee) -- 1:N --> TC(Cars)
+   ```
+
+   Utwórzmy dwie tabele, zaraz zdefiniujemy dla nich scheme, w pliku ` migrations/20230627164951_default.ts`, dodaj dwa polecenia dla utworzenia tabeli `employee` i `car` (btw. [plural vs singular table names](https://dba.stackexchange.com/questions/13730/plural-vs-singular-table-name)): 
+
+   ```typescript
+   import { Knex } from "knex";
+
+   export async function up(knex: Knex): Promise<void> {
+    return knex.schema.createTable('employee', require('./schemas/Employee'))
+        .createTable('car', require('./schemas/Car')) // (1)
+   }
+
+   export async function down(knex: Knex): Promise<void> {
+   }
+   ```
+
+
+
+
+<!--
+   Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
+-->
+
+   
+
+   
 
 
 
@@ -238,7 +268,7 @@ TBA
 
 ## Express + Primsma
 
-<!-- 
+<!--
 https://www.prisma.io/typescript
 https://www.prisma.io/express
 -->
