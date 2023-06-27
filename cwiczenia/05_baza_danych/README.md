@@ -370,6 +370,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 9. Wróćmy do naszej aplikacji:
 
    ```typescript
+   
    ```
 
 Bardziej złożony przykład znajdziecie na [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
