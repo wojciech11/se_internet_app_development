@@ -175,6 +175,37 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
 3. Przanalizuj plik `knexfile.ts`. Co to jest `migration_table`? Zauważ, że masz konfigurację per środowisko (`development`, `staging` i `production`).
 
 
+4. Zaimportujmy konfigurację knexa w naszej aplikacji oraz dodaj logowanie wybranej konfiguracji:  
+
+   ```typescript
+   import express, { Express, Request, Response } from 'express';
+   import dotenv from 'dotenv';
+   import knexConfigs from './knexfile'; // (1)
+
+   dotenv.config();
+
+   const app: Express = express();
+
+   const port = process.env.PORT;
+
+
+   const envName = process.env.NODE_ENV || 'development'; // (2)
+   const knexConfig = knexConfigs[envName]; // (3)
+   console.log(knexConfig) // (4)
+
+   app.get('/', (req: Request, res: Response) => {
+      res.send('Express + TypeScript Server with db: ' + knexConfig["client"]); // (4)
+   });
+
+   app.listen(port, () => {
+      console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+   });
+   ```
+
+5. 
+
+
+
 4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
 
    ```bash
@@ -182,9 +213,20 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    cd db
    ```
 
+<!-- https://blog.shahednasser.com/knex-js-tutorial-for-beginners/ -->
+
 ## App 2
 
 TBA
+
+## Express + Primsma
+
+<!-- 
+https://www.prisma.io/typescript
+https://www.prisma.io/express
+-->
+
+
 
 ## Materiały dodatkowe
 
