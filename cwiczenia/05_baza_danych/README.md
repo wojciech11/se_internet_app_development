@@ -223,19 +223,60 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
     TE(Employee) -- 1:N --> TC(Cars)
    ```
 
-   Utwórzmy dwie tabele, zaraz zdefiniujemy dla nich scheme, w pliku ` migrations/20230627164951_default.ts`, dodaj dwa polecenia dla utworzenia tabeli `employee` i `car` (a propos, [plural vs singular table names](https://dba.stackexchange.com/questions/13730/plural-vs-singular-table-name)): 
+   Utwórzmy dwie tabele, zaraz zdefiniujemy dla nich scheme, w pliku ` migrations/20230627164951_default.ts`, dodaj dwa polecenia dla utworzenia tabeli `employee` i `car` (a propos, [plural vs singular table names](https://dba.stackexchange.com/questions/13730/plural-vs-singular-table-name)):
 
    ```typescript
    import { Knex } from "knex";
 
    export async function up(knex: Knex): Promise<void> {
-    return knex.schema.createTable('employee', require('./schemas/Employee'))
-        .createTable('car', require('./schemas/Car')) // (1)
+     return knex.schema.createTable('employee', require('./schemas/Employee'))
+       .createTable('car', require('./schemas/Car')) // (1)
    }
 
    export async function down(knex: Knex): Promise<void> {
+     return knex.schema.dropTableIfExists('car')
+       .dropTableIfExists('employee') // (2)
+
    }
    ```
+
+   Warto znać: [Knex cheatsheet](https://devhints.io/knex).
+
+7. Schematy tabeli będą w katalogu `migrations/schemas`:
+
+
+   - `migrations/schemas/Car.ts`:
+
+     ```typescript
+     const carSchema = (table) => {
+       table.increments('id').primary().unique()
+       table.string('number_plate').notNullable().unique()
+       table.string('description').notNullable()
+       table.string('mileage').notNullable()
+       table.string('alias')
+       table.integer('employee_id').references('id').inTable('employee')
+       table.timestamps(true, true)
+     }
+
+     module.exports = carSchema;
+     ```
+
+  -`migrations/schemas/Employee.ts`:
+
+     ```typescript
+     const employeeSchema = (table) => {
+       table.increments('id').primary().unique()
+       table.string('employee_number').notNullable().unique()
+       table.string('first_name').notNullable()
+       table.string('surname').notNullable()
+       table.timestamps(true, true)
+     }
+
+     module.exports = employeeSchema;
+     ```
+
+8.
+
 
 
 
@@ -244,9 +285,9 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
 -->
 
-   
 
-   
+
+
 
 
 
