@@ -352,7 +352,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
     "seed": "knex seed:run --knexfile knexfile.ts"
     ```
 
-    Teraz:
+    Teraz, wystarczy uruchomić:
 
     ```bash
     npm run seed
@@ -366,6 +366,8 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
     sqlite> . tables
     sqlite> select * from car
     ``` 
+
+9. xyz
 
 <!--
    Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
