@@ -275,7 +275,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
      module.exports = employeeSchema;
      ```
 
-8.
+8. ___
 
 
 
