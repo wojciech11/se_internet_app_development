@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
+import knex, { Knex } from 'knex';
 import  * as knexConfigs from './knexfile';
 
 dotenv.config();
@@ -16,6 +17,10 @@ console.log(knexConfig)
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server hahah' + knexConfig["client"]);
+});
+
+app.get('/employees', (req: Request, res: Response) => {
+  knex("employee")
 });
 
 app.listen(port, () => {

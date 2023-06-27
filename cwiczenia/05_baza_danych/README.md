@@ -365,13 +365,14 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
     sqlite> . tables
     sqlite> select * from car
-    ``` 
+    ```
 
-9. xyz
+9. Wróćmy do naszej aplikacji:
 
-<!--
-   Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
--->
+   ```typescript
+   ```
+
+Bardziej złożony przykład znajdziecie na [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
 
 
 <!-- https://blog.shahednasser.com/knex-js-tutorial-for-beginners/ -->
