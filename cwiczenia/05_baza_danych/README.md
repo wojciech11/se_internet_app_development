@@ -255,31 +255,34 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
    Warto znać: [Knex cheatsheet](https://devhints.io/knex).
 
-7. ___
+7. Utwórzmy teraz tabele, uruchamiając migracje:
 
+   ```bash
+   npx knex  migrate:latest
+   ```
 
+   Zauważ, na stagingu byśmy uruchomili:
 
+   ```bash
+   NODE_ENV=staging npx knex migrate:latest
+   ```
+
+   Zobaczmy:
+
+   ```bash
+   sqlite3 dev.sqlite3
+
+   sqlite> . tables
+   sqlite> select * from car
+   ```
+
+8. xyz
 
 
 <!--
    Najlepsze praktyki dla nazywania tabel, patrz [sqlfluff](https://docs.sqlfluff.com/)
 -->
 
-
-
-
-
-
-
-
-
-
-4. Teraz pora na skonfigurowanie knexa oraz utworzenie naszej struktury bazy danych:
-
-   ```bash
-   mkdir db
-   cd db
-   ```
 
 <!-- https://blog.shahednasser.com/knex-js-tutorial-for-beginners/ -->
 
