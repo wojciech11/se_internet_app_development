@@ -153,7 +153,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
 11. Zauważ, mógłbyś:
 
    ```bash
-   node index.js
+   node dist/index.js
    ```
 
 ## Knex + Baza danych
