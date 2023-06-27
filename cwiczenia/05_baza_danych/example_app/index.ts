@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
-import knexConfigs from './knexfile';
+import  * as knexConfigs from './knexfile';
 
 dotenv.config();
 

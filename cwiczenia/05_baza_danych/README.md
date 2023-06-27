@@ -22,7 +22,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
 2. Instalacja informacji o typach:
 
    ```bash
-   npm i -D typescript @types/express @types/node @types/knex @types/dotenv
+   npm install -D typescript @types/express @types/node @types/knex @types/dotenv ts-node
    ```
 
 3. Inicjalizacja:
@@ -158,6 +158,8 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
 
 ## Knex + Baza danych
 
+Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d).
+
 1. Zainstaluj [knex](https://knexjs.org/), szczegółowe informacje znajdziesz na w [dokumentacji](https://knexjs.org/guide/#node-js):
 
    ```bash
@@ -180,7 +182,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    ```typescript
    import express, { Express, Request, Response } from 'express';
    import dotenv from 'dotenv';
-   import knexConfigs from './knexfile'; // (1)
+   import  * as knexConfigs from './knexfile'; // (1)
 
    dotenv.config();
 
@@ -202,7 +204,22 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    });
    ```
 
-5. 
+5. Utwórzmy plik do migracji, niezapomniejmy zainstalować biblioteki do pracy z sqllite ([docs](https://knexjs.org/guide/#node-js)), czyli bazy danych, którą chcemy używać w środowisku dev. 
+
+   **Pamiętaj**: unikaj korzystania z różnych baz na różnych środowiskach!
+
+   ```bash
+   npm install sqlite3 // !!
+
+   knex migrate:make default -x ts
+   ```
+
+   Zauważ, że został utworzony nowy katalog - `migrations`, przejrzyj zawartość nowego katalogu.
+
+6. 
+
+
+
 
 
 
