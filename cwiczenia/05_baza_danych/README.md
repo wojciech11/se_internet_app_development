@@ -421,9 +421,9 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 13. Zapoznaj się z [najlepszymi praktykami dla expressjs w produkcji](https://expressjs.com/en/advanced/best-practice-performance.html).
 
-14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
+14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template) oraz [CRUD REST API with Node.js, Express, and PostgreSQ](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
 
-## Właściwa struktura programu
+## Właściwa struktura Web app
 
 Naszym celem będzie omówienie najlepszych praktyk:
 
@@ -437,15 +437,13 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania
 
-## Express + Primsma
+## Express + Prisma
 
 <!--
 https://www.prisma.io/typescript
 https://www.prisma.io/express
 -->
 
-
-
 ## Materiały dodatkowe
 
-- [NodeJs + Express + PSQL](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
+- [12factor app](https://12factor.net)
