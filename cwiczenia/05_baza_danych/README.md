@@ -31,14 +31,13 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npx tsc --init
    ```
 
-4. Przejrzyj plik `tsconfig.json` ([docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)), odkomentuj `outDir` i jako wartość ustaw `./dist`:
+4. Przejrzyj plik `tsconfig.json` ([docs](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)), usuń komentarz sprzed `outDir` i jako wartość ustaw `./dist`:
 
    ```javascript
    // ...
     "outDir": "./dist"
    // ...
    ```
-
 
 5. Utwórzmy nasz `index.ts` w vscode:
 
@@ -111,7 +110,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npm install -D concurrently nodemon
    ```
 
-9. Dodaj następujący blok do `package.json` (zauważ `NODE_ENV` - więcej w [dokumentacji nodejs](https://nodejs.dev/en/learn/nodejs-the-difference-between-development-and-production/ )):
+9. Dodaj następujący blok do `package.json`:
 
    ```json
    "scripts": {
@@ -121,15 +120,17 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    }
    ```
 
-   Przetestuj czy wszystkie komendy działają:
+   Zauważ `NODE_ENV` (patrz [dokumentacja nodejs](https://nodejs.dev/en/learn/nodejs-the-difference-between-development-and-production/)), pamiętaj najlepszą praktyką jest podawanie [konfiguracji przez zmienne środowiskowe](https://12factor.net/config), a nie uczenie aplikacji co to znaczy dev czy staging.
 
-   ```bash
-   npm run build
-   npm run start
-   npm run dev
-   ```
+10. Przetestuj czy wszystkie komendy działają:
 
-10. Sprawdźmy czy wszystko działą:
+    ```bash
+    npm run build
+    npm run start
+    npm run dev
+    ```
+
+11. Sprawdźmy czy nasza aplikacja działa:
 
     ```bash
     npm run dev
@@ -140,7 +141,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
     curl 127.0.0.1:3000
     ```
 
-    OK. Teraz czy po zmianach się kod rekompiluje:
+    OK. Teraz zobaczmy czy automatycznie po zmianie pliku, kod skompiluje i aplikacja zrestartuje:
 
     1. Zmień tekst zwracany przez naszą aplikację na głównej ścieżce.
 
@@ -153,6 +154,8 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
 11. Zauważ, mógłbyś:
 
    ```bash
+   ls dist/
+
    node dist/index.js
    ```
 
@@ -192,11 +195,11 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 
    const envName = process.env.NODE_ENV || 'development'; // (2)
-   const knexConfig = knexConfigs[envName]; // (3)
-   console.log(knexConfig) // (4)
+   const knexCfg = knexConfigs[envName]; // (3)
+   console.log(knexCfg) // (4)
 
    app.get('/', (req: Request, res: Response) => {
-      res.send('Express + TypeScript Server with db: ' + knexConfig["client"]); // (4)
+      res.send('Express + TypeScript Server with db: ' + knexCfg["client"]); // (4)
    });
 
    app.listen(port, () => {
@@ -277,7 +280,6 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    ```
 
 8. Seed file allows you to add data into your database without having to manually add them:
-
 
     ```bash
     knex seed:make employee --knexfile knexfile.ts -x ts
@@ -370,19 +372,60 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 9. Wróćmy do naszej aplikacji:
 
    ```typescript
+   import express, { Express, Request, Response } from 'express';
+   import dotenv from 'dotenv';
+   import knex from 'knex';
+   import  * as knexConfigs from './knexfile';
 
+   dotenv.config();
+
+   const app: Express = express();
+
+   const port = process.env.PORT;
+
+   const envName = process.env.NODE_ENV || 'dev';
+
+   console.log(knexConfigs)
+
+   const knexCfg = knexConfigs[envName]
+   console.log(knexCfg)
+
+   const kdb = knex(knexCfg) // (1)
+
+   app.get('/', (req: Request, res: Response) => {
+     res.send('Express + TypeScript Server hahah' + knexConfig["client"]);
+   });
+
+   app.get('/employees', (req: Request, res: Response) => { // (2)
+     kdb.select().from("employee").then((empls) => {
+       res.send(empls)
+     })
+   });
+
+   app.listen(port, () => {
+      console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+   });
    ```
 
-Bardziej złożony przykład znajdziecie na [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
+   Przetestuj:
 
+   ```bash
+   curl 127.0.0.1:3000/employees
+   ```
 
-<!-- https://blog.shahednasser.com/knex-js-tutorial-for-beginners/ -->
+10. Dodaj endpoint: `/cars`.
 
-12. Zapoznaj się z [najlepszymi praktykami dla expressjs w produkcji](https://expressjs.com/en/advanced/best-practice-performance.html).
+11. Dodaj endpoint do wyświetlania szczegółów pojedynczego pojazdu: `cars/{id}':
 
-## App 2
+12. Jeśli dobrze Tobie poszło, z poprzednimi punkami, dodaj endpointy CRUD do zarządzania zarówno pracownikami jak i przydzielonymi im samochodzami.
 
-TBA
+13. Zapoznaj się z [najlepszymi praktykami dla expressjs w produkcji](https://expressjs.com/en/advanced/best-practice-performance.html).
+
+14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
+
+## Aplikacja 2
+
+Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania
 
 ## Express + Primsma
 
