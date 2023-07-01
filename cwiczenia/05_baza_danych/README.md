@@ -111,13 +111,13 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npm install -D concurrently nodemon
    ```
 
-9. Dodaj następujący blok do `package.json`:
+9. Dodaj następujący blok do `package.json` (zauważ `NODE_ENV` - więcej w [dokumentacji nodejs](https://nodejs.dev/en/learn/nodejs-the-difference-between-development-and-production/ )):
 
    ```json
    "scripts": {
       "build": "npx tsc",
       "start": "node dist/index.js",
-      "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+      "dev": "NODE_ENV=development concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
    }
    ```
 
@@ -370,13 +370,15 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 9. Wróćmy do naszej aplikacji:
 
    ```typescript
-   
+
    ```
 
 Bardziej złożony przykład znajdziecie na [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
 
 
 <!-- https://blog.shahednasser.com/knex-js-tutorial-for-beginners/ -->
+
+12. Zapoznaj się z [najlepszymi praktykami dla expressjs w produkcji](https://expressjs.com/en/advanced/best-practice-performance.html).
 
 ## App 2
 

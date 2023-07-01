@@ -9,7 +9,7 @@ const app: Express = express();
 
 const port = process.env.PORT;
 
-const envName = process.env.NODE_ENV || 'development';
+const envName = process.env.NODE_ENV || 'dev';
 
 console.log(knexConfigs)
 const knexConfig = knexConfigs[envName];
@@ -20,7 +20,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.get('/employees', (req: Request, res: Response) => {
-  knex("employee")
+  console.log(knex("employee").select())
 });
 
 app.listen(port, () => {
