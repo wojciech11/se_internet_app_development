@@ -423,7 +423,17 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template).
 
-## Aplikacja 2
+## Właściwa struktura programu
+
+Naszym celem będzie omówienie najlepszych praktyk:
+
+1. Rozbicie programu na logiczne części;
+
+2. Omówimy [dependency injection](https://wiki.c2.com/?DependencyInjection) do zaimplementowania IoC (Inverse of Control) i korzyści związane z tym wzorcem projektowym.
+
+Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
+
+## Zadanie domowe
 
 Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania
 
