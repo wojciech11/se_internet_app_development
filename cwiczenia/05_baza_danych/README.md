@@ -465,7 +465,15 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 To ćwiczenie jest zrobione w oparciu o oficjalny przykład wykorzystania [prisma z expressjs](https://www.prisma.io/express) i [tutoriala](https://www.prisma.io/typescript), oraz kod jest w [githubie](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express).
 
-1. TBD
+1. Uruchom według wskazówek na [github.com/prisma/prisma-examples/tree/latest/typescript/rest-express](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express):
+
+   ```bash
+   npx try-prisma@latest --template typescript/rest-express
+
+   // i tak dalej
+   ```
+
+2. TBA
 
 ## Materiały dodatkowe
 
