@@ -423,6 +423,10 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template) oraz [CRUD REST API with Node.js, Express, and PostgreSQ](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
 
+<!--
+https://stackoverflow.com/questions/57500089/how-to-configure-knex-ts-in-typescript-project
+-->
+
 ## Właściwa struktura Web app
 
 Naszym celem będzie omówienie najlepszych praktyk:

@@ -1,6 +1,7 @@
 import type { Knex } from "knex";
 
 // Update with your config settings.
+// see https://stackoverflow.com/questions/57500089/how-to-configure-knex-ts-in-typescript-project
 
 const config: { [key: string]: Knex.Config } = {
   development: {
