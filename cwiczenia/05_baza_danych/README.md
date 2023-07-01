@@ -439,7 +439,27 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 ## Zadanie domowe
 
-Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania
+1. Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania koszykiem (jak w sklepie):
+
+   - koszyk:
+
+     - składa się z pozycji
+
+   - pozycje koszyka:
+
+     - wartość jednej jednostki
+     - ilość rzeczy
+    - jednostka miary
+
+2. W drugiej iteracji: read dla koszyka powinien również podawać pełną wartość koszyka poprzez zsumowanie wszystkich pozycji.
+
+3. Dodaj promocje w kodzie, nie na poziomie bazy danych, zacznij od 3 sztuki mleka, 1 za darmo. Wartość koszyka >100PLN, to 10% taniej.
+
+   Jeśli spodoba Tobie się to ćwiczenie, [tutaj znajdziesz więcej pomysłów](http://codekata.com/kata/kata01-supermarket-pricing/).
+
+4. Czwarta iteracja - popatrz na strukturę kodu i pamiętając o IoC, jak można ją logicznie rozdzielić?
+
+5. Czwarta/Piąta iteracja, (1) napisz testy do logiki promocji oraz (2) do działania web API.
 
 ## Express + Prisma
 
