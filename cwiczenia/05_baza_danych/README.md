@@ -463,11 +463,10 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 ## Express + Prisma
 
-<!--
-https://www.prisma.io/typescript
-https://www.prisma.io/express
--->
+To ćwiczenie jest zrobione w oparciu o oficjalny przykład wykorzystania [prisma z expressjs](https://www.prisma.io/express) i [tutoriala](https://www.prisma.io/typescript), oraz kod jest w [githubie](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express).
+
+1. TBD
 
 ## Materiały dodatkowe
 
-- [12factor app](https://12factor.net)
+- [12factor app](https://12factor.net).
