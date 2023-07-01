@@ -374,7 +374,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    ```typescript
    import express, { Express, Request, Response } from 'express';
    import dotenv from 'dotenv';
-   import knex from 'knex';
+   import Knex from 'knex';
    import  * as knexConfigs from './knexfile';
 
    dotenv.config();
@@ -390,14 +390,14 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    const knexCfg = knexConfigs[envName]
    console.log(knexCfg)
 
-   const kdb = knex(knexCfg) // (1)
+   const knex = Knex(knexCfg) // (1)
 
    app.get('/', (req: Request, res: Response) => {
      res.send('Express + TypeScript Server hahah' + knexConfig["client"]);
    });
 
    app.get('/employees', (req: Request, res: Response) => { // (2)
-     kdb.select().from("employee").then((empls) => {
+     knex.select().from("employee").then((empls) => {
        res.send(empls)
      })
    });
