@@ -1,12 +1,15 @@
 # Aplikacja w produkcji
 
-## Testowanie
+## Testowanie - TBA
 
-TBA
+- unit tests
+- handler testing
+- https://playwright.dev
+- https://storybook.js.org (np. z https://www.chromatic.com)
 
 ## Observability
 
-W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability:
+W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, tylko, żeby zasygnalizować temat monitoringu, logowania i tracingu.
 
 ### Metryki
 
@@ -19,6 +22,10 @@ TBA
 ### Tracing
 
 TBA
+
+## Dodatkowe narzędzia
+
+- session replays - https://logrocket.com / RUM
 
 ## Kierunek: Continuous Deployment (do domu 1)
 
@@ -34,4 +41,4 @@ https://vitejs.dev -
 
 ## Materiały
 
-xyz
+- [Budowa i administacja aplikacji w chmurze](https://github.com/wojciech11/se_cloud_app_administration_and_development).
