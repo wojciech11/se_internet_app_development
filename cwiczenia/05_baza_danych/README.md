@@ -11,7 +11,7 @@ cd pai_5_db_app
 
 ## Express + Typescript
 
-Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.com/how-to-set-up-node-typescript-express/):
+To ćwczienie jest oparte o tutorial dostępny na [blogu LogRocketa](https://blog.logrocket.com/how-to-set-up-node-typescript-express/):
 
 1. Zainstalujmy wszystkie wymagane biblioteki:
 
@@ -25,7 +25,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    npm install -D typescript @types/express @types/node @types/knex @types/dotenv ts-node
    ```
 
-3. Inicjalizacja:
+3. Inicjalizacja Typescripta:
 
    ```bash
    npx tsc --init
@@ -79,7 +79,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    });
    ```
 
-6. Dodaj plik `.env` o treści
+6. Dodaj plik `.env` o treści, jest to plik konfiguracyjny:
 
    ```text
    PORT=8000
@@ -104,7 +104,7 @@ Na podstawie tutoriala dostępnego na [blogu LogRocketa](https://blog.logrocket.
    ls dist/
    ```
 
-8. Aby automatycznie kompilować nowy kod Typescript oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
+8. Aby automatycznie kompilować nowy kod Javascript do Typescripta oraz zrestartować naszą aplikację, wspomożemy się dwoma narzędziami:
 
    ```bash
    npm install -D concurrently nodemon
@@ -178,7 +178,6 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
    ```
 
 3. Przanalizuj plik `knexfile.ts`. Co to jest `migration_table`? Zauważ, że masz konfigurację per środowisko (`development`, `staging` i `production`).
-
 
 4. Zaimportujmy konfigurację knexa w naszej aplikacji oraz dodaj logowanie wybranej konfiguracji:  
 
@@ -281,14 +280,14 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 8. Seed file allows you to add data into your database without having to manually add them:
 
-    ```bash
-    knex seed:make employee --knexfile knexfile.ts -x ts
-    knex seed:make car --knexfile knexfile.ts -x ts
-    ```
+   ```bash
+   knex seed:make employee --knexfile knexfile.ts -x ts
+   knex seed:make car --knexfile knexfile.ts -x ts
+   ```
 
-    Zacznijmy pliku seed dla tabeli `employee`, uzupełnij `seeds/employee.ts` według poniższego przykładu:
+   Zacznijmy pliku seed dla tabeli `employee`, uzupełnij `seeds/employee.ts` według poniższego przykładu:
 
-    ```typescript
+   ```typescript
     import { Knex } from "knex";
 
     export async function seed(knex: Knex): Promise<void> {
@@ -307,11 +306,11 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
         { id: 3, employee_number: "D7990", first_name: "Tomasz", surname: "Kowal" },
       ]);
     }
-    ```
+   ```
 
-    Zacznijmy pliku seed dla tabeli `car`, uzupełnij `seeds/car.ts` według poniższego przykładu:
+   Zacznijmy pliku seed dla tabeli `car`, uzupełnij `seeds/car.ts` według poniższego przykładu:
 
-    ```typescript
+   ```typescript
     import { Knex } from "knex";
 
     export async function seed(knex: Knex): Promise<void> {
@@ -346,28 +345,28 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
         },
       ]);
     }
-    ```
+   ```
 
-    Dodamy od razu komendę do `package.json`, abyśmy nie musieli wpisywać jej za każdym razem:
+   Dodamy od razu komendę do `package.json`, abyśmy nie musieli wpisywać jej za każdym razem:
 
-    ```javascript
-    "seed": "knex seed:run --knexfile knexfile.ts"
-    ```
+   ```javascript
+   "seed": "knex seed:run --knexfile knexfile.ts"
+   ```
 
-    Teraz, wystarczy uruchomić:
+   Teraz, wystarczy uruchomić:
 
-    ```bash
-    npm run seed
-    ```
+   ```bash
+   npm run seed
+   ```
 
-    Zobaczmy czy dane są w bazie danych:
+   Zobaczmy czy dane są w bazie danych:
 
-    ```bash
-    sqlite3 dev.sqlite3
+   ```bash
+   sqlite3 dev.sqlite3
 
-    sqlite> . tables
-    sqlite> select * from car
-    ```
+   sqlite> . tables
+   sqlite> select * from car
+   ```
 
 9. Wróćmy do naszej aplikacji:
 
@@ -415,17 +414,13 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 10. Dodaj endpoint: `/cars`.
 
-11. Dodaj endpoint do wyświetlania szczegółów pojedynczego pojazdu: `cars/{id}`:
+11. Dodaj endpoint do wyświetlania szczegółów pojedynczego pojazdu: `cars/{id}`.
 
 12. Jeśli dobrze Tobie poszło, z poprzednimi punkami, dodaj endpointy CRUD do zarządzania zarówno pracownikami jak i przydzielonymi im samochodzami.
 
 13. Zapoznaj się z [najlepszymi praktykami dla expressjs w produkcji](https://expressjs.com/en/advanced/best-practice-performance.html).
 
-14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template) oraz [CRUD REST API with Node.js, Express, and PostgreSQ](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
-
-<!--
-https://stackoverflow.com/questions/57500089/how-to-configure-knex-ts-in-typescript-project
--->
+14. Bardziej złożony przykład znajdziecie na [medium](https://medium.com/cbazil-dev/setting-up-a-simple-standard-knex-express-restful-api-with-postgresql-b4a62244520d) i [githubie](https://github.com/cdellacqua/express-knex-typescript-template) oraz [CRUD REST API with Node.js, Express, and PostgreSQL](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/).
 
 ## Właściwa struktura Web app
 
