@@ -437,6 +437,8 @@ Naszym celem będzie omówienie najlepszych praktyk:
 
 Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
+**TBA**
+
 ## Zadanie domowe
 
 1. Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania koszykiem (jak w sklepie):
