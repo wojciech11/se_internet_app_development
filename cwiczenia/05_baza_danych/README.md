@@ -559,16 +559,17 @@ Teraz czas na nas, zobaczmy krok po kroku jak zbudować aplikację podobną do t
    ```typeScript
    import { Prisma, PrismaClient } from '@prisma/client'
    import express, { Express, Request, Response } from 'express';
-   
+
    const prisma = new PrismaClient()
    const app = express()
-   
+
+   // https://expressjs.com/en/api.html#express.json
    app.use(express.json())
-   
+
    app.get('/', async (req: Request, res: Response) => {
      res.send('Express + TS + Prisma + Sqlite');
    });
-   
+
    app.post(`/signup`, async (req, res) => {
      const { name, email} = req.body
      const result = await prisma.user.create({
@@ -579,12 +580,12 @@ Teraz czas na nas, zobaczmy krok po kroku jak zbudować aplikację podobną do t
      })
      res.json(result)
    })
-   
+
    app.get('/users', async (req, res) => {
      const users = await prisma.user.findMany()
      res.json(users)
    })
-   
+
    const server = app.listen(3000, () =>
      console.log(`
       🚀 Server ready at: http://localhost:3000`),
@@ -619,7 +620,14 @@ Teraz czas na nas, zobaczmy krok po kroku jak zbudować aplikację podobną do t
 
    ```bash
    curl -X POST -H "Content-Type: application/json" \
-        -d '{"name": "natalia", "email": "natalia@example.com"}'  http://localhost:3000/signup
+        -d '{"name": "natalia", "email": "natalia@example.com"}' \
+        http://localhost:3000/signup
+   ```
+
+   wyświetlij:
+
+   ```bash
+   curl -X GET http://localhost:3000/users
    ```
 
 10. Dodaj endpoint `post` (metoda HTTP *POST*), który pozwala dodać posta istniejącego użytwkonika.
