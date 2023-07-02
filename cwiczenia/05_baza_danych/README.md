@@ -415,7 +415,7 @@ Zauważ: rozbudowany tutorial dla JS, znajdziesz na tym [blogu](https://medium.c
 
 10. Dodaj endpoint: `/cars`.
 
-11. Dodaj endpoint do wyświetlania szczegółów pojedynczego pojazdu: `cars/{id}':
+11. Dodaj endpoint do wyświetlania szczegółów pojedynczego pojazdu: `cars/{id}`:
 
 12. Jeśli dobrze Tobie poszło, z poprzednimi punkami, dodaj endpointy CRUD do zarządzania zarówno pracownikami jak i przydzielonymi im samochodzami.
 
@@ -461,19 +461,166 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 5. Czwarta/Piąta iteracja, (1) napisz testy do logiki promocji oraz (2) do działania web API.
 
-## Express + Prisma
+## Express + Typescript + Prisma
 
 To ćwiczenie jest zrobione w oparciu o oficjalny przykład wykorzystania [prisma z expressjs](https://www.prisma.io/express) i [tutoriala](https://www.prisma.io/typescript), oraz kod jest w [githubie](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express).
 
-1. Uruchom według wskazówek na [github.com/prisma/prisma-examples/tree/latest/typescript/rest-express](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express):
+### Przykładowa aplikacja
+
+Uruchom według wskazówek na [github.com/prisma/prisma-examples/tree/latest/typescript/rest-express](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-express):
+
+```bash
+# wrocmy do naszego katalogu z projektami
+cd ~/workspace
+npx try-prisma@latest --template typescript/rest-express
+
+// i tak dalej
+```
+
+### Krok po kroku
+
+Teraz czas na nas, zobaczmy krok po kroku jak zbudować aplikację podobną do tej z repozytorium prisma. Nie będziemy implementować pełnego CRUDA, ograniczymy się do kilku endpointów, jako zadanie domowe możesz dodać brakujące funkcjonalności.
+
+1. Utwórz repozytorium githuba *pai_5_crud_prisma*, sklonuj... itp. itd. You know the dril:
 
    ```bash
-   npx try-prisma@latest --template typescript/rest-express
-
-   // i tak dalej
+   cd ~/workspace
+   git clone https://.../pai_5_crud_prisma.git
+   cd pai_5_crud_prisma
    ```
 
-2. TBA
+2. Zainstalujmy wymagane biblioteki ([tutorial getting-started](https://www.prisma.io/docs/getting-started/quickstart)):
+
+   ```bash
+   npm init -y
+
+   npm install -D typescript ts-node @types/express @types/node @types/dotenv --save-dev
+   ```
+
+    Inicjalizacja TypeScript:
+
+   ```bash
+   npx tsc --init
+   ```
+
+   ```bash
+   npm install prisma --save-dev
+   ```
+
+3. Wygenerujemy konfigurację do pracy z `sqlite`:
+
+   ```bash
+   npx prisma init --datasource-provider sqlite
+   ```
+
+   Zauważ: nowy folder `prisma/`
+
+4. Na końcu `prisma/schema.prisma`, dodaj definicję naszego modelu danych.
+
+   ```prisma
+   model User {
+     id    Int     @id @default(autoincrement())
+     email String  @unique
+     name  String?
+     posts Post[]
+   }
+
+   model Post {
+     id        Int     @id @default(autoincrement())
+     title     String
+     content   String?
+     published Boolean @default(false)
+     author    User    @relation(fields: [authorId], references: [id])
+     authorId  Int
+   }
+   ```
+
+5. Uruchom migrację, żeby utworzyć wymagane tabele w bazie danych:
+
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+   Zauważ, nowy katalog `prisma/migrations/`.
+
+6. Czas na aplikację.
+
+   Będziemy tutaj korzystać z *expressjs*:
+
+   ```bash
+   npm install express
+   ```
+
+   `index.ts`:
+
+
+   ```typeScript
+   import { Prisma, PrismaClient } from '@prisma/client'
+   import express, { Express, Request, Response } from 'express';
+   
+   const prisma = new PrismaClient()
+   const app = express()
+   
+   app.use(express.json())
+   
+   app.get('/', async (req: Request, res: Response) => {
+     res.send('Express + TS + Prisma + Sqlite');
+   });
+   
+   app.post(`/signup`, async (req, res) => {
+     const { name, email} = req.body
+     const result = await prisma.user.create({
+       data: {
+         name,
+         email,
+       },
+     })
+     res.json(result)
+   })
+   
+   app.get('/users', async (req, res) => {
+     const users = await prisma.user.findMany()
+     res.json(users)
+   })
+   
+   const server = app.listen(3000, () =>
+     console.log(`
+      🚀 Server ready at: http://localhost:3000`),
+   )
+   ```
+
+8. Przygotowanie skryptów do pracy z kodem (podobnie jak to zrobiliśmy wcześniej):
+
+   ```bash
+   npm install -D concurrently nodemon
+   ```
+
+   Dodaj następujący blok do `package.json`:
+
+   ```json
+   "scripts": {
+      "build": "npx tsc",
+      "start": "node dist/index.js",
+      "dev": "NODE_ENV=development concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+   }
+   ```
+
+   **oraz** w `tsconfig.json` -- wyszukaj `outDir`, usuń komentarz i ustaw na `./dist`.
+
+9. Let's go!
+
+   ```bash
+   npm run dev
+   ```
+
+   signup the post author:
+
+   ```bash
+   curl -X POST -H "Content-Type: application/json" \
+        -d '{"name": "natalia", "email": "natalia@example.com"}'  http://localhost:3000/signup
+   ```
+
+10. Dodaj endpoint `post` (metoda HTTP *POST*), który pozwala dodać posta istniejącego użytwkonika.
 
 ## Materiały dodatkowe
 
