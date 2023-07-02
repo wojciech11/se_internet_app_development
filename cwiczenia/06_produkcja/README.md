@@ -23,9 +23,9 @@ TBA
 
 TBA
 
-## Dodatkowe narzędzia
+## Session recording (Dodatkowe)
 
-- session replays - https://logrocket.com / RUM
+Dobrym przykładem jest [logrocket.com](https://logrocket.com).
 
 ## Kierunek: Continuous Deployment (do domu 1)
 
