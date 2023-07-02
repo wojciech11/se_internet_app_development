@@ -439,7 +439,7 @@ Wróćmy do naszego poprzedniego programu, pierwszym krokiem będzie....
 
 **TBA**
 
-## Zadanie domowe
+## Zadanie domowe 1 - Express i Knex
 
 1. Napisz aplikację, na zasadzie analogi do poprzedniego przykładu, do zarządzania koszykiem (jak w sklepie):
 
@@ -632,6 +632,12 @@ Teraz czas na nas, zobaczmy krok po kroku jak zbudować aplikację podobną do t
 
 10. Dodaj endpoint `post` (metoda HTTP *POST*), który pozwala dodać posta istniejącego użytwkonika.
 
-## Materiały dodatkowe
+### Zadanie domowe 2 - Prisma + Express
+
+Zbuduj własną aplikację, może to być podobnie jak ostatnio aplikacja do zarządzania koszykiem albo Twój własny pomysł.
+
+Możesz też zamiast skupić się na backendzie, poświęcić większość czasu budując frontend z użyciem Reacta i gotowych komponentów interfejsu użytkownika - tailwindcss albo bootstrap.
+
+# Materiały dodatkowe
 
 - [12factor app](https://12factor.net).
