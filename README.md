@@ -67,9 +67,9 @@ Program:
 
 4. Web App stack: frontend z Reactem - [instrukcja](cwiczenia/04_react_frontend);
 
-5. Web App stack: baza danych - [instrukcja](cwiczenia/05_baza_danych);
+5. Web App stack: Typescript, Express, i baza danych - [instrukcja](cwiczenia/05_baza_danych);
 
-6. Aplikacja w produkcji - [instrukcja](cwiczenia/06_produkcja);
+6. Aplikacja w produkcji - testowanie i observability [instrukcja](cwiczenia/06_produkcja);
 
 7. Zaliczenie ćwiczeń - [instrukcja](cwiczenia/07_zaliczenie).
 
