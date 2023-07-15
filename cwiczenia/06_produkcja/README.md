@@ -39,6 +39,12 @@ Większość czasu, spędziliśmy pisząc aplikację posługując się expressjs
 
 https://vitejs.dev - 
 
+## Security
+
+Zapoznaj się z:
+
+- [OWASP Secure Coding Practices-Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/).
+
 ## Materiały
 
 - [Budowa i administacja aplikacji w chmurze](https://github.com/wojciech11/se_cloud_app_administration_and_development).
