@@ -41,3 +41,9 @@ Zauważ również, że narzędzia idą w kierunku łączenia, każdego z aspekt�
 ### Traces
 
 - Tempo
+
+## Uruchominie przykładu (WIP)
+
+```bash
+docker-compose up
+```

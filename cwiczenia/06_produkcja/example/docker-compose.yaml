@@ -15,8 +15,8 @@ services:
       - '--storage.tsdb.path=/data/prometheus'
       - '--web.enable-lifecycle'
     volumes:
-      - ./prometheus/etc/:/etc/prometheus/
-      - ./prometheus/data/:/data/prometheus/:z
+      - ./observability/0_prometheus/etc/:/etc/prometheus/
+      - ./observability/0_prometheus/data/:/data/prometheus/:z
     links:
       - order-manager:order-manager
   grafana:
@@ -29,6 +29,12 @@ services:
     links:
       - prometheus:prometheus
     volumes:
-      - ./grafana/data/:/var/lib/grafana
-      - ./grafana/etc/provisioning:/etc/grafana/provisioning/
-      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./observability/1_grafana/data/:/var/lib/grafana
+      - ./observability/1_grafana/etc/provisioning:/etc/grafana/provisioning/
+      - ./observability/1_grafana/dashboards:/var/lib/grafana/dashboards
+  loki:
+    image: grafana/loki:2.8.2
+    ports:
+      - 3000:3000
+    volumes:
+      - ./observability/2_loki/data
