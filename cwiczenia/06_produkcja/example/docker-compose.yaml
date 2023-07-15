@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  order-manager:
+    build:
+      context: .
+    ports:
+      - 8080:8080
+  prometheus:
+    image: prom/prometheus:v2.45.0
+    ports:
+      - 9090:9090
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/data/prometheus'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./prometheus/etc/:/etc/prometheus/
+      - ./prometheus/data/:/data/prometheus/:z
+    links:
+      - order-manager:order-manager
+  grafana:
+    image: grafana/grafana:10.0.2
+    ports:
+      - 3000:3000
+    environment:
+      - "GF_SERVER_ROOT_URL=http://127.0.0.1"
+      - "GF_SECURITY_ADMIN_PASSWORD=secret"
+    links:
+      - prometheus:prometheus
+    volumes:
+      - ./grafana/data/:/var/lib/grafana
+      - ./grafana/etc/provisioning:/etc/grafana/provisioning/
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
