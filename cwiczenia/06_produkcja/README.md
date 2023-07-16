@@ -91,6 +91,18 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    PORT=8000
    ```
 
+### Logowanie do konsoli
+
+Jest kilka opcji bibliotek logowania do konsoli (i nie tylko) ponad stardowy`console.log` ([](https://blog.logrocket.com/node-js-logging-best-practices-essential-guide/)), my dzisiaj skorzystamy z `winston`.
+
+```bash
+npm install winston
+```
+
+```bash
+npm install -D @types/winston
+```
+
 ### Metryki
 
 TBA
