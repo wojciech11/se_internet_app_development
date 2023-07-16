@@ -41,6 +41,8 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    npx tsc --init
    ```
 
+   Do czego służy biblioteka [cors](https://expressjs.com/en/resources/middleware/cors.html)?
+
 3. Automatyzacja - automatycznej kompilacji i restart serweru w dev, kiedy zmieniasz plik Typescript, tak jak było na ostatnich ćwiczeniach:
 
    W `tsconfig.json`, usuń komentarz sprzed `outDir` i jako wartość ustaw `./dist`:
