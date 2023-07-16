@@ -1,6 +1,6 @@
 # Aplikacja w produkcji
 
-## Testowanie - TBA
+## Testowanie i linting (TBA)
 
 - unit tests
 - handler testing
@@ -65,7 +65,7 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    }
    ```
 
-4. Zacznijmy od prostej aplikacji:
+4. Zacznijmy od prostej aplikacji `index.ts`:
 
    ```typescript
    import express, { Express, Request, Response } from 'express';

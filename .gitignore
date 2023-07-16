@@ -25,6 +25,9 @@ cwiczenia/**/tmp
 **/05_baza_danych/*/dist/
 **/05_baza_danych/example_app/dev.sqlite3
 
+## produkcja
+**/06_*/*/dist
+
 ##
 **/core
 
