@@ -29,10 +29,12 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
 
    ```bash
    # biblioteki
-   npm install express dotenv
+   npm install express dotenv cors
 
    # types
-   npm install -D typescript @types/express @types/node @types/dotenv ts-node
+   npm install -D typescript @types/express \
+       @types/node @types/dotenv @types/cors \
+       ts-node
    ```
 
    ```bash
@@ -70,14 +72,18 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    ```typescript
    import express, { Express, Request, Response } from 'express';
    import dotenv from 'dotenv';
+   import cors from 'cors';
 
    dotenv.config();
 
    const app: Express = express();
    const port = process.env.PORT;
 
+   app.use(cors());
+   app.use(express.json())
+
    app.get('/', (req: Request, res: Response) => {
-     res.send('Simple app');
+     res.json({ method: req.method, message: "Hello World", ...req.body });
    });
 
    app.listen(port, () => {
