@@ -32,10 +32,14 @@ services:
       - ./observability/1_grafana/data/:/var/lib/grafana
       - ./observability/1_grafana/etc/provisioning:/etc/grafana/provisioning/
       - ./observability/1_grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
   loki:
     image: grafana/loki:2.8.2
     ports:
-      - 3000:3000
+      - 3101:3101
     volumes:
       - ./observability/2_loki/data:/tmp/loki
   tempo:
