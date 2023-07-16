@@ -32,7 +32,7 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    npm install express dotenv
 
    # types
-   npm install -D typescript @types/express @types/node @types/dotenv
+   npm install -D typescript @types/express @types/node @types/dotenv ts-node
    ```
 
    ```bash
