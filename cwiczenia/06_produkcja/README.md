@@ -95,13 +95,16 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
 
 TBA
 
+https://github.com/mnadeem/nodejs-opentelemetry-tempo
+
 ### Logowanie
 
-TBA
+https://brightinventions.pl/blog/how-to-improve-your-app-observability-easily-with-grafana-and-opentelemetry/
+
 
 ### Tracing
 
-TBA
+https://brightinventions.pl/blog/how-to-improve-your-app-observability-easily-with-grafana-and-opentelemetry/
 
 ## Session recording (Dodatkowe)
 

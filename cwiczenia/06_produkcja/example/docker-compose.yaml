@@ -37,4 +37,17 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./observability/2_loki/data
+      - ./observability/2_loki/data:/tmp/loki
+  tempo:
+    image: grafana/tempo:2.1.1
+    command: ["-config.file=/etc/tempo.yaml"]
+    volumes:
+      - ./observability/3_tempo/etc/tempo-local.yaml:/etc/tempo.yaml
+      - ./observability/3_tempo/data/tempo-data:/tmp/tempo
+    ports:
+      - "14268"      # jaeger ingest, Jaeger - Thrift HTTP
+      - "14250"      # Jaeger - GRPC
+      - "55680"      # OpenTelemetry
+      - "3100"       # tempo
+      - "6831/udp"   # Jaeger - Thrift Compact
+      - "6832/udp"   # Jaeger - Thrift Binary
