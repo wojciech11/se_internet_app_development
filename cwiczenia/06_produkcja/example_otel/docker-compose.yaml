@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  order-manager:
+    build:
+      context: .
+    ports:
+      - 8080:8080
+  prometheus:
+    image: prom/prometheus:v2.45.0
+    ports:
+      - 9090:9090
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/data/prometheus'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./observability/0_prometheus/etc/:/etc/prometheus/
+      - ./observability/0_prometheus/data/:/data/prometheus/:z
+    links:
+      - order-manager:order-manager
+  grafana:
+    image: grafana/grafana:10.0.2
+    ports:
+      - 3000:3000
+    environment:
+      - "GF_SERVER_ROOT_URL=http://127.0.0.1"
+      - "GF_SECURITY_ADMIN_PASSWORD=secret"
+    links:
+      - prometheus:prometheus
+    volumes:
+      - ./observability/1_grafana/data/:/var/lib/grafana
+      - ./observability/1_grafana/etc/provisioning:/etc/grafana/provisioning/
+      - ./observability/1_grafana/dashboards:/var/lib/grafana/dashboards
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+  loki:
+    image: grafana/loki:2.8.2
+    ports:
+      - 3101:3101
+    volumes:
+      - ./observability/2_loki/data:/tmp/loki
+  tempo:
+    image: grafana/tempo:2.1.1
+    command: ["-config.file=/etc/tempo.yaml"]
+    volumes:
+      - ./observability/3_tempo/etc/tempo-local.yaml:/etc/tempo.yaml
+      - ./observability/3_tempo/data/tempo-data:/tmp/tempo
+    ports:
+      - "14268"      # jaeger ingest, Jaeger - Thrift HTTP
+      - "14250"      # Jaeger - GRPC
+      - "55680"      # OpenTelemetry
+      - "3100"       # tempo
+      - "6831/udp"   # Jaeger - Thrift Compact
+      - "6832/udp"   # Jaeger - Thrift Binary
