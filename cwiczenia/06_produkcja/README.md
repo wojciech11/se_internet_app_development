@@ -99,17 +99,54 @@ W tym ćwiczeniu zbudujemy prostą aplikację dla zilustrowania observability, t
    PORT=8000
    ```
 
-### Logowanie do konsoli
+### Lepsze logowanie do konsoli
 
-Jest kilka opcji bibliotek logowania do konsoli (i nie tylko) ponad stardowy`console.log` ([](https://blog.logrocket.com/node-js-logging-best-practices-essential-guide/)), my dzisiaj skorzystamy z `winston`.
+Jest kilka opcji bibliotek logowania do konsoli (i nie tylko) ponad standardowy `console.log` ([](https://blog.logrocket.com/node-js-logging-best-practices-essential-guide/)), my dzisiaj skorzystamy z `pino` (jest dostępny również [pino middleware](https://github.com/pinojs/pino/blob/master/docs/web.md#pino-with-express)).
 
 ```bash
-npm install winston
+npm install pino
 ```
 
 ```bash
-npm install -D @types/winston
+npm install -D @types/pino
 ```
+
+Dorzućmy logowanie:
+
+```typescript
+import express, { Express, Request, Response } from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import pino from 'pino'; // (1)
+
+dotenv.config();
+
+const logger = pino({ // (2)
+     name:   'order-mgmt-app',
+     level: 'info'
+});
+
+const app: Express = express();
+const port = process.env.PORT;
+
+app.use(cors());
+app.use(express.json())
+
+app.get('/', (req: Request, res: Response) => {
+     logger.info({'handler': '/'}, "Calling the main") // (3)
+     res.json({ method: req.method, message: "Hello World", ...req.body });
+});
+
+app.listen(port, () => {
+     logger.info(`⚡️[server]: Server is running at http://localhost:${port}`); // (4)
+});
+```
+
+Biblioteki do logowania pozwalają nam dodawać dodatkowe informacje w ustrukturyzowany sposób oraz dbają o właściwy format.
+
+## Open telemetry
+
+xyz
 
 ### Metryki
 

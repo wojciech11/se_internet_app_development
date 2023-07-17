@@ -1,8 +1,14 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import pino from 'pino';
 
 dotenv.config();
+
+const logger = pino({
+     name:   'order-mgmt-app',
+     level: 'info'
+});
 
 const app: Express = express();
 const port = process.env.PORT;
@@ -11,9 +17,10 @@ app.use(cors());
 app.use(express.json())
 
 app.get('/', (req: Request, res: Response) => {
-  res.json({ method: req.method, message: "Hello World", ...req.body });
+     logger.info({"handler": "/"}, "Calling the main")
+     res.json({ method: req.method, message: "Hello World", ...req.body });
 });
 
 app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+     logger.info(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
