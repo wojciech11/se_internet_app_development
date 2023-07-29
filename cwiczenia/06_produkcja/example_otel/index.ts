@@ -2,11 +2,18 @@ import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import pino from 'pino';
+import {context, propagation, trace} from "@opentelemetry/api";
 
 dotenv.config();
 
+const app_name = "order-mgmt-app"
+
+const tracer = opentelemetry.trace.getTracer(
+     app_name
+);
+
 const logger = pino({
-     name:   'order-mgmt-app',
+     name:   app_name,
      level: 'info'
 });
 
@@ -18,7 +25,9 @@ app.use(express.json())
 
 app.get('/', (req: Request, res: Response) => {
      logger.info({"handler": "/"}, "Calling the main")
-     res.json({ method: req.method, message: "Hello World", ...req.body });
+     tracer.startActiveSpan('main', (span) => {
+          res.json({ method: req.method, message: "Hello World", ...req.body });
+     }
 });
 
 app.listen(port, () => {

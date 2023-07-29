@@ -215,10 +215,12 @@ Wykorzystajmy OpenTelemetry w naszej aplikacji:
 
 4. Moglibyśmy również wstrzyknąć informację z tracingu do logów, instrukcja ze [dokumentacji sumologic](https://help.sumologic.com/docs/apm/traces/get-started-transaction-tracing/opentelemetry-instrumentation/javascript/traceid-spanid-injection-into-logs/), pokazuje jak. Dla `pico` i innych popularnych bibliotek mamy integrację z OTEL, dla `pico` to `@opentelemetry/instrumentation-pino`.
 
-5. Jako, że mamy wszystko działajace, zobaczmy korzystać z tracingu w heandlerze:
+5. Jako, że mamy wszystko działające, zobaczmy korzystać z tracingu w heandlerze ([OTEL docs](https://opentelemetry.io/docs/instrumentation/js/manual/)):
 
-   ```bash
+   ```typescript
    ```
+
+6. Patrz semantyczne atrybuty: https://www.logicmonitor.com/blog/nodejs-application-manual-instrumentation-for-distributed-traces
 
 #### Metryki
 
