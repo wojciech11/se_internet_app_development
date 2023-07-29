@@ -142,26 +142,98 @@ app.listen(port, () => {
 });
 ```
 
-Biblioteki do logowania pozwalają nam dodawać dodatkowe informacje w ustrukturyzowany sposób oraz dbają o właściwy format.
-
-## Open telemetry
-
-xyz
+Biblioteki do logowania pozwalają nam dodawać dodatkowe informacje w ustrukturyzowany sposób (dodanie request id) oraz dbają o właściwy format.
 
 ### Metryki
+
+Lepsze logowanie do konsoli oraz dodanie metryk z Prometheusem są pierwszymi krokami dla implementacji observability niezależnie czy jest to Typescript, Python czy Golang. Dla Nodejs, integrację z Prometheusem znajdziesz na [siimon/prom-client](https://github.com/siimon/prom-client).
+
+### Open Telemetry
+
+[OpenTelemetry](https://opentelemetry.io/) obiecuje nam, że w ramach jednej biblioteki możemy mieć wsparcie dla tracingu, metryk i logowania (ostatnio dodane).
+
+Wykorzystajmy OpenTelemetry w naszej aplikacji:
+
+1. Zainstalujmy biblioteki/plugin dla [expressa](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/plugins/node/opentelemetry-instrumentation-express#readme), dla porównania jak wygląda [instrumentacja aplikacji nodejs](https://opentelemetry.io/docs/instrumentation/js/getting-started/nodejs/).
+
+   ```bash
+   npm install --save @opentelemetry/instrumentation-http \
+                      @opentelemetry/instrumentation-express \
+                      @opentelemetry/sdk-node
+   ```
+
+   Podepniemy do naszej aplikacji OTEL, utwórz następujący plik:  `instrumentation.ts`:
+
+   ```Typescript
+   import { NodeSDK } from '@opentelemetry/sdk-node';
+   import { ConsoleSpanExporter } from '@opentelemetry/sdk-trace-node';
+   import { HttpInstrumentation } from '@opentelemetry/instrumentation-http';
+   import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express';
+
+   import { PeriodicExportingMetricReader, ConsoleMetricExporter } from '@opentelemetry/sdk-metrics';
+
+   const sdk = new NodeSDK({
+     traceExporter: new ConsoleSpanExporter(),
+     metricReader: new PeriodicExportingMetricReader({
+       exporter: new ConsoleMetricExporter()
+     }),
+     instrumentations: [new HttpInstrumentation(), new ExpressInstrumentation()]
+   });
+
+   sdk.start()
+   ```
+
+2. Zmodyfikuj `package.json`, żeby nasz kod dla observability z OTEL był ładowany przy każdym starcie aplikacji:
+
+  ```json
+  //...
+  "dev": "NODE_ENV=development concurrently \"npx tsc --watch\" \"nodemon --require ./dist/instrumentation.js -q dist/index.js\""
+  // ...
+  ```
+
+3. Zobaczmy OTEL w działaniu:
+
+   - dla traceingu, używany `ConsoleSpanExporter`;
+   - dla metryk, okresowo wypisujemy na konsole z `PeriodicExportingMetricReader` i `ConsoleMetricExporter`.
+
+   W jednym z okien konsoli uruchom aplikację:
+
+   ```bash
+   npm run dev
+   ```
+
+   w drugim:
+
+   ```bash
+   curl http://localhost:8080/
+   ```
+
+   Zauważ:
+
+   - metryki - co jakis czas raportowane
+   - oraz tracing
+
+4. Moglibyśmy również wstrzyknąć informację z tracingu do logów, instrukcja ze [dokumentacji sumologic](https://help.sumologic.com/docs/apm/traces/get-started-transaction-tracing/opentelemetry-instrumentation/javascript/traceid-spanid-injection-into-logs/), pokazuje jak. Dla `pico` i innych popularnych bibliotek mamy integrację z OTEL, dla `pico` to `@opentelemetry/instrumentation-pino`.
+
+5. Jako, że mamy wszystko działajace, zobaczmy korzystać z tracingu w heandlerze:
+
+   ```bash
+   ```
+
+#### Metryki
 
 TBA
 
 https://github.com/mnadeem/nodejs-opentelemetry-tempo
 
+#### Tracing
+
+https://brightinventions.pl/blog/how-to-improve-your-app-observability-easily-with-grafana-and-opentelemetry/
+
 ### Logowanie
 
 https://brightinventions.pl/blog/how-to-improve-your-app-observability-easily-with-grafana-and-opentelemetry/
 
-
-### Tracing
-
-https://brightinventions.pl/blog/how-to-improve-your-app-observability-easily-with-grafana-and-opentelemetry/
 
 ## Session recording (Dodatkowe)
 

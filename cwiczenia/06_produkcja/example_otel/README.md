@@ -10,9 +10,15 @@ Jeśli jesteś ciekaw jak skonfigurowane jest każde z tych narzędzie, możesz 
 
 ```mermaid
 flowchart LR
-    App(Order Mgmt\nApp) -- metrics --> Pr(Prometheus) --> Gr(Grafana)
-    App -- logs --> Loki
+
     App -- traces --> Tempo
+    App -- metrics --> Pr(Prometheus) --> Gr(Grafana)
+    Deps -- logs --> Loki
+
+    subgraph App Stack
+      direction TB
+      App(Order Mgmt\nApp) --- Deps(Runtime)
+    end
 
     Loki --> Gr
     Tempo --> Gr
