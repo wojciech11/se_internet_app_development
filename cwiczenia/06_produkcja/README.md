@@ -220,7 +220,7 @@ Wykorzystajmy OpenTelemetry w naszej aplikacji:
    ```typescript
    ```
 
-6. Patrz semantyczne atrybuty: https://www.logicmonitor.com/blog/nodejs-application-manual-instrumentation-for-distributed-traces
+6. Patrz semantyczne atrybuty: https://www.logicmonitor.com/blog/nodejs-application-manual-instrumentation-for-distributed-traces i https://github.com/open-telemetry/opentelemetry-js/blob/main/doc/tracing.md#describing-a-span .
 
 #### Metryki
 

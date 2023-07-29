@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import pino from 'pino';
-import {context, propagation, trace} from "@opentelemetry/api";
+import * as api from '@opentelemetry/api';
 
 dotenv.config();
 
